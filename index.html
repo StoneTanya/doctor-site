@@ -1,19 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/style/index.css">
     <title>Document</title>
 </head>
-<body>
-test
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<body>
+
+
+    <div class="tabs-list row">
+        <div class="tabs-list__navigation row col col-sm-6 col-md-4 col-lg-4">
+            <h2 class="product-list__copy large">Повышаю квалификацию</h2>
+
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#research"
+                        type="button" role="tab" aria-controls="research" aria-selected="true">Исследования</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#sert" type="button"
+                        role="tab" aria-controls="sert" aria-selected="false">Дипломы и сертификаты</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#patent"
+                        type="button" role="tab" aria-controls="patent" aria-selected="false">Патенты</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="research" role="tabpanel" aria-labelledby="research-tab">...
+                </div>
+                <div class="tab-pane fade" id="sert" role="tabpanel" aria-labelledby="sert-tab">...</div>
+                <div class="tab-pane fade" id="patent" role="tabpanel" aria-labelledby="patent-tab">
+
+                    <div class="container">
+                        <div class="row row-cols-2">
+                            <div class="col">
+                                <p>Участвовал в создании патентов</p>
+                            </div>
+                            <div class="col">
+                                <div> <span> №1</span> <a
+                                        href="https://yandex.ru/patents/doc/RU5921U1_19980216">ДИСТРАКТОР ДЛЯ
+                                        ДИНАМИЧЕСКОГО ВЫТЯЖЕНИЯ ПОЯСНИЧНО-ГРУДНОГО ОТДЕЛА</a>
+                                </div>
+                                <div> <span> №2</span> <a
+                                        href="https://yandex.ru/patents/doc/RU2580280C2_20160410">КОМПОЗИЦИЯ ДЛЯ
+                                        МЕСТНОГО ПРИМЕНЕНИЯ ДЛЯ СНИЖЕНИЯ ИЛИ СНЯТИЯ БОЛЕВОГО СИНДРОМА</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
