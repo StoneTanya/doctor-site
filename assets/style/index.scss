@@ -1,0 +1,11 @@
+$font-stack:'Playfair Display', sans-serif;
+$primary-color: #177165;
+$background: #E1F4F2;
+
+.product-list__title {
+    font-family: $font-stack;
+    color: $primary-color;}
+
+#tabs-list {
+        background-color: $background;
+    }

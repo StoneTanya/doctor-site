@@ -10,18 +10,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/style/index.css">
+    <link rel="stylesheet" href="assets/style/index.css">
     <title>Document</title>
 </head>
 
 <body>
 
 
-    <div class="tabs-list row">
-        <div class="tabs-list__navigation row col col-sm-6 col-md-4 col-lg-4">
-            <h2 class="product-list__copy large">Повышаю квалификацию</h2>
-
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <h2 class="product-list__title large">Повышаю квалификацию</h2>
+    <div class="tabs-list row justify-content-center">
+        <div class="tabs-list__navigation row col-12">
+            <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
                     <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#research"
                         type="button" role="tab" aria-controls="research" aria-selected="true">Исследования</button>
@@ -42,15 +41,17 @@
                 <div class="tab-pane fade" id="patent" role="tabpanel" aria-labelledby="patent-tab">
 
                     <div class="container">
-                        <div class="row row-cols-2">
-                            <div class="col">
-                                <p>Участвовал в создании патентов</p>
+                        <div class="row row-cols-2 patent">
+                            <div class="col-2 border">
+                                <p class="patent__title">Участвовал в создании патентов</p>
                             </div>
-                            <div class="col">
+                            <div class="col-10 border">
                                 <div> <span> №1</span> <a
                                         href="https://yandex.ru/patents/doc/RU5921U1_19980216">ДИСТРАКТОР ДЛЯ
                                         ДИНАМИЧЕСКОГО ВЫТЯЖЕНИЯ ПОЯСНИЧНО-ГРУДНОГО ОТДЕЛА</a>
                                 </div>
+                                <video class="col border" width="400" height="300" preload="auto" loop autoplay
+                                    src="./assets/video/Spina_4.mp4"></video>
                                 <div> <span> №2</span> <a
                                         href="https://yandex.ru/patents/doc/RU2580280C2_20160410">КОМПОЗИЦИЯ ДЛЯ
                                         МЕСТНОГО ПРИМЕНЕНИЯ ДЛЯ СНИЖЕНИЯ ИЛИ СНЯТИЯ БОЛЕВОГО СИНДРОМА</a>
