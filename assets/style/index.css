@@ -1,13 +1,58 @@
 .product-list__title {
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Playfair Display", serif;
   color: #177165;
 }
 
-.tabs-list {
-  background-color: #E1F4F2;
+.patent__btn {
+  font-family: "Roboto", sans-serif;
+  color: #177165;
+  border: 2px solid #177165;
+  border-radius: 0px;
 }
-/*# sourceMappingURL=index.css.map */
+
+.research__btn {
+  font-family: "Roboto", sans-serif;
+  color: #E1F4F2;
+  border: 2px solid #177165;
+  border-radius: 0px;
+}
+
+.patent__discription {
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+}
+
+.video-block__container {
+  width: 50%;
+}
 
 .video-block__distractor {
-    width: 50%;
+  max-width: 100%;
 }
+
+.cert-container {
+  padding-top: 2%;
+}
+
+.research-container {
+  background-color: #177165;
+}
+
+.research-container__title {
+  font-family: "Playfair Display", serif;
+  color: #fff;
+}
+
+.research-container__paragraph {
+  font-family: "Roboto", sans-serif;
+  color: #A4D6CF;
+}
+
+.research__img {
+  max-width: 100%;
+}
+
+.research-container__img {
+  width: 30%;
+}
+/*# sourceMappingURL=index.css.map */

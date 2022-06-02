@@ -3,12 +3,63 @@ $font-other: 'Roboto', sans-serif;
 $primary-color: #177165;
 $background: #E1F4F2;
 $text: #777777;
-
+$title-color: #fff;
+$paragraph: #A4D6CF;
+$btn-border: 2px solid $primary-color;
 
 .product-list__title {
     font-family: $font-main;
     color: $primary-color;}
 
-.tabs-list {
-        background-color: $background;
+
+    .patent__btn {
+        font-family: $font-other;
+        color: $primary-color;
+        border: $btn-border;
+        border-radius: 0px;
+    }
+
+.research__btn {
+    font-family: $font-other;
+        color: $background;
+        border: $btn-border;
+        border-radius: 0px;
+}
+
+    .patent__discription {
+        font-family: $font-other;
+        color: $text;
+    }
+
+    .video-block__container {
+        width: 50%;
+    }
+
+    .video-block__distractor {
+        max-width: 100%;
+    }
+
+    .cert-container {
+        padding-top: 2%;
+    }
+
+
+    .research-container {
+        background-color: $primary-color;
+    }
+
+    .research-container__title {
+        font-family: $font-main;
+        color: $title-color;
+    }
+    .research-container__paragraph {
+        font-family: $font-other;
+        color: $paragraph;
+    }
+
+    .research__img {
+        max-width: 100%;
+    }
+    .research-container__img {
+        width: 20%;
     }

@@ -11,82 +11,53 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style/index.css">
+    <script src="https://kit.fontawesome.com/f543b4ca6b.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 
 <body>
 
 
+
+
+
+    
+
     <h2 class="product-list__title large">Повышаю квалификацию</h2>
     <div class="tabs-list row justify-content-center">
         <div class="tabs-list__navigation row col-12">
             <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#research"
-                        type="button" role="tab" aria-controls="research" aria-selected="true">Исследования</button>
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#patent"
+                        type="button" role="tab" aria-controls="research" aria-selected="true">Патенты</button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#sert" type="button"
                         role="tab" aria-controls="sert" aria-selected="false">Дипломы и сертификаты</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#patent"
-                        type="button" role="tab" aria-controls="patent" aria-selected="false">Патенты</button>
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#research"
+                        type="button" role="tab" aria-controls="patent" aria-selected="false">Исследования</button>
                 </li>
             </ul>
 
             <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="research" role="tabpanel" aria-labelledby="research-tab">...
-                </div>
-
-
-
-                <div class="tab-pane fade " id="sert" role="tabpanel" aria-labelledby="sert-tab">
-                    <div class="dipl-list justify-content-sm-around">
-                        <a class="slider-doc" href="https://bizprinting.ru/image/catalog/products/full_12410.jpg"><img
-                                class="lazyloaded"
-                                data-src="https://bizprinting.ru/image/catalog/products/full_12410.jpg"
-                                style="width:200px; height:320px; object-fit:cover"
-                                src="https://bizprinting.ru/image/catalog/products/full_12410.jpg"></a>
-
-                        <a class="slider-doc" href="https://bizprinting.ru/image/catalog/products/full_12410.jpg"><img
-                                class="lazyloaded"
-                                data-src="https://bizprinting.ru/image/catalog/products/full_12410.jpg"
-                                style="width:200px; height:320px; object-fit:cover"
-                                src="https://bizprinting.ru/image/catalog/products/full_12410.jpg"></a>
-
-                        <a class="slider-doc" href="https://bizprinting.ru/image/catalog/products/full_12410.jpg"><img
-                                class="lazyloaded"
-                                data-src="https://bizprinting.ru/image/catalog/products/full_12410.jpg"
-                                style="width:200px; height:320px; object-fit:cover"
-                                src="https://bizprinting.ru/image/catalog/products/full_12410.jpg"></a>
-
-                        <a class="slider-doc" href="https://bizprinting.ru/image/catalog/products/full_12410.jpg"><img
-                                class="lazyloaded"
-                                data-src="https://bizprinting.ru/image/catalog/products/full_12410.jpg"
-                                style="width:200px; height:320px; object-fit:cover"
-                                src="https://bizprinting.ru/image/catalog/products/full_12410.jpg"></a>
-                    </div>
-                </div>
-
-
-
-
-                <div class="tab-pane fade" id="patent" role="tabpanel" aria-labelledby="patent-tab">
-                    <div class="container">
+                
+                <div class="tab-pane fade show active" id="patent" role="tabpanel" aria-labelledby="patent-tab">
+                    <div class="patent-container">
                         <div class="row row-cols-2 patent">
                             <div class="col-2 border">
                                 <p class="patent__title">Участвовал в создании патентов</p>
                             </div>
 
                             <div class="col-4 border">
-                                <div> <span> №1</span>
+                                <div> <span>№1</span>
                                     <h4>Дистрактор для динамического вытяжения пояснично-грудного отдела</h4>
                                     <p class="patent__discription">Устройство обеспечивает свободу движений в верхнем
                                         плечевом поясе, уменьшает растяжение функционально нормальных
                                         позвоночно-двигательных сегментов</p>
-                                    <a class="btn btn-outline-success"
-                                        href="https://yandex.ru/patents/doc/RU5921U1_19980216">Узнать больше</a>
+                                    <a class="btn btn-outline-success d-inline-flex align-items-center patent__btn"
+                                        href="https://yandex.ru/patents/doc/RU5921U1_19980216">Узнать больше<i class="fa-solid fa-plus"></i></a>
                                 </div>
                             </div>
 
@@ -98,20 +69,64 @@
                         </div>
 
                         <div class="row row-cols-2 patent">
-                            <div class="col-5 border video-block"> <span> №2</span> <a
-                                    href="https://yandex.ru/patents/doc/RU2580280C2_20160410">Парфюмерная композиция для
-                                    местного применениядля снижения или снятия болевого синдрома</a>
-                                <p class="patent__discription">Снимает болевые синдромы при заболеваниях, которые
+                            <div class="col-5 border video-block"> <span> №2</span> <h4>Парфюмерная композиция для
+                                    местного применениядля снижения или снятия болевого синдрома</h4>
+                                <p class="patent__discription ">Снимает болевые синдромы при заболеваниях, которые
                                     сопровождаются нарушением локального кровообращения, способствует профилактике
                                     наружных кожных болезней</p>
+                                    <a class="btn btn-outline-success d-inline-flex align-items-center patent__btn"
+                                    href="https://yandex.ru/patents/doc/RU5921U1_19980216">Узнать больше<i class="fa-solid fa-plus"></i></a>
                             </div>
                         </div>
-
                     </div>
-
-
-
                 </div>
+
+
+                <div class="tab-pane fade" id="sert" role="tabpanel" aria-labelledby="sert-tab">
+                    <div class="dipl-list d-flex flex-row justify-content-around cert-container">
+                        <a class="slider-doc" href="https://bizprinting.ru/image/catalog/products/full_12410.jpg"><img
+                                class="lazyloaded"
+                                data-src="https://bizprinting.ru/image/catalog/products/full_12410.jpg"
+                                style="width:200px; height:320px; object-fit:cover"
+                                src="https://bizprinting.ru/image/catalog/products/full_12410.jpg"></a>
+
+                        <a class="slider-doc" href="https://bizprinting.ru/image/catalog/products/full_12410.jpg"><img
+                                class="lazyloaded"
+                                data-src="https://bizprinting.ru/image/catalog/products/full_12410.jpg"
+                                style="width:200px; height:320px; object-fit:cover"
+                                src="https://bizprinting.ru/image/catalog/products/full_12410.jpg"></a>
+
+                        <a class="slider-doc" href="https://bizprinting.ru/image/catalog/products/full_12410.jpg"><img
+                                class="lazyloaded"
+                                data-src="https://bizprinting.ru/image/catalog/products/full_12410.jpg"
+                                style="width:200px; height:320px; object-fit:cover"
+                                src="https://bizprinting.ru/image/catalog/products/full_12410.jpg"></a>
+
+                        <a class="slider-doc" href="https://bizprinting.ru/image/catalog/products/full_12410.jpg"><img
+                                class="lazyloaded"
+                                data-src="https://bizprinting.ru/image/catalog/products/full_12410.jpg"
+                                style="width:200px; height:320px; object-fit:cover"
+                                src="https://bizprinting.ru/image/catalog/products/full_12410.jpg"></a>
+                    </div>
+                </div>
+
+                
+
+                <div class="tab-pane fade" id="research" role="tabpanel" aria-labelledby="research-tab">
+                    <div class="research-container d-flex flex-row justify-content-around"> 
+                        <div class="research-container_left"><p class="research-container__paragraph">Ознакомьтесь с моей диссертацией на тему</p> 
+                    <h4 class="research-container__title" >Комплексное лечение и реабилитация больных с нарушением функции тазовых органов при травматической болезни спинного мозга</h4>
+                </div> 
+                    <div class="research-container__img">
+                    <img src="assets/img/mainpagedisser.png" alt="main page of dissertation" class="research__img">
+                </div>
+                    <a class="btn btn-outline-info d-inline-flex align-items-center research__btn"
+                    href="https://medical-diss.com/medicina/kompleksnoe-lechenie-i-reabilitatsiya-bolnyh-s-narusheniem-funktsii-tazovyh-organov-pri-travmaticheskoy-bolezni-spinnogo-">Узнать больше<i class="fa-solid fa-plus"></i></a>
+                </div>
+                </div>
+
+
+
             </div>
         </div>
     </div>
