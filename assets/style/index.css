@@ -1,5 +1,13 @@
 .product-list__title {
-    font-family: "Playfair Display", sans-serif;
-    color: #177165;
+  font-family: "Playfair Display", sans-serif;
+  color: #177165;
+}
+
+.tabs-list {
+  background-color: #E1F4F2;
 }
 /*# sourceMappingURL=index.css.map */
+
+.video-block__distractor {
+    width: 50%;
+}
