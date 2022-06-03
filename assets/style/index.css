@@ -4,6 +4,11 @@
     margin-bottom: 5vh;
     margin-top: 5vh;
 }
+.work {
+  background-color: #E1F4F2;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+}
 .content-studi {
     background-color: white;
     width: 50%;
@@ -22,16 +27,19 @@
     color: black;
     font-family: 'Playfair Display';
     margin-top: 5vh;
+    margin-left: 3vw;
+    width: 30vw;
 }
 .line {
     width: 10px;
     background-color: #177165;
 }
 .content {
-    width: 60vw;
+    width: 70vw;
+    margin-left: -30px;
 }
 .limiter {
-    max-height: 13.2vh;
+    max-height: 13vh;
     overflow: hidden;
     position: relative;
   }
@@ -59,4 +67,3 @@
     text-decoration: underline;
     margin-left: 5%;
   }
-   
