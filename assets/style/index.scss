@@ -11,6 +11,7 @@ $margin-top-about-me:2.5rem;
 $margin-bottom-about-me: 2.5rem;
 
 
+/* styles to "tab block (patent, cert and research" */
 .product-list__title {
     font-family: $font-main;
     color: $primary-color;}
@@ -67,7 +68,7 @@ $margin-bottom-about-me: 2.5rem;
         width: 20%;
     }
 
-
+/* styles to "about me" */
 body {
     font: 100% $font-main;
     color: $primary-color;
@@ -91,6 +92,7 @@ p {
     color: $text;
 }
 
+/* styles to "workareas" */
 .container-workareas__topblock {
     background-color: #E7F6F5;
     height: 150px;
@@ -109,4 +111,28 @@ p {
 
 #workareas__card1 {
     margin-left: 18rem;
+}
+
+
+/* styles to "header" */
+nav,
+.header-block {
+    background-color: $primary-color;
+}
+
+.header-block {
+    height: 788px;
+}
+
+.header-block_text {
+    font-size: 60px;
+    line-height: 78px;
+    color: white;
+    margin: 50px;
+}
+
+.info-list {
+    color: #A4D6CF;
+    font-size: 25px;
+    margin: 50px;
 }
