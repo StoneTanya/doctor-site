@@ -1,12 +1,76 @@
-$font-stack: Playfair Display, sans-serif;
-$font-size-for-common-text: 1.5rem;
+$font-main:'Playfair Display', serif;
+$font-other: 'Roboto', sans-serif;
 $primary-color: #177165;
+$background: #E1F4F2;
+$text: #777777;
+$title-color: #fff;
+$paragraph: #A4D6CF;
+$btn-border: 2px solid $primary-color;
+$font-size-for-common-text: 1.5rem;
 $margin-top-about-me:2.5rem;
 $margin-bottom-about-me: 2.5rem;
-$common-text-color:#777777;
 
+
+/* styles to "tab block (patent, cert and research" */
+.product-list__title {
+    font-family: $font-main;
+    color: $primary-color;}
+
+
+    .patent__btn {
+        font-family: $font-other;
+        color: $primary-color;
+        border: $btn-border;
+        border-radius: 0px;
+    }
+
+.research__btn {
+    font-family: $font-other;
+        color: $background;
+        border: $btn-border;
+        border-radius: 0px;
+}
+
+    .patent__discription {
+        font-family: $font-other;
+        color: $text;
+    }
+
+    .video-block__container {
+        width: 50%;
+    }
+
+    .video-block__distractor {
+        max-width: 100%;
+    }
+
+    .cert-container {
+        padding-top: 2%;
+    }
+
+    .research-container {
+        background-color: $primary-color;
+    }
+
+    .research-container__title {
+        font-family: $font-main;
+        color: $title-color;
+    }
+    .research-container__paragraph {
+        font-family: $font-other;
+        color: $paragraph;
+    }
+
+    .research__img {
+        max-width: 100%;
+    }
+    .research-container__img {
+        width: 20%;
+    }
+
+/* styles to "about me" */
 body {
-    font: 100% $font-stack;
+    font: 100% $font-main;
     color: $primary-color;
 }
 
@@ -25,9 +89,10 @@ h1 {
 
 p {
     font-size: $font-size-for-common-text;
-    color: $common-text-color;
+    color: $text;
 }
 
+/* styles to "workareas" */
 .container-workareas__topblock {
     background-color: #E7F6F5;
     height: 150px;
@@ -40,10 +105,34 @@ p {
     margin-left: 30px;
     border: 1px solid red;
     justify-content: space-between;
-    background-color: white;
+    background-color: $title-color;
     text-align: center;
 }
 
 #workareas__card1 {
     margin-left: 18rem;
+}
+
+
+/* styles to "header" */
+nav,
+.header-block {
+    background-color: $primary-color;
+}
+
+.header-block {
+    height: 788px;
+}
+
+.header-block_text {
+    font-size: 60px;
+    line-height: 78px;
+    color: white;
+    margin: 50px;
+}
+
+.info-list {
+    color: #A4D6CF;
+    font-size: 25px;
+    margin: 50px;
 }
