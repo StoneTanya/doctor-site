@@ -1,3 +1,4 @@
+
 body {
   font: 100% Playfair Display, sans-serif;
   color: #177165;
@@ -19,5 +20,28 @@ h1 {
 p {
   font-size: 1.5rem;
   color: #777777;
+=======
+.container-workareas__topblock {
+  background-color: #E7F6F5;
+  height: 150px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-workareas__card {
+  height: 6rem;
+  max-width: 18rem;
+  margin-left: 30px;
+  border: 1px solid red;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  text-align: center;
+}
+
+#workareas__card1 {
+  margin-left: 18rem;
 }
 /*# sourceMappingURL=index.css.map */
