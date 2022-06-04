@@ -70,24 +70,24 @@
   margin-left: 5%;
 }
 
-.read-more-checker-2 {
+.read-more-checker2 {
   opacity: 0;
   position: absolute;
 }
-.read-more-checker-2:checked ~ .limiter {
+.read-more-checker2:checked ~ .limiter {
   max-height: none;
 }
-.read-more-checker-2:checked ~ .limiter .bottom {
+.read-more-checker2:checked ~ .limiter .bottom {
   opacity: 0;
   transition: 0.3s;
 }
-.read-more-checker-2 ~ .read-more-button:before {
+.read-more-checker2 ~ .read-more-button2:before {
   content: "Развернуть »";
 }
-.read-more-checker-2:checked ~ .read-more-button:before {
+.read-more-checker2:checked ~ .read-more-button2:before {
   content: "Свернуть «";
 }
-.read-more-button {
+.read-more-button2 {
   cursor: pointer;
   display: inline-block;
   color: black;
