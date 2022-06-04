@@ -6,6 +6,10 @@ $text: #777777;
 $title-color: #fff;
 $paragraph: #A4D6CF;
 $btn-border: 2px solid $primary-color;
+$font-size-for-common-text: 1.5rem;
+$margin-top-about-me:2.5rem;
+$margin-bottom-about-me: 2.5rem;
+
 
 .product-list__title {
     font-family: $font-main;
@@ -43,7 +47,6 @@ $btn-border: 2px solid $primary-color;
         padding-top: 2%;
     }
 
-
     .research-container {
         background-color: $primary-color;
     }
@@ -63,3 +66,47 @@ $btn-border: 2px solid $primary-color;
     .research-container__img {
         width: 20%;
     }
+
+
+body {
+    font: 100% $font-main;
+    color: $primary-color;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: $margin-top-about-me;
+    margin-bottom: $margin-bottom-about-me;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: $margin-top-about-me;
+    margin-bottom: $margin-bottom-about-me;
+}
+
+p {
+    font-size: $font-size-for-common-text;
+    color: $text;
+}
+
+.container-workareas__topblock {
+    background-color: #E7F6F5;
+    height: 150px;
+    align-items: center;
+}
+
+.container-workareas__card {
+    height: 6rem;
+    max-width: 18rem;
+    margin-left: 30px;
+    border: 1px solid red;
+    justify-content: space-between;
+    background-color: $title-color;
+    text-align: center;
+}
+
+#workareas__card1 {
+    margin-left: 18rem;
+}
