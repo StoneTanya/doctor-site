@@ -348,28 +348,44 @@ p {
 }
 
 /* styles to "workareas" */
+.container-workareas__header {
+  color: white;
+  font-family: 'Playfair Display';
+  margin-top: 7vh;
+  margin-bottom: 7vh;
+  margin-left: 3vw;
+}
+
 .container-workareas__topblock {
-  background-color: #E7F6F5;
-  height: 150px;
+  background-color: #177165;
+  height: 30vh;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .container-workareas__card {
-  height: 6rem;
+  height: 30vh;
   max-width: 18rem;
-  margin-left: 30px;
-  border: 1px solid red;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  margin-left: 4vw;
+  border: 0.5px solid #177165;
   background-color: #fff;
   text-align: center;
+  font-size: 1.1rem;
+  font: 'Roboto';
 }
 
 #workareas__card1 {
-  margin-left: 18rem;
+  margin-left: 17vw;
+}
+
+.workareas-icon {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.container-workareas__bottomblock {
+  height: 25vh;
 }
 
 /* styles to "header" */
