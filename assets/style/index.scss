@@ -13,6 +13,7 @@ $margin-bottom-about-me: 2.5rem;
 html {
     width: 100%;
     height: 100%;
+    box-sizing: border-box;
 }
 
 /* блоки об учебе и работе */
@@ -114,9 +115,128 @@ html {
 /*КОНЕЦ блоков об учебе и работе */
 
 /* styles to "tab block (patent, cert and research)" */
-.product-list__title {
+.tabs-block {
+    background: $primary-color;
+    height: 100%;
+    width: 100%;
+
+.tabs-block__title {
     font-family: $font-main;
-    color: $primary-color;}
+    font-size: 2rem;
+    color: $primary-color;
+    text-align: center;
+    color: $title-color;
+    font-weight: 300;
+    padding: 40px 0 20px 0;
+    margin: 0;
+}
+}
+
+.tab-container {
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    background: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 90%;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    border-radius: 3px;
+    font-family: $font-other;
+    font-size: 1.2rem;
+    line-height: 100%;
+}
+
+.tab-content .tab-pane {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 1em;
+    background: white;
+    width: 100%;
+}
+
+.nav-tabs {
+    border: 0;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.nav .nav-item {
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin: 0;
+    text-align: center;
+    flex: 1;
+}
+
+.nav .nav-link::before {
+    position: absolute;
+    bottom: 1em;
+    left: 50%;
+    margin-left: -20px;
+    width: 30%;
+    height: 4px;
+    background: #177165;
+    content: '';
+    opacity: 0;
+    transition: transform 0.2s ease-in;
+    transform: scale3d(0, 1, 1);
+}
+
+.nav .nav-link {
+    border: 0;
+    display: inline-block;
+    overflow: visible;
+    padding: 1em 0 2em;
+    color: #777777;
+    line-height: 1;
+    transition: color 0.3s cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.nav .nav-link:hover {
+    color: #177165;
+}
+
+.nav .nav-link.active::before {
+    position: absolute;
+    bottom: 1em;
+    left: 50%;
+    margin-left: -20px;
+    width: 40px;
+    height: 4px;
+    background: #0cc98d;
+    content: '';
+    opacity: 0;
+    transition: transform 0.2s ease-in;
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+}
+
+.nav .nav-link.active,
+.nav .nav-link.active:hover {
+    background-color: var(#E1F4F2);
+    color: #177165;
+}
+
+.nav i {
+    font-size: 1.3em;
+    display: block;
+    margin: 0 0 0.35em;
+    opacity: 0;
+    transition: transform 0.2s, opacity 0.2s;
+    transform: translate3d(0, -100px, 0);
+    pointer-events: none;
+}
+
+.nav .nav-link.active i {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
 
 
     .patent__btn {
@@ -138,6 +258,7 @@ html {
         color: $text;
     }
 
+    /*style for video*/ 
     .video-block__container {
         width: 50%;
     }
@@ -156,20 +277,16 @@ html {
     }
     .research-container__paragraph {
         font-family: $font-other;
-        color: $paragraph;
+        color: $primary-color;
     }
 
     .research__img {
         max-width: 100%;
     }
     .research-container__img {
-        width: 20%;
+        width: 40%;
     }
 
-.tab-title {
-    font-family: $font-other;
-    color: $primary-color;
-}
 
 
 
@@ -249,235 +366,3 @@ nav,
 
 
 
-
-/* colors */
-$blue: #428BFF;
-$red: #FF4A53;
-$dark: #333;
-
-$accent: $primary-color;
-$accent-inactive: desaturate($accent, 85%);
-$secondary: $accent-inactive;
-
-
-/* tab setting */
-$tab-count: 3;
-$indicator-width: 50px;
-$indicator-height: 4px;
-
-/* breakpoints */
-$breakpoints: (
-    medium: #{$tab-count*250px},
-    small: #{$tab-count*150px}
-);
-
-
-/* selectors relative to radio inputs */
-$label-selector: "~ ul > li";
-$slider-selector: "~ .slider";
-$content-selector: "~ .content > section";
-
-@mixin tabs(
-    $label-selector: $label-selector,
-    $slider-selector: $slider-selector,
-    $content-selector: $content-selector) {
-    
-@for $i from 1 through $tab-count {
-    &:nth-of-type(#{$i}):checked {
-        #{$label-selector}:nth-child(#{$i}) {
-        @content;
-        }
-
-        #{$slider-selector} {
-        transform: translateX(#{100% * ($i - 1)});
-        }
-
-        #{$content-selector}:nth-child(#{$i}) {
-        display: block;
-        }
-    }
-}
-}
-
-
-
-.tabs-block {
-    background: $primary-color;
-    height: 100%;
-
-.product-list__title {
-    text-align: center;
-    color: $title-color;
-    font-weight: 300;
-    padding: 40px 0 20px 0;
-    margin: 0;
-}
-}
-
-.tabs-container {
-    left: 50%;
-    transform: translateX(-50%);
-    position: relative;
-    background: white;
-    padding: 50px;
-    padding-bottom: 80px;
-    width: 90%;
-    height: 100%;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    border-radius: 5px;
-  min-width: #{$tab-count * 60px}
-    
-
-ul li button {
-    font-family: $font-other;
-    font-weight: bold;
-    font-size: 18px;
-    color: $accent;
-}
-
-ul {
-    li {
-        box-sizing: border-box;
-        flex: 1;
-        width: #{100%/$tab-count};
-        padding: 0 10px;
-        text-align: center;
-    
-    .tab-title {
-        transition: all 0.3s ease-in-out;
-        color: $secondary;
-        padding: 5px auto;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        transition: all 0.2s ease-in-out;
-        white-space: nowrap;
-        -webkit-touch-callout: none;
-    }
-    
-    button {
-        color: $primary-color;
-        &::after {
-            content: "";
-            position: relative;
-            display: block;
-            width: 30px;
-            height: 3px;
-            background: $accent;
-            margin-top: 5px;
-            left: 1px;
-        }
-    }
-        i {
-            height: 1.2em;
-            margin-right: 0.2em;
-            transition: all 0.2s ease-in-out;
-        }
-        
-        &:hover,
-        &:focus,
-        &:active {
-            outline: 0;
-            color: lighten($secondary, 15%);
-        i {
-            fill: lighten($secondary, 15%);
-        }
-        }
-    }
-    }
-}
-
-.slider {
-    position: relative;
-    width: #{33%/$tab-count};
-    transition: all 0.33s cubic-bezier(0.38, 0.8, 0.32, 1.07);
-    .indicator {
-        position: relative;
-        width: $indicator-width;
-        max-width: 100%;
-        margin: 0 auto;
-        height: $indicator-height;
-        background: $accent;
-        border-radius: 1px;     
-    }
-}
-
-.content {
-    margin-top: 30px;
-    line-height: 1.4;
-    
-    section {
-        display: none;
-        animation: {
-        name: content;
-        direction: normal;
-        duration: 0.3s;
-        timing-function: ease-in-out;
-        iteration-count: 1;
-}
-
-
-    }
-}
-
-.tabs-block {
-    > .tab-title {
-        cursor: default;
-        color: $accent;
-        
-        i {
-        fill: $accent;
-        }
-        
-        @media (max-width: map-get($breakpoints, small)) {
-            background: rgba(0, 0, 0, 0.08);
-        }
-    }
-    }
-
-
-@keyframes tab-content {
-    from {
-        opacity: 0;
-        transform: translateY(5%);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0%);
-    }
-}
-
-@media (max-width: map-get($breakpoints, medium)) {
-    ul li .tab-title {
-      white-space: initial;
-      
-      br {
-        display: initial;
-      }
-      
-      i {
-        height: 1.5em;
-      }
-    }
-  }
-  
-  @media (max-width: map-get($breakpoints, small)) {
-    ul li .tab-title {
-      padding: 5px;
-      border-radius: 5px;
-      
-      span {
-        display: none;
-    }
-    }
-    
-    .slider {
-        display: none;
-    }
-    
-    .tab-content {
-        margin-top: 20px; 
-        section h2 {
-        display: block;
-    }
-    }
-}

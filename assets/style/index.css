@@ -2,6 +2,8 @@
 html {
   width: 100%;
   height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* блоки об учебе и работе */
@@ -123,9 +125,152 @@ html {
 
 /*КОНЕЦ блоков об учебе и работе */
 /* styles to "tab block (patent, cert and research)" */
-.product-list__title {
+.tabs-block {
+  background: #177165;
+  height: 100%;
+  width: 100%;
+}
+
+.tabs-block .tabs-block__title {
   font-family: "Playfair Display", serif;
+  font-size: 2rem;
   color: #177165;
+  text-align: center;
+  color: #fff;
+  font-weight: 300;
+  padding: 40px 0 20px 0;
+  margin: 0;
+}
+
+.tab-container {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: relative;
+  background: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 90%;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border-radius: 3px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  line-height: 100%;
+}
+
+.tab-content .tab-pane {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 1em;
+  background: white;
+  width: 100%;
+}
+
+.nav-tabs {
+  border: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav .nav-item {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin: 0;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.nav .nav-link::before {
+  position: absolute;
+  bottom: 1em;
+  left: 50%;
+  margin-left: -20px;
+  width: 30%;
+  height: 4px;
+  background: #177165;
+  content: '';
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+  transition: -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
+  -webkit-transform: scale3d(0, 1, 1);
+          transform: scale3d(0, 1, 1);
+}
+
+.nav .nav-link {
+  border: 0;
+  display: inline-block;
+  overflow: visible;
+  padding: 1em 0 2em;
+  color: #777777;
+  line-height: 1;
+  -webkit-transition: color 0.3s cubic-bezier(0.7, 0, 0.3, 1);
+  transition: color 0.3s cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.nav .nav-link:hover {
+  color: #177165;
+}
+
+.nav .nav-link.active::before {
+  position: absolute;
+  bottom: 1em;
+  left: 50%;
+  margin-left: -20px;
+  width: 40px;
+  height: 4px;
+  background: #0cc98d;
+  content: '';
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+  transition: -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
+  opacity: 1;
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+}
+
+.nav .nav-link.active,
+.nav .nav-link.active:hover {
+  background-color: var(#E1F4F2);
+  color: #177165;
+}
+
+.nav i {
+  font-size: 1.3em;
+  display: block;
+  margin: 0 0 0.35em;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+  transition: opacity 0.2s, -webkit-transform 0.2s;
+  transition: transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.2s, -webkit-transform 0.2s;
+  -webkit-transform: translate3d(0, -100px, 0);
+          transform: translate3d(0, -100px, 0);
+  pointer-events: none;
+}
+
+.nav .nav-link.active i {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 
 .patent__btn {
@@ -147,6 +292,7 @@ html {
   color: #777777;
 }
 
+/*style for video*/
 .video-block__container {
   width: 50%;
 }
@@ -166,7 +312,7 @@ html {
 
 .research-container__paragraph {
   font-family: "Roboto", sans-serif;
-  color: #A4D6CF;
+  color: #177165;
 }
 
 .research__img {
@@ -174,12 +320,7 @@ html {
 }
 
 .research-container__img {
-  width: 20%;
-}
-
-.tab-title {
-  font-family: "Roboto", sans-serif;
-  color: #177165;
+  width: 40%;
 }
 
 /* styles to "about me" */
@@ -252,205 +393,5 @@ nav,
   color: #A4D6CF;
   font-size: 25px;
   margin: 50px;
-}
-
-/* colors */
-/* tab setting */
-/* breakpoints */
-/* selectors relative to radio inputs */
-.tabs-block {
-  background: #177165;
-  height: 100%;
-}
-
-.tabs-block .product-list__title {
-  text-align: center;
-  color: #fff;
-  font-weight: 300;
-  padding: 40px 0 20px 0;
-  margin: 0;
-}
-
-.tabs-container {
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  position: relative;
-  background: white;
-  padding: 50px;
-  padding-bottom: 80px;
-  width: 90%;
-  height: 100%;
-  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  border-radius: 5px;
-  min-width: 180px ul li button;
-  min-width-font-family: "Roboto", sans-serif;
-  min-width-font-weight: bold;
-  min-width-font-size: 18px;
-  min-width-color: #177165;
-}
-
-.tabs-container ul li {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  width: 33.33333%;
-  padding: 0 10px;
-  text-align: center;
-}
-
-.tabs-container ul li .tab-title {
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  color: #444444;
-  padding: 5px auto;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  white-space: nowrap;
-  -webkit-touch-callout: none;
-}
-
-.tabs-container ul li button {
-  color: #177165;
-}
-
-.tabs-container ul li button::after {
-  content: "";
-  position: relative;
-  display: block;
-  width: 30px;
-  height: 3px;
-  background: #177165;
-  margin-top: 5px;
-  left: 1px;
-}
-
-.tabs-container ul li i {
-  height: 1.2em;
-  margin-right: 0.2em;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.tabs-container ul li:hover, .tabs-container ul li:focus, .tabs-container ul li:active {
-  outline: 0;
-  color: #6a6a6a;
-}
-
-.tabs-container ul li:hover i, .tabs-container ul li:focus i, .tabs-container ul li:active i {
-  fill: #6a6a6a;
-}
-
-.slider {
-  position: relative;
-  width: 11%;
-  -webkit-transition: all 0.33s cubic-bezier(0.38, 0.8, 0.32, 1.07);
-  transition: all 0.33s cubic-bezier(0.38, 0.8, 0.32, 1.07);
-}
-
-.slider .indicator {
-  position: relative;
-  width: 50px;
-  max-width: 100%;
-  margin: 0 auto;
-  height: 4px;
-  background: #177165;
-  border-radius: 1px;
-}
-
-.content {
-  margin-top: 30px;
-  line-height: 1.4;
-}
-
-.content section {
-  display: none;
-  -webkit-animation-name: content;
-          animation-name: content;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-duration: 0.3s;
-          animation-duration: 0.3s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-}
-
-.tabs-block > .tab-title {
-  cursor: default;
-  color: #177165;
-}
-
-.tabs-block > .tab-title i {
-  fill: #177165;
-}
-
-@media (max-width: 450px) {
-  .tabs-block > .tab-title {
-    background: rgba(0, 0, 0, 0.08);
-  }
-}
-
-@-webkit-keyframes tab-content {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(5%);
-            transform: translateY(5%);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-}
-
-@keyframes tab-content {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(5%);
-            transform: translateY(5%);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-}
-
-@media (max-width: 750px) {
-  ul li .tab-title {
-    white-space: initial;
-  }
-  ul li .tab-title br {
-    display: initial;
-  }
-  ul li .tab-title i {
-    height: 1.5em;
-  }
-}
-
-@media (max-width: 450px) {
-  ul li .tab-title {
-    padding: 5px;
-    border-radius: 5px;
-  }
-  ul li .tab-title span {
-    display: none;
-  }
-  .slider {
-    display: none;
-  }
-  .tab-content {
-    margin-top: 20px;
-  }
-  .tab-content section h2 {
-    display: block;
-  }
 }
 /*# sourceMappingURL=index.css.map */

@@ -275,149 +275,127 @@
     
   <!-- start of tab block with patent, cert and dissertation -->
   <section class="tabs-block">
-    <h2 class="product-list__title large">Регулярно подтверждаю свой профессионализм и повышаю квалификацию</h2>
+    <h2 class="tabs-block__title">Регулярно подтверждаю свой профессионализм и повышаю квалификацию</h2>
 
-<div class="tabs-container">
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                <li class="nav-item " role="presentation">
-                    <button class="nav-link active tab-title" id="pills-patent-tab" data-bs-toggle="pill" data-bs-target="#patent"
-                        type="button" role="tab" aria-controls="patent" aria-selected="true"> <i class="fa-brands fa-medrt"></i>Патенты</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link tab-title" id="pills-sert-tab" data-bs-toggle="pill" data-bs-target="#sert" type="button"
-                        role="tab" aria-controls="sert" aria-selected="false"><i class="fa-solid fa-hospital-user"></i>Дипломы и сертификаты</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link tab-title" id="pills-research-tab" data-bs-toggle="pill" data-bs-target="#research"
-                        type="button" role="tab" aria-controls="research" aria-selected="false"><i class="fa-solid fa-file-signature"></i>Исследования</button>
-                </li>
-            </ul>
+    <div class="container-fluid">
+      <div class="tab-container">
+          <ul class="nav nav-tabs container" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="patent-tab" data-bs-toggle="tab" data-bs-target="#patent" role="tab"
+                      aria-controls="patent" aria-selected="true"><i class="fa-brands fa-medrt"></i>Патенты</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="sert-tab" data-bs-toggle="tab" data-bs-target="#sert" role="tab"
+                      aria-controls="sert" aria-selected="false"><i class="fa-solid fa-hospital-user"></i>Дипломы и
+                      сертификаты</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="research-tab" data-bs-toggle="tab" data-bs-target="#research" role="tab"
+                      aria-controls="research" aria-selected="false"><i
+                          class="fa-solid fa-file-signature"></i>Исследования</button>
+              </li>
+          </ul>
+      </div>
 
-            <div class="slider">
-              <div class="indicator"></div>
+      <div class="tab-content container" id="myTabContent">
+          <div class="tab-pane fade show active" id="patent" role="tabpanel" aria-labelledby="home-tab">
+              <div class="patent-container">
+                  <div class="row row-cols-2 patent">
+                      <div class="col-2">
+                          <p class="patent__title">Участвовал в создании патентов</p>
+                      </div>
+
+                      <div class="col-3">
+                              <h4>Дистрактор для динамического вытяжения пояснично-грудного отдела</h4>
+                              <p class="patent__discription">Устройство обеспечивает свободу движений в верхнем
+                                  плечевом поясе, уменьшает растяжение функционально нормальных
+                                  позвоночно-двигательных сегментов</p>
+                              <a class="btn btn-outline-success d-inline-flex align-items-center patent__btn"
+                                  href="https://yandex.ru/patents/doc/RU5921U1_19980216">Узнать больше<i
+                                      class="fa-solid fa-plus"></i></a>
+                      </div>
+
+                      <div class="col-5 video-block">
+                          <div class="video-block__container">
+                              <video class="col video-block__distractor" preload="auto" loop autoplay
+                                  src="./assets/video/Spina_4.mp4"></video>
+                                </div>
+                                </div>
+                              </div>
+
+                  <div class="row row-cols-2 patent">
+                      <div class="col-5 video-block">
+                          <h4>Парфюмерная композиция для
+                              местного применениядля снижения или снятия болевого синдрома</h4>
+                          <p class="patent__discription ">Снимает болевые синдромы при заболеваниях, которые
+                              сопровождаются нарушением локального кровообращения, способствует профилактике
+                              наружных кожных болезней</p>
+                          <a class="btn btn-outline-success d-inline-flex align-items-center patent__btn"
+                              href="https://yandex.ru/patents/doc/RU5921U1_19980216">Узнать больше<i
+                                  class="fa-solid fa-plus"></i></a>
+                      </div>
+                  </div>
+              </div>
           </div>
 
-          <!-- контент вкладок -->
-            <div class="tab-content content" id="pills-TabContent">
+          <div class="tab-pane fade" id="sert" role="tabpanel" aria-labelledby="sert-tab">
+              <div class="dipl-list d-flex flex-row flex-wrap justify-content-around cert-container">
+                  <a class="slider-doc" href="./assets/img/Diplom2015.jpg"><img class="lazyloaded"
+                          data-src="./assets/img/Diplom2015.jpg" style="width: 350px; object-fit:cover"
+                          src="./assets/img/Diplom2015.jpg"></a>
 
-                <section class="tab-pane fade show active" id="patent" role="tabpanel" aria-labelledby="pills-patent-tab">
-                    <div class="patent-container">
+                  <a class="slider-doc" href="./assets/img/ManualTerapy2019.jpg"><img class="lazyloaded"
+                          data-src="./assets/img/ManualTerapy2019.jpg" style="width: 350px; object-fit:cover"
+                          src="./assets/img/ManualTerapy2019.jpg"></a>
 
-                        <div class="row row-cols-2 patent">
-                            <div class="col-2 border">
-                                <p class="patent__title">Участвовал в создании патентов</p>
-                            </div>
+                  <a class="slider-doc" href="./assets/img/NeurologiaFGBU_NMHC.jpeg"><img class="lazyloaded"
+                          data-src="./assets/img/NeurologiaFGBU_NMHC.jpeg" style="width: 350px; object-fit:cover"
+                          src="./assets/img/NeurologiaFGBU_NMHC.jpeg"></a>
 
-                            <div class="col-4 border">
-                                <div> <span>№1</span>
-                                    <h4>Дистрактор для динамического вытяжения пояснично-грудного отдела</h4>
-                                    <p class="patent__discription">Устройство обеспечивает свободу движений в верхнем
-                                        плечевом поясе, уменьшает растяжение функционально нормальных
-                                        позвоночно-двигательных сегментов</p>
-                                    <a class="btn btn-outline-success d-inline-flex align-items-center patent__btn"
-                                        href="https://yandex.ru/patents/doc/RU5921U1_19980216">Узнать больше<i class="fa-solid fa-plus"></i></a>
-                                </div>
-                            </div>
+                  <a class="slider-doc" href="./assets/img/NeuroSergery 01031990.jpg"><img class="lazyloaded"
+                          data-src="./assets/img/NeuroSergery 01031990.jpg" style="width: 350px; object-fit:cover"
+                          src="./assets/img/NeuroSergery 01031990.jpg"></a>
 
-                            <div class="col-5 border video-block">
-                                <div class="video-block__container"> 
-                                  <video class="col border video-block__distractor" preload="auto" loop autoplay src="./assets/video/Spina_4.mp4"></video>
-                                </div>
-                            </div>
-                        </div>
+                  <a class="slider-doc" href="./assets/img/Sert2019.jpg"><img class="lazyloaded"
+                          data-src="./assets/img/Sert2019.jpg" style="width: 350px; object-fit:cover"
+                          src="./assets/img/Sert2019.jpg"></a>
 
-                        <div class="row row-cols-2 patent">
-                            <div class="col-5 border video-block"> <span> №2</span> <h4>Парфюмерная композиция для
-                                    местного применениядля снижения или снятия болевого синдрома</h4>
-                                <p class="patent__discription ">Снимает болевые синдромы при заболеваниях, которые
-                                    сопровождаются нарушением локального кровообращения, способствует профилактике
-                                    наружных кожных болезней</p>
-                                    <a class="btn btn-outline-success d-inline-flex align-items-center patent__btn"
-                                    href="https://yandex.ru/patents/doc/RU5921U1_19980216">Узнать больше<i class="fa-solid fa-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                  <a class="slider-doc" href="./assets/img/Sert_healthcare019.jpg"><img class="lazyloaded"
+                          data-src="./assets/img/Sert_healthcare019.jpg" style="width: 350px; object-fit:cover"
+                          src="./assets/img/Sert_healthcare019.jpg"></a>
+
+                  <a class="slider-doc" href="./assets/img/SertManualTerapy2019.jpg"><img class="lazyloaded"
+                          data-src="./assets/img/SertManualTerapy2019.jpg" style="width: 350px; object-fit:cover"
+                          src="./assets/img/SertManualTerapy2019.jpg"></a>
 
 
-                <section class="tab-pane fade" id="sert" role="tabpanel" aria-labelledby="pills-sert-tab">
-                    <div class="dipl-list d-flex flex-row flex-wrap justify-content-around cert-container">
-                        <a class="slider-doc" href="./assets/img/Diplom2015.jpg"><img
-                                class="lazyloaded"
-                                data-src="./assets/img/Diplom2015.jpg"
-                                style="width: 350px; object-fit:cover"
-                                src="./assets/img/Diplom2015.jpg"></a>
+                  <a class="slider-doc" href="./assets/img/SertMT14022015.jpg"><img class="lazyloaded"
+                          data-src="./assets/img/SertMT14022015.jpg" style="width: 350px; object-fit:cover"
+                          src="./assets/img/SertMT14022015.jpg"></a>
 
-                        <a class="slider-doc" href="./assets/img/ManualTerapy2019.jpg"><img
-                                class="lazyloaded"
-                                data-src="./assets/img/ManualTerapy2019.jpg"
-                                style="width: 350px; object-fit:cover"
-                                src="./assets/img/ManualTerapy2019.jpg"></a>
+                  <a class="slider-doc" href="./assets/img/SertNeurology2014.jpeg"><img class="lazyloaded"
+                          data-src="./assets/img/SertNeurology2014.jpeg" style="width: 350px; object-fit:cover"
+                          src="./assets/img/SertNeurology2014.jpeg"></a>
+              </div>
+          </div>
 
-                        <a class="slider-doc" href="./assets/img/NeurologiaFGBU_NMHC.jpeg"><img
-                                class="lazyloaded"
-                                data-src="./assets/img/NeurologiaFGBU_NMHC.jpeg"
-                                style="width: 350px; object-fit:cover"
-                                src="./assets/img/NeurologiaFGBU_NMHC.jpeg"></a>
-
-                        <a class="slider-doc" href="./assets/img/NeuroSergery 01031990.jpg"><img
-                                class="lazyloaded"
-                                data-src="./assets/img/NeuroSergery 01031990.jpg"
-                                style="width: 350px; object-fit:cover"
-                                src="./assets/img/NeuroSergery 01031990.jpg"></a>
-
-                        <a class="slider-doc" href="./assets/img/Sert2019.jpg"><img
-                                  class="lazyloaded"
-                                  data-src="./assets/img/Sert2019.jpg"
-                                  style="width: 350px; object-fit:cover"
-                                  src="./assets/img/Sert2019.jpg"></a>
-
-                        <a class="slider-doc" href="./assets/img/Sert_healthcare019.jpg"><img
-                                    class="lazyloaded"
-                                    data-src="./assets/img/Sert_healthcare019.jpg"
-                                    style="width: 350px; object-fit:cover"
-                                    src="./assets/img/Sert_healthcare019.jpg"></a>
-                    
-                        <a class="slider-doc" href="./assets/img/SertManualTerapy2019.jpg"><img
-                                      class="lazyloaded"
-                                      data-src="./assets/img/SertManualTerapy2019.jpg"
-                                      style="width: 350px; object-fit:cover"
-                                      src="./assets/img/SertManualTerapy2019.jpg"></a>
-                                  
-                
-                        <a class="slider-doc" href="./assets/img/SertMT14022015.jpg"><img
-                                    class="lazyloaded"
-                                    data-src="./assets/img/SertMT14022015.jpg"
-                                    style="width: 350px; object-fit:cover"
-                                    src="./assets/img/SertMT14022015.jpg"></a>
-                                
-                        <a class="slider-doc" href="./assets/img/SertNeurology2014.jpeg"><img
-                                      class="lazyloaded"
-                                      data-src="./assets/img/SertNeurology2014.jpeg"
-                                      style="width: 350px; object-fit:cover"
-                                      src="./assets/img/SertNeurology2014.jpeg"></a>
-                                  </div>
-                                </section>
-
-                
-                <section class="tab-pane fade" id="research" role="tabpanel" aria-labelledby="pills-research-tab">
-                    <div class="research-container d-flex flex-row justify-content-around"> 
-                        <div class="research-container_left"><p class="research-container__paragraph">Ознакомьтесь с моей диссертацией на тему</p> 
-                    <h4 class="research-container__title">Комплексное лечение и реабилитация больных с нарушением функции тазовых органов при травматической болезни спинного мозга</h4>
-                </div> 
-                    <div class="research-container__img">
-                    <img src="assets/img/mainpagedisser.png" alt="main page of dissertation" class="research__img">
-                </div>
-                    <a class="btn btn-outline-info d-inline-flex align-items-center research__btn"
-                    href="https://medical-diss.com/medicina/kompleksnoe-lechenie-i-reabilitatsiya-bolnyh-s-narusheniem-funktsii-tazovyh-organov-pri-travmaticheskoy-bolezni-spinnogo-">Узнать больше<i class="fa-solid fa-plus"></i></a>
-                </div>
-              </section>
-
-</div>
-
-</div>
-
-
+          <div class="tab-pane fade" id="research" role="tabpanel" aria-labelledby="research-tab">
+              <div class="research-container d-flex flex-row justify-content-around">
+                  <div class="research-container_left">
+                      <p class="research-container__paragraph">Ознакомьтесь с моей диссертацией на тему</p>
+                      <h4 class="research-container__title">Комплексное лечение и реабилитация больных с нарушением
+                          функции тазовых органов при травматической болезни спинного мозга</h4>
+                          <a class="btn btn-outline-success d-inline-flex align-items-center patent__btn"
+                              href="https://yandex.ru/patents/doc/RU5921U1_19980216">Узнать больше<i
+                                  class="fa-solid fa-plus"></i></a>
+                  </div>
+                  <div class="research-container__img">
+                      <img src="assets/img/mainpagedisser.png" alt="main page of dissertation" class="research__img">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
 </section>
 <!-- end of tab block with patent, cert and dissertation -->
 
