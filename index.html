@@ -453,45 +453,79 @@
       </div>
 
       <div class="tab-content container" id="myTabContent">
-          <div class="tab-pane fade show active" id="patent" role="tabpanel" aria-labelledby="home-tab">
-              <div class="patent-container">
-                  <div class="row row-cols-2 patent">
-                      <div class="col-2">
-                          <p class="patent__title">Участвовал в создании патентов</p>
-                      </div>
-
-                      <div class="col-3">
-                              <h4>Дистрактор для динамического вытяжения пояснично-грудного отдела</h4>
+        
+        <div class="tab-pane fade show active" id="patent" role="tabpanel" aria-labelledby="patent-tab">
+            <div class="patent-container">
+                <h2 class="patent__title text-center">Участвовал в создании патентов</h2>
+                  
+                <div class="row d-flex flex-row flex-wrap patent">
+                      <div class="col-md-6">
+                              <h4 class="patent__title_small" >Дистрактор для динамического вытяжения пояснично-грудного отдела</h4>
                               <p class="patent__discription">Устройство обеспечивает свободу движений в верхнем
                                   плечевом поясе, уменьшает растяжение функционально нормальных
                                   позвоночно-двигательных сегментов</p>
-                              <a class="btn btn-outline-success d-inline-flex align-items-center patent__btn"
-                                  href="https://yandex.ru/patents/doc/RU5921U1_19980216">Узнать больше<i
+                              <a class="btn d-inline-flex align-items-center patent__btn"
+                                  href="https://yandex.ru/patents/doc/RU5921U1_19980216">Узнать больше &nbsp<i
                                       class="fa-solid fa-plus"></i></a>
                       </div>
 
-                      <div class="col-5 video-block">
-                          <div class="video-block__container">
-                              <video class="col video-block__distractor" preload="auto" loop autoplay
-                                  src="./assets/video/Spina_4.mp4"></video>
+                      <div class="col-md-6 video-block">
+                        <h4 class="patent__title_small">Парфюмерная композиция для
+                          местного применения для снятия болевого синдрома</h4>
+                      <p class="patent__discription">Снимает болевые синдромы при заболеваниях, которые
+                          сопровождаются нарушением локального кровообращения, способствует профилактике
+                          наружных кожных болезней</p>
+                      <a class="btn d-inline-flex align-items-center patent__btn"
+                          href="https://yandex.ru/patents/doc/RU5921U1_19980216">Узнать больше &nbsp<i
+                              class="fa-solid fa-plus"></i></a>
                                 </div>
-                                </div>
-                              </div>
+                </div>
 
-                  <div class="row row-cols-2 patent">
-                      <div class="col-5 video-block">
-                          <h4>Парфюмерная композиция для
-                              местного применениядля снижения или снятия болевого синдрома</h4>
-                          <p class="patent__discription ">Снимает болевые синдромы при заболеваниях, которые
-                              сопровождаются нарушением локального кровообращения, способствует профилактике
-                              наружных кожных болезней</p>
-                          <a class="btn btn-outline-success d-inline-flex align-items-center patent__btn"
-                              href="https://yandex.ru/patents/doc/RU5921U1_19980216">Узнать больше<i
-                                  class="fa-solid fa-plus"></i></a>
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
                       </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                          <div class="video-block__container">
+                            <video class="col video-block__distractor d-block" preload="auto" loop autoplay
+                                src="./assets/video/Spina_2.mp4"></video>
+                              </div>  
+                          <div class="carousel-caption d-none d-md-block">
+                            <p>Анимация дистрактора</p>
+                          </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                          <div class="video-block__container">
+                            <video class="col video-block__distractor d-block w-50" preload="auto" loop autoplay
+                                src="./assets/video/Spina_4.mp4"></video>
+                              </div> 
+                          <div class="carousel-caption d-none d-md-block">
+                            <p>Анимация дистрактора</p>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/img/distractor.svg" class="d-block w-50 video-block__distractor" alt="...">
+                          <div class="carousel-caption d-none d-md-block">
+                            <p>Некоторый репрезентативный заполнитель для третьего слайда.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"  data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Предыдущий</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"  data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Следующий</span>
+                      </button>
+                    </div>
+
                   </div>
-              </div>
-          </div>
+              </div>  
+            </div>
 
           <div class="tab-pane fade" id="sert" role="tabpanel" aria-labelledby="sert-tab">
               <div class="dipl-list d-flex flex-row flex-wrap justify-content-around cert-container">
@@ -551,6 +585,7 @@
           </div>
       </div>
   </div>
+</div>
 </section>
 <!-- end of tab block with patent, cert and dissertation -->
 

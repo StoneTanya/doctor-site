@@ -199,7 +199,7 @@ html {
 }
 
 .nav .nav-link:hover {
-    color: #177165;
+    color: #a0b6b3;
 }
 
 .nav .nav-link.active::before {
@@ -209,7 +209,7 @@ html {
     margin-left: -20px;
     width: 40px;
     height: 4px;
-    background: #0cc98d;
+    background: #8ea19b;
     content: '';
     opacity: 0;
     transition: transform 0.2s ease-in;
@@ -238,29 +238,47 @@ html {
     transform: translate3d(0, 0, 0);
 }
 
-
     .patent__btn {
         font-family: $font-other;
+        font-size: 0.8rem;
         color: $primary-color;
         border: $btn-border;
         border-radius: 0px;
+        margin-top: 5%;
+        margin-left: 5%;
+        &:hover {
+            font-size: 1rem;
+        }
     }
 
 .research__btn {
     font-family: $font-other;
+    font-size: 0.8rem;
         color: $background;
         border: $btn-border;
         border-radius: 0px;
 }
 
+.patent {
+    padding-bottom: 2%;
+}
     .patent__discription {
         font-family: $font-other;
         color: $text;
+        font-size: 1rem;
+        padding-top: 5%;
+        padding-left: 5%;
+    }
+
+    .patent__title_small {
+        font-size: 1.4rem;
+        padding-top: 5%;
+        padding-left: 5%;
     }
 
     /*style for video*/ 
     .video-block__container {
-        width: 50%;
+        width: 100%;
     }
 
     .video-block__distractor {
