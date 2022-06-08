@@ -1,5 +1,7 @@
-$font-main:'Playfair Display', serif;
-$font-other: 'Roboto', sans-serif;
+$font-main:'Playfair Display',
+serif;
+$font-other: 'Roboto',
+sans-serif;
 $primary-color: #177165;
 $background: #E1F4F2;
 $text: #777777;
@@ -22,11 +24,13 @@ html {
     margin-bottom: 5vh;
     margin-top: 5vh;
 }
+
 .work {
     background-color: #E1F4F2;
     margin-bottom: 5vh;
     margin-top: 5vh;
 }
+
 .content-studi {
     background-color: white;
     width: 50%;
@@ -34,14 +38,17 @@ html {
     margin-bottom: 3vh;
     border: #177165 solid;
 }
+
 .zagol-data {
     color: #177165;
     font-family: 'Playfair Display';
 }
+
 .textcont1 {
     color: black;
     font-family: 'Roboto';
 }
+
 .zagol1 {
     color: black;
     font-family: 'Playfair Display';
@@ -49,14 +56,17 @@ html {
     margin-left: 3vw;
     width: 30vw;
 }
+
 .line {
     width: 10px;
     background-color: #177165;
 }
+
 .content {
     width: 70vw;
     margin-left: -30px;
 }
+
 .limiter {
     max-height: 13vh;
     overflow: hidden;
@@ -67,19 +77,24 @@ html {
     opacity: 0;
     position: absolute;
 }
-.read-more-checker:checked ~ .limiter {
+
+.read-more-checker:checked~.limiter {
     max-height: none;
 }
-.read-more-checker:checked ~ .limiter .bottom {
+
+.read-more-checker:checked~.limiter .bottom {
     opacity: 0;
     transition: 0.3s;
 }
-.read-more-checker ~ .read-more-button:before {
+
+.read-more-checker~.read-more-button:before {
     content: "Развернуть »";
 }
-.read-more-checker:checked ~ .read-more-button:before {
+
+.read-more-checker:checked~.read-more-button:before {
     content: "Свернуть «";
 }
+
 .read-more-button {
     cursor: pointer;
     display: inline-block;
@@ -92,19 +107,24 @@ html {
     opacity: 0;
     position: absolute;
 }
-.read-more-checker2:checked ~ .limiter {
+
+.read-more-checker2:checked~.limiter {
     max-height: none;
 }
-.read-more-checker2:checked ~ .limiter .bottom {
+
+.read-more-checker2:checked~.limiter .bottom {
     opacity: 0;
     transition: 0.3s;
 }
-.read-more-checker2 ~ .read-more-button2:before {
+
+.read-more-checker2~.read-more-button2:before {
     content: "Развернуть »";
 }
-.read-more-checker2:checked ~ .read-more-button2:before {
+
+.read-more-checker2:checked~.read-more-button2:before {
     content: "Свернуть «";
 }
+
 .read-more-button2 {
     cursor: pointer;
     display: inline-block;
@@ -112,6 +132,7 @@ html {
     text-decoration: underline;
     margin-left: 5%;
 }
+
 /*КОНЕЦ блоков об учебе и работе */
 
 /* styles to "tab block (patent, cert and research)" */
@@ -120,16 +141,16 @@ html {
     height: 100%;
     width: 100%;
 
-.tabs-block__title {
-    font-family: $font-main;
-    font-size: 2rem;
-    color: $primary-color;
-    text-align: center;
-    color: $title-color;
-    font-weight: 300;
-    padding: 40px 0 20px 0;
-    margin: 0;
-}
+    .tabs-block__title {
+        font-family: $font-main;
+        font-size: 2rem;
+        color: $primary-color;
+        text-align: center;
+        color: $title-color;
+        font-weight: 300;
+        padding: 40px 0 20px 0;
+        margin: 0;
+    }
 }
 
 .tab-container {
@@ -238,60 +259,66 @@ html {
     transform: translate3d(0, 0, 0);
 }
 
-    .patent__btn, .research__btn  {
-        font-family: $font-other;
-        font-size: 0.8rem;
-        color: $primary-color;
-        border: $btn-border;
-        border-radius: 0px;
-        margin-top: 5%;
-        margin-left: 5%;
-        &:hover {
-            font-size: 1rem;
-        }
+.patent__btn,
+.research__btn {
+    font-family: $font-other;
+    font-size: 0.8rem;
+    color: $primary-color;
+    border: $btn-border;
+    border-radius: 0px;
+    margin-top: 5%;
+    margin-left: 5%;
+
+    &:hover {
+        font-size: 1rem;
     }
+}
 
 .patent {
     padding-bottom: 2%;
 }
-    .patent__discription, .research-container__paragraph {
-        font-family: $font-other;
-        color: $text;
-        font-size: 1rem;
-        padding-top: 5%;
-        padding-left: 5%;
-    }
 
-    .patent__title_small, .research-container__title {
-        font-family: $font-main;
-        font-size: 1.4rem;
-        padding-top: 5%;
-        padding-left: 5%;
-        color: $primary-color;
-    }
+.patent__discription,
+.research-container__paragraph {
+    font-family: $font-other;
+    color: $text;
+    font-size: 1rem;
+    padding-top: 5%;
+    padding-left: 5%;
+}
 
-    /*style for video*/ 
-    .video-block__container {
-        width: 100%;
-        height: 70vh;
-    }
+.patent__title_small,
+.research-container__title {
+    font-family: $font-main;
+    font-size: 1.4rem;
+    padding-top: 5%;
+    padding-left: 5%;
+    color: $primary-color;
+}
 
-    .video-block__distractor {
-        max-height: 100%;
-    }
+/*style for video*/
+.video-block__container {
+    width: 100%;
+    height: 70vh;
+}
+
+.video-block__distractor {
+    max-height: 100%;
+}
 
 
-    .cert-container {
-        padding-top: 2%;
-    }
+.cert-container {
+    padding-top: 2%;
+}
 
-    .research__img {
-        max-width: 100%;
-        border-radius: 5px;
-    }
-    .research-container__img {
-        width: 40%;
-    }
+.research__img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.research-container__img {
+    width: 40%;
+}
 
 .research-container__title_bolder {
     font-weight: bolder;
@@ -299,25 +326,26 @@ html {
 
 
 /* styles to "about me" */
-body {
+.container-aboutme {
     font: 100% $font-main;
-    color: $primary-color;
+
 }
 
-img {
+.img-aboutme {
     max-width: 100%;
     max-height: 100%;
     margin-top: $margin-top-about-me;
     margin-bottom: $margin-bottom-about-me;
 }
 
-h1 {
+.h1-aboutme {
     font-size: 2.5rem;
     margin-top: $margin-top-about-me;
     margin-bottom: $margin-bottom-about-me;
+    color: $primary-color;
 }
 
-p {
+.p-aboutme {
     font-size: $font-size-for-common-text;
     color: $text;
 }
@@ -336,19 +364,23 @@ p {
     background-color: #177165;
     height: 30vh;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .container-workareas__card {
-    height: 30vh;
+    height: 34vh;
     max-width: 18rem;
     margin-left: 4vw;
     border: 0.5px solid #177165;
     background-color: #fff;
     text-align: center;
     font-size: 1.1rem;
-    font: 'Roboto' 
+    font: 'Roboto'
+}
+
+.container-workareas__card:hover {
+    border: 3px solid #413f3f;
 }
 
 #workareas__card1 {
@@ -386,11 +418,3 @@ nav,
     font-size: 25px;
     margin: 50px;
 }
-
-
-
-
-
-
-
-
