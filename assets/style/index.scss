@@ -400,21 +400,140 @@ html {
 nav,
 .header-block {
     background-color: $primary-color;
+    font-family: $font-other;
 }
 
 .header-block {
     height: 788px;
 }
 
-.header-block_text {
+.header-block_title {
     font-size: 60px;
     line-height: 78px;
-    color: white;
-    margin: 50px;
+    color: $title-color;
+    margin: 80px 155px;
+    font-family: $font-main;
 }
 
-.info-list {
-    color: #A4D6CF;
-    font-size: 25px;
-    margin: 50px;
+.info-list,
+.logo,
+.menu__link,
+.header_blue__button{
+    color: $paragraph;
 }
+.info-list {
+    font-size: 25px;
+    margin: 30px 155px;
+    font-family: $font-other;
+}
+
+.header-photo{
+    max-width: 100%;
+    max-height: 100%;
+    padding-left: 150px;
+}
+.header-menu {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 27px auto;
+    padding: 0px 30px;
+}
+
+.header-menu ul li {
+    margin-right: 29px;
+    align-items: center;
+}
+
+.menu__link:hover,
+.menu__link:focus,
+.menu__link:active,
+.logo:hover{
+    opacity: .75;
+    color: $title-color;
+}
+
+.logo {
+    padding-top: 20px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.menu__list {
+    padding-top: 28px;
+}
+
+.menu__item {
+    display: inline-block;
+    margin-right: 29px;
+}
+
+.menu__link {
+    display: block;
+    font-weight: 400;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.header__button {
+    display: flex;
+}
+
+.header_blue__button {
+    display: flex;
+    white-space: nowrap;
+    text-align: center;
+    font-weight: 400;
+    font-size: 25px;
+    text-decoration: none;
+    padding-top: 20px;
+}
+
+
+.header_blue__button:hover {
+    color: $title-color;
+    opacity: .75;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__menu ul li {
+    margin-right: 29px;
+}
+
+/* styles to "footer" */
+
+.footer{
+    background-color: $primary-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 80px 0px;
+}
+.footer-heading{
+    color: $title-color;
+    font-size: 60px;
+    width: 800px;
+}
+.footer-button{
+    background-color: #23786D;
+    border: 1px ;
+    width: 400px;
+    height: 98px;
+    color: $title-color;
+    font-size: 25px;
+    font-family: $font-other;
+}
+.footer-button:hover{
+    opacity: 1.75;
+    background-color: #389084;
+}
+
+
+
+
+
