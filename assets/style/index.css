@@ -1,20 +1,424 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+@charset "UTF-8";
+html {
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
+/* блоки об учебе и работе */
+.studies {
+  background-color: #E1F4F2;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+}
+
+.work {
+  background-color: #E1F4F2;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+}
+
+.content-studi {
+  background-color: white;
+  width: 50%;
+  margin-top: 2vh;
+  margin-bottom: 3vh;
+  border: #177165 solid;
+}
+
+.zagol-data {
+  color: #177165;
+  font-family: 'Playfair Display';
+}
+
+.textcont1 {
+  color: black;
+  font-family: 'Roboto';
+}
+
+.zagol1 {
+  color: black;
+  font-family: 'Playfair Display';
+  margin-top: 5vh;
+  margin-left: 3vw;
+  width: 30vw;
+}
+
+.line {
+  width: 10px;
+  background-color: #177165;
+}
+
+.content {
+  width: 70vw;
+  margin-left: -30px;
+}
+
+.limiter {
+  max-height: 13vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.read-more-checker {
+  opacity: 0;
+  position: absolute;
+}
+
+.read-more-checker:checked ~ .limiter {
+  max-height: none;
+}
+
+.read-more-checker:checked ~ .limiter .bottom {
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.read-more-checker ~ .read-more-button:before {
+  content: "Развернуть »";
+}
+
+.read-more-checker:checked ~ .read-more-button:before {
+  content: "Свернуть «";
+}
+
+.read-more-button {
+  cursor: pointer;
+  display: inline-block;
+  color: black;
+  text-decoration: underline;
+  margin-left: 5%;
+}
+
+.read-more-checker2 {
+  opacity: 0;
+  position: absolute;
+}
+
+.read-more-checker2:checked ~ .limiter {
+  max-height: none;
+}
+
+.read-more-checker2:checked ~ .limiter .bottom {
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.read-more-checker2 ~ .read-more-button2:before {
+  content: "Развернуть »";
+}
+
+.read-more-checker2:checked ~ .read-more-button2:before {
+  content: "Свернуть «";
+}
+
+.read-more-button2 {
+  cursor: pointer;
+  display: inline-block;
+  color: black;
+  text-decoration: underline;
+  margin-left: 5%;
+}
+
+/*КОНЕЦ блоков об учебе и работе */
+/* styles to "tab block (patent, cert and research)" */
+.tabs-block {
+  background: #177165;
+  height: 100%;
+  width: 100%;
+}
+
+.tabs-block .tabs-block__title {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  color: #177165;
+  text-align: center;
+  color: #fff;
+  font-weight: 300;
+  padding: 40px 0 20px 0;
+  margin: 0;
+}
+
+.tab-container {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: relative;
+  background: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 90%;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border-radius: 3px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  line-height: 100%;
+}
+
+.tab-content .tab-pane {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 1em;
+  background: white;
+  width: 100%;
+}
+
+.nav-tabs {
+  border: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav .nav-item {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin: 0;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.nav .nav-link::before {
+  position: absolute;
+  bottom: 1em;
+  left: 50%;
+  margin-left: -20px;
+  width: 30%;
+  height: 4px;
+  background: #177165;
+  content: '';
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+  transition: -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
+  -webkit-transform: scale3d(0, 1, 1);
+          transform: scale3d(0, 1, 1);
+}
+
+.nav .nav-link {
+  border: 0;
+  display: inline-block;
+  overflow: visible;
+  padding: 1em 0 2em;
+  color: #777777;
+  line-height: 1;
+  -webkit-transition: color 0.3s cubic-bezier(0.7, 0, 0.3, 1);
+  transition: color 0.3s cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.nav .nav-link:hover {
+  color: #a0b6b3;
+}
+
+.nav .nav-link.active::before {
+  position: absolute;
+  bottom: 1em;
+  left: 50%;
+  margin-left: -20px;
+  width: 40px;
+  height: 4px;
+  background: #8ea19b;
+  content: '';
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+  transition: -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
+  opacity: 1;
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+}
+
+.nav .nav-link.active,
+.nav .nav-link.active:hover {
+  background-color: var(#E1F4F2);
+  color: #177165;
+}
+
+.nav i {
+  font-size: 1.3em;
+  display: block;
+  margin: 0 0 0.35em;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+  transition: opacity 0.2s, -webkit-transform 0.2s;
+  transition: transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.2s, -webkit-transform 0.2s;
+  -webkit-transform: translate3d(0, -100px, 0);
+          transform: translate3d(0, -100px, 0);
+  pointer-events: none;
+}
+
+.nav .nav-link.active i {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.patent__btn, .research__btn {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  color: #177165;
+  border: 2px solid #177165;
+  border-radius: 0px;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.patent__btn:hover, .research__btn:hover {
+  font-size: 1rem;
+}
+
+.patent {
+  padding-bottom: 2%;
+}
+
+.patent__discription, .research-container__paragraph {
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+  font-size: 1rem;
+  padding-top: 5%;
+  padding-left: 5%;
+}
+
+.patent__title_small, .research-container__title {
+  font-family: "Playfair Display", serif;
+  font-size: 1.4rem;
+  padding-top: 5%;
+  padding-left: 5%;
+  color: #177165;
+}
+
+/*style for video*/
+.video-block__container {
+  width: 100%;
+  height: 70vh;
+}
+
+.video-block__distractor {
+  max-height: 100%;
+}
+
+.cert-container {
+  padding-top: 2%;
+}
+
+.research__img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.research-container__img {
+  width: 40%;
+}
+
+.research-container__title_bolder {
+  font-weight: bolder;
+}
+
+/* styles to "about me" */
+body {
+  font: 100% "Playfair Display", serif;
+  color: #177165;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+p {
+  font-size: 1.5rem;
+  color: #777777;
+}
+
+/* styles to "workareas" */
+.container-workareas__header {
+  color: white;
+  font-family: 'Playfair Display';
+  margin-top: 7vh;
+  margin-bottom: 7vh;
+  margin-left: 3vw;
+}
+
+.container-workareas__topblock {
+  background-color: #177165;
+  height: 30vh;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.container-workareas__card {
+  height: 30vh;
+  max-width: 18rem;
+  margin-left: 4vw;
+  border: 0.5px solid #177165;
+  background-color: #fff;
+  text-align: center;
+  font-size: 1.1rem;
+  font: 'Roboto';
+}
+
+#workareas__card1 {
+  margin-left: 17vw;
+}
+
+.workareas-icon {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.container-workareas__bottomblock {
+  height: 25vh;
+}
+
+/* styles to "header" */
 nav,
-.header-block{
-    background-color: #177165;
+.header-block {
+  background-color: #177165;
 }
-.header-block{
-    height: 788px;
+
+.header-block {
+  height: 788px;
 }
-.header-block_text{
-    font-size: 60px;
-    line-height: 78px;
-    color: white;
-    margin: 50px;
+
+.header-block_text {
+  font-size: 60px;
+  line-height: 78px;
+  color: white;
+  margin: 50px;
 }
-.info-list{
-    color: #A4D6CF;
-    font-size: 25px;
-    margin: 50px;
+
+.info-list {
+  color: #A4D6CF;
+  font-size: 25px;
+  margin: 50px;
 }
+/*# sourceMappingURL=index.css.map */
