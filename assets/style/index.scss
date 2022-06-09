@@ -145,8 +145,7 @@ $margin-bottom-about-me: 2.5rem;
 /* styles to "tab block (patent, cert and research)" */
 .tabs-block {
     background: $primary-color;
-    height: 100%;
-    width: 100%;
+}
 
     .tabs-block__title {
         font-family: $font-main;
@@ -158,7 +157,6 @@ $margin-bottom-about-me: 2.5rem;
         padding: 40px 0 20px 0;
         margin: 0;
     }
-}
 
 .tab-container {
     left: 50%;
