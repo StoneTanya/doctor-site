@@ -12,7 +12,7 @@
 }
 
 /* блоки об учебе и работе */
-.studies {
+.studies-row {
   background-color: #E1F4F2;
 }
 
@@ -21,6 +21,9 @@
   margin-top: 5vh;
 }
 
+.work-row {
+  background-color: white;
+}
 
 .content-studi {
   background-color: white;
@@ -371,13 +374,13 @@
 .container-workareas__header {
   color: white;
   font-family: "Playfair Display", serif;
-  margin-top: 5vh;
-  margin-bottom: 10vh;
+  margin-top: 7vh;
+  margin-bottom: 7vh;
 }
 
 .container-workareas__topblock {
   background-color: #177165;
-  height: 20vh;
+  height: 30vh;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
