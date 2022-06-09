@@ -363,9 +363,9 @@ html {
 }
 
 /* styles to "workareas" */
-.container-workareas__header {
-  color: white;
-  font-family: 'Playfair Display';
+.container-workareas__title {
+  color: #fff;
+  font-family: "Playfair Display", serif;
   margin-top: 7vh;
   margin-bottom: 7vh;
   margin-left: 3vw;
