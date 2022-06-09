@@ -7,7 +7,9 @@
           box-sizing: border-box;
 }
 
-.header-photo__block, .img-aboutme__block, .research-container__img {
+.header-photo__block,
+.img-aboutme__block,
+.research-container__img {
   width: 40%;
 }
 
@@ -564,5 +566,29 @@ nav,
 .footer-button:hover {
   opacity: 1.75;
   background-color: #389084;
+}
+
+/*styles to "FAQ" */
+.accordion {
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+}
+
+.h1-faq {
+  font-size: 2rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  color: #177165;
+  text-align: center;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #177165;
+  background-color: white;
+}
+
+.accordion-button:focus {
+  -webkit-box-shadow: 0 0 0 0.1rem #177165;
+          box-shadow: 0 0 0 0.1rem #177165;
 }
 /*# sourceMappingURL=index.css.map */
