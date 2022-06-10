@@ -135,11 +135,9 @@
 /* styles to "tab block (patent, cert and research)" */
 .tabs-block {
   background: #177165;
-  height: 100%;
-  width: 100%;
 }
 
-.tabs-block .tabs-block__title {
+.tabs-block__title {
   font-family: "Playfair Display", serif;
   font-size: 2rem;
   color: #177165;
@@ -370,14 +368,15 @@
 .p-aboutme {
   font-size: 1.5rem;
   color: #777777;
+  font-family: "Roboto", sans-serif;
 }
 
 /* styles to "workareas" */
-.container-workareas__header {
+.container-workareas__title {
   color: white;
   font-family: "Playfair Display", serif;
   margin-top: 7vh;
-  margin-bottom: 7vh;
+  margin-bottom: 25vh;
 }
 
 .container-workareas__topblock {
@@ -400,7 +399,7 @@
   border: 0.5px solid #177165;
   background-color: #fff;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-family: "Roboto", sans-serif;
 }
 
@@ -411,6 +410,7 @@
 .workareas-icon {
   margin-top: 2rem;
   margin-bottom: 1rem;
+  color: #177165;
 }
 
 /* styles to "header" */
@@ -420,11 +420,15 @@ nav,
   font-family: "Roboto", sans-serif;
 }
 
+.header-block {
+  padding: 30px;
+}
+
 .header-block_title {
-  font-size: 60px;
-  line-height: 78px;
+  font-size: 50px;
+  line-height: 50px;
   color: #fff;
-  margin: 80px 155px;
+  margin: 30px 20px 30px 40px;
   font-family: "Playfair Display", serif;
 }
 
@@ -437,14 +441,13 @@ nav,
 
 .info-list {
   font-size: 25px;
-  margin: 30px 155px;
+  margin: 70px 20px 30px 40px;
   font-family: "Roboto", sans-serif;
 }
 
 .header-photo {
   max-width: 100%;
   max-height: 100%;
-  padding-left: 150px;
 }
 
 .header-menu {
@@ -458,6 +461,10 @@ nav,
           justify-content: space-between;
   margin-top: 27px auto;
   padding: 0px 30px;
+  background-color: #195f56;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .header-menu ul li {
@@ -493,7 +500,7 @@ nav,
 .menu__link {
   display: block;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 20px;
   text-decoration: none;
 }
 
@@ -547,10 +554,11 @@ nav,
   padding: 80px 0px;
 }
 
-.footer-heading {
+.footer-title {
+  font-family: "Playfair Display", serif;
   color: #fff;
-  font-size: 60px;
-  width: 800px;
+  font-size: 50px;
+  width: 700px;
 }
 
 .footer-button {
