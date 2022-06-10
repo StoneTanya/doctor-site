@@ -352,16 +352,17 @@ $margin-bottom-about-me: 2.5rem;
 .p-aboutme {
     font-size: $font-size-for-common-text;
     color: $text;
+    font-family: $font-other;
 }
 
 
 /* styles to "workareas" */
 
-.container-workareas__header {
+.container-workareas__title {
     color: white;
     font-family: $font-main;
     margin-top: 7vh;
-    margin-bottom: 7vh;
+    margin-bottom: 25vh;
 }
 
 .container-workareas__topblock {
@@ -393,12 +394,13 @@ $margin-bottom-about-me: 2.5rem;
 }
 
 #workareas__card1 {
-    margin-left: 12vw;
+    margin-left: 2%;
 }
 
 .workareas-icon {
     margin-top: 2rem;
     margin-bottom: 1rem;
+    color: $primary-color;
 }
 
 
@@ -521,7 +523,8 @@ nav,
     justify-content: space-around;
     padding: 80px 0px;
 }
-.footer-heading{
+.footer-title{
+    font-family: $font-main;
     color: $title-color;
     font-size: 50px;
     width: 700px;
