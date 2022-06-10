@@ -384,12 +384,16 @@ $margin-bottom-about-me: 2.5rem;
     border: 0.5px solid #177165;
     background-color: #fff;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-family: $font-other;
 }
 
 .container-workareas__card:hover {
     border: 3px solid #413f3f;
+}
+
+#workareas__card1 {
+    margin-left: 12vw;
 }
 
 .workareas-icon {
