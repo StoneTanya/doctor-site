@@ -27,7 +27,7 @@
 
 .content-studi {
   background-color: white;
-  width: 40%;
+  width: 50%;
   margin-top: 2vh;
   margin-bottom: 3vh;
   border: #177165 solid;
@@ -351,6 +351,7 @@
 
 .img-aboutme {
   max-width: 100%;
+  max-height: 100%;
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
 }
@@ -376,9 +377,6 @@
 }
 
 .container-workareas__topblock {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   background-color: #177165;
   height: 30vh;
   -webkit-box-align: center;
@@ -443,24 +441,17 @@ nav,
   font-family: "Roboto", sans-serif;
 }
 
-.header-photo__block, .img-aboutme__block {
-  width: 40%;
-}
-
 .header-photo {
   max-width: 100%;
   max-height: 100%;
 }
 
 .header-menu {
+  position: relative;
   z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -477,7 +468,6 @@ nav,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 0.9rem;
 }
 
 .menu__link:hover,
@@ -489,22 +479,18 @@ nav,
 }
 
 .logo {
-  text-align: left;
-  padding-top: 5px;
-  padding-left: 10px;
+  padding-top: 20px;
   text-decoration: none;
-  font-size: 1.5rem;
-  color: #fff;
-  font-weight: bolder;
-  letter-spacing: 2px;
+  font-size: 30px;
 }
 
 .menu__list {
-  padding-top: 20px;
+  padding-top: 28px;
 }
 
 .menu__item {
   display: inline-block;
+  margin-right: 29px;
 }
 
 .menu__link {
@@ -527,7 +513,7 @@ nav,
   white-space: nowrap;
   text-align: center;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 25px;
   text-decoration: none;
   padding-top: 20px;
 }
@@ -535,6 +521,19 @@ nav,
 .header_blue__button:hover {
   color: #fff;
   opacity: .75;
+}
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__menu ul li {
+  margin-right: 29px;
 }
 
 /* styles to "footer" */
