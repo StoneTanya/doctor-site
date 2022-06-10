@@ -466,6 +466,7 @@
         width: 540px;
         height: 451px;
         background: #E1F4F2;
+        padding: 18px;
     }
     
     .carousel-cell {
@@ -475,7 +476,7 @@
         background: #E1F4F2;
     }
     
-    .main-carousel {
+    .carousel {
         margin-bottom: 20px;
     }
     /* "cases" styles end /
