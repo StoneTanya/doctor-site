@@ -376,7 +376,7 @@ html {
     background-color: #fff;
     text-align: center;
     font-size: 1.1rem;
-    font: 'Roboto'
+    font-family: $font-other;
 }
 
 .container-workareas__card:hover {
@@ -384,7 +384,7 @@ html {
 }
 
 #workareas__card1 {
-    margin-left: 17vw;
+    margin-left: 12vw;
 }
 
 .workareas-icon {
