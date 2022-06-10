@@ -628,19 +628,20 @@
 }
 
 
-}
-
 /* "cases" styles end /
 
 /* styles to "header" */
+
 nav,
 .header-block {
     background-color: #177165;
     font-family: "Roboto", sans-serif;
 }
+
 .header-block {
     padding: 30px;
 }
+
 .header-block_title {
     font-size: 50px;
     line-height: 50px;
@@ -648,21 +649,25 @@ nav,
     margin: 30px 20px 30px 40px;
     font-family: "Playfair Display", serif;
 }
+
 .info-list,
 .logo,
 .menu__link,
 .header_blue__button {
     color: #A4D6CF;
 }
+
 .info-list {
     font-size: 25px;
     margin: 70px 20px 30px 40px;
     font-family: "Roboto", sans-serif;
 }
+
 .header-photo {
     max-width: 100%;
     max-height: 100%;
 }
+
 .header-menu {
     position: relative;
     z-index: 2;
@@ -679,12 +684,14 @@ nav,
     -ms-flex-align: baseline;
     align-items: baseline;
 }
+
 .header-menu ul li {
     margin-right: 29px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
 }
+
 .menu__link:hover,
 .menu__link:focus,
 .menu__link:active,
@@ -692,29 +699,35 @@ nav,
     opacity: .75;
     color: #fff;
 }
+
 .logo {
     padding-top: 20px;
     text-decoration: none;
     font-size: 30px;
 }
+
 .menu__list {
     padding-top: 28px;
 }
+
 .menu__item {
     display: inline-block;
     margin-right: 29px;
 }
+
 .menu__link {
     display: block;
     font-weight: 400;
     font-size: 20px;
     text-decoration: none;
 }
+
 .header__button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
+
 .header_blue__button {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -726,10 +739,12 @@ nav,
     text-decoration: none;
     padding-top: 20px;
 }
+
 .header_blue__button:hover {
     color: #fff;
     opacity: .75;
 }
+
 .header__menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -738,11 +753,14 @@ nav,
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
+
 .header__menu ul li {
     margin-right: 29px;
 }
 
+
 /* styles to "footer" */
+
 .footer {
     background-color: #177165;
     display: -webkit-box;
@@ -755,12 +773,14 @@ nav,
     justify-content: space-around;
     padding: 80px 0px;
 }
+
 .footer-title {
     font-family: "Playfair Display", serif;
     color: #fff;
     font-size: 50px;
     width: 700px;
 }
+
 .footer-button {
     background-color: #23786D;
     border: 1px;
@@ -770,16 +790,20 @@ nav,
     font-size: 25px;
     font-family: "Roboto", sans-serif;
 }
+
 .footer-button:hover {
     opacity: 1.75;
     background-color: #389084;
 }
 
+
 /*styles to "FAQ" */
+
 .accordion {
     font-family: "Playfair Display", serif;
     font-size: 1rem;
 }
+
 .h1-faq {
     font-size: 2rem;
     margin-top: 2.5rem;
@@ -787,13 +811,16 @@ nav,
     color: #177165;
     text-align: center;
 }
+
 .accordion-button:not(.collapsed) {
     color: #177165;
     background-color: white;
 }
+
 .accordion-button:focus {
     -webkit-box-shadow: 0 0 0 0.1rem #177165;
     box-shadow: 0 0 0 0.1rem #177165;
 }
+
 
 /*# sourceMappingURL=index.css.map */
