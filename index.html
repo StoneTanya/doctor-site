@@ -19,19 +19,19 @@
 
 <body>
     <!-- header block -->
-<div class="container header-container border">
-        <header >
+<div class="container border">
+        <header class="header">
             <nav class="header-menu">
                 <a href="#" class="logo">Сергей Фомченков</a>
                 <ul class="menu__list">
                     <li class="menu__item">
-                        <a href="#" class="menu__link">Обо мне</a>
+                        <a href="#about_me" class="menu__link">Обо мне</a>
                     </li>
                     <li class="menu__item">
                         <a href="#" class="menu__link">Случаи из практики</a>
                     </li>
                     <li class="menu__item">
-                        <a href="#" class="menu__link">Патенты</a>
+                        <a href="#patents" class="menu__link">Патенты</a>
                     </li>
                     <li class="menu__item">
                         <a href="#" class="menu__link">Сертификаты</a>
@@ -66,7 +66,7 @@
 
     <main class="container border">
         <!-- about me block   -->
-        <div class="container container-aboutme border">
+        <div class="container container-aboutme border" id="about_me">
             <div class="row d-flex wrap">
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 img-aboutme__block">
                     <img class="img-aboutme" src="assets/pictures/about_me.png" alt="Sergey Fomchenkov">
@@ -107,8 +107,8 @@
                 <div>Реабилитация пациентов с постковидным синдромом</div>
             </div>
         </div>
-        
-
+        </div>
+    
         <section class="container work border">
             <div class="row">
                 <div class="contstudi col">
@@ -336,17 +336,10 @@
                 </div>
             </div>
         </section>
-    </main>
-
-
-
-
-
     <!-- start of tab block with patent, cert and dissertation -->
-    <section class="container tabs-block">
+    <section class="container tabs-block" id="patents">
         <h2 class="tabs-block__title">Регулярно подтверждаю свой профессионализм и повышаю квалификацию</h2>
-
-        <div class="container">
+        
             <div class="tab-container">
                 <ul class="nav nav-tabs container" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
@@ -506,8 +499,6 @@
                         </div>
                     </div>
                 </div>
-
-            </div>
         </div>
 
     </section>
