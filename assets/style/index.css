@@ -1,9 +1,14 @@
 @charset "UTF-8";
+/* сюда добавим общие для страницы стили*/
 *,
 *:before,
 *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.header-photo__block, .img-aboutme__block, .research-container__img {
+  width: 40%;
 }
 
 /* блоки об учебе и работе */
@@ -12,9 +17,12 @@
 }
 
 .work {
-  background-color: #fff;
   margin-bottom: 2vh;
-  max-width: 100%;
+  margin-top: 5vh;
+}
+
+.work-row {
+  background-color: white;
 }
 
 .content-studi {
@@ -49,8 +57,8 @@
 }
 
 .content {
-  width: 50vw;
-  margin-left: -30px;
+  width: 40vw;
+  margin-left: -20px;
 }
 
 .limiter {
@@ -125,11 +133,9 @@
 /* styles to "tab block (patent, cert and research)" */
 .tabs-block {
   background: #177165;
-  height: 100%;
-  width: 100%;
 }
 
-.tabs-block .tabs-block__title {
+.tabs-block__title {
   font-family: "Playfair Display", serif;
   font-size: 2rem;
   color: #177165;
@@ -287,7 +293,11 @@
   font-size: 1rem;
 }
 
-.patent__title {
+.patent {
+  padding-bottom: 2%;
+}
+
+.patent .patent__title {
   font-family: "Playfair Display", serif;
   color: #177165;
 }
@@ -328,10 +338,6 @@
 .research__img {
   max-width: 100%;
   border-radius: 5px;
-}
-
-.research-container__img {
-  width: 40%;
 }
 
 .research-container__title_bolder {
@@ -378,10 +384,16 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-bottom: -5%;
+}
+
+.container-workareas__bottomblock {
+  position: relative;
+  margin-top: -5%;
+  z-index: 2;
 }
 
 .container-workareas__card {
-  height: 28vh;
   max-width: 18rem;
   border: 0.5px solid #177165;
   background-color: #fff;
@@ -399,10 +411,6 @@
   margin-bottom: 1rem;
 }
 
-.container-workareas__bottomblock {
-  height: 20vh;
-}
-
 /* styles to "header" */
 nav,
 .header-block {
@@ -410,11 +418,15 @@ nav,
   font-family: "Roboto", sans-serif;
 }
 
+.header-block {
+  padding: 30px;
+}
+
 .header-block_title {
-  font-size: 2.4rem;
-  line-height: 100%;
+  font-size: 50px;
+  line-height: 50px;
   color: #fff;
-  margin: 5% 10%;
+  margin: 30px 20px 30px 40px;
   font-family: "Playfair Display", serif;
 }
 
@@ -426,8 +438,8 @@ nav,
 }
 
 .info-list {
-  font-size: 1.2rem;
-  margin: 5% 20%;
+  font-size: 25px;
+  margin: 70px 20px 30px 40px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -438,7 +450,6 @@ nav,
 .header-photo {
   max-width: 100%;
   max-height: 100%;
-  padding-left: 5%;
 }
 
 .header-menu {
@@ -453,8 +464,12 @@ nav,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 2% auto;
-  padding: 0px 1%;
+  margin-top: 27px auto;
+  padding: 0px 30px;
+  background-color: #195f56;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .header-menu ul li {
@@ -495,8 +510,14 @@ nav,
 .menu__link {
   display: block;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 20px;
   text-decoration: none;
+}
+
+.header__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .header_blue__button {
@@ -532,8 +553,8 @@ nav,
 
 .footer-heading {
   color: #fff;
-  font-size: 60px;
-  width: 60%;
+  font-size: 50px;
+  width: 700px;
 }
 
 .footer-button {

@@ -18,22 +18,20 @@
 </head>
 
 <body>
-
-
     <!-- header block -->
-    <div class="container header__container">
-        <header>
+<div class="container border">
+        <header class="header">
             <nav class="header-menu">
                 <a href="#" class="logo">Сергей Фомченков</a>
                 <ul class="menu__list">
                     <li class="menu__item">
-                        <a href="#" class="menu__link">Обо мне</a>
+                        <a href="#about_me" class="menu__link">Обо мне</a>
                     </li>
                     <li class="menu__item">
                         <a href="#" class="menu__link">Случаи из практики</a>
                     </li>
                     <li class="menu__item">
-                        <a href="#" class="menu__link">Патенты</a>
+                        <a href="#patents" class="menu__link">Патенты</a>
                     </li>
                     <li class="menu__item">
                         <a href="#" class="menu__link">Сертификаты</a>
@@ -43,9 +41,9 @@
                     <a href="#" class="header_blue__button"> Связаться в телеграмме</a>
                 </div>
             </nav>
-            <div class="header-block">
+            <div class="container header-block">
                 <div class="row">
-                    <div class="col-12 col-sm-6">
+                    <div class="col-6">
                         <h1 class="header-block_title">
                             Помогаю людям адаптироваться и восстанавливаться после серьёзных травм
                         </h1>
@@ -55,7 +53,7 @@
                             <li>Консультирую в Москве</li>
                         </ul>
                     </div>
-                    <div class="col-6 header-photo__block">
+                    <div class="col-6">
                         <img class="header-photo" src="assets/pictures/header_main.jpg" alt="doctor" alt="doctor">
                     </div>
                 </div>
@@ -65,9 +63,10 @@
     </div>
 
 
-    <main class="container">
+
+    <main class="container border">
         <!-- about me block   -->
-        <div class="container-aboutme">
+        <div class="container container-aboutme border" id="about_me">
             <div class="row d-flex wrap">
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 img-aboutme__block">
                     <img class="img-aboutme" src="assets/pictures/about_me.png" alt="Sergey Fomchenkov">
@@ -89,30 +88,31 @@
 
         <!-- Work areas block -->
 
-        <div class="container container-workareas">
+        <div class="container container-workareas border">
             <div class="row container-workareas__topblock d-flex row wrap justify-content-around">
                 <h2 class="container-workareas__header large text-center">Восстанавливаю целостность организма после заболеваний и
                     травм
                 </h2>
-                <div class="col-4 container-workareas__card" id="workareas__card1"><i
-                        class="fa-solid fa-head-side-virus workareas-icon fa-4x"></i>
-                    <div>Диагностика и лечение заболеваний нервной системы и опорно-двигательного аппарата</div>
-                </div>
-                <div class="col-4 container-workareas__card"><i class="fa-solid fa-disease workareas-icon fa-4x"></i>
-                    <div>Реабилитация метаболических нарушений</div>
-                </div>
-                <div class="col-4 container-workareas__card"><i
-                        class="fa-solid fa-virus-covid workareas-icon fa-4x"></i>
-                    <div>Реабилитация пациентов с постковидным синдромом</div>
-                </div>
             </div>
-            <div class="row container-workareas__bottomblock"></div>
+            <div class="row container-workareas__bottomblock d-flex row wrap justify-content-around">
+                <div class="col-12 col-sm-6 col-md-4 col-xl container-workareas__card" id="workareas__card1"><i
+                    class="fa-solid fa-head-side-virus workareas-icon fa-4x"></i>
+                <div>Диагностика и лечение заболеваний нервной системы и опорно-двигательного аппарата</div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-xl container-workareas__card"><i class="fa-solid fa-disease workareas-icon fa-4x"></i>
+                <div>Реабилитация метаболических нарушений</div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-xl container-workareas__card"><i
+                    class="fa-solid fa-virus-covid workareas-icon fa-4x"></i>
+                <div>Реабилитация пациентов с постковидным синдромом</div>
+            </div>
         </div>
-
-        <section class="work">
+        </div>
+    
+        <section class="container work border">
             <div class="row">
                 <div class="contstudi col">
-                    <div class="studi border">
+                    <div class="studi">
                         <h1 class="zagol1">За время практики помог более 12500 пациентов</h1>
                     </div>
                 </div>
@@ -174,7 +174,7 @@
             </div>
         </section>
 
-        <section class="studies">
+        <section class="container studies border">
             <div class="row">
                 <div class="contstudi col">
                     <div class="studi">
@@ -336,14 +336,10 @@
                 </div>
             </div>
         </section>
-    </main>
-
-
     <!-- start of tab block with patent, cert and dissertation -->
-    <section class="container tabs-block">
+    <section class="container tabs-block" id="patents">
         <h2 class="tabs-block__title">Регулярно подтверждаю свой профессионализм и повышаю квалификацию</h2>
-
-        <div class="container">
+        
             <div class="tab-container">
                 <ul class="nav nav-tabs container" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
@@ -368,7 +364,7 @@
             <div class="tab-content container" id="myTabContent">
 
                 <div class="tab-pane fade show active" id="patent" role="tabpanel" aria-labelledby="patent-tab">
-
+                    
                         <h2 class="patent__title text-center">Участвовал в создании патентов</h2>
 
                         <div class="row d-flex flex-row flex-wrap patent">
@@ -435,6 +431,7 @@
                             </button>
                         </div>
 
+                    
                 </div>
 
                 <div class="tab-pane fade" id="sert" role="tabpanel" aria-labelledby="sert-tab">
@@ -502,17 +499,16 @@
                         </div>
                     </div>
                 </div>
-
-            </div>
         </div>
-        
 
     </section>
+
     <!-- end of tab block with patent, cert and dissertation -->
 
 
 
-        <footer class="container footer">
+
+        <footer class="footer container">
             <h2 class="footer-heading">Обращайтесь за консультацией в Telegram</h2>
             <button class="footer-button">Связатьcя в телеграмме</button>
         </footer>
@@ -522,11 +518,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>
-
-
-
-
-
 </body>
 
 </html>
