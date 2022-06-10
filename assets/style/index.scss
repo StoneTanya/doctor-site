@@ -12,23 +12,30 @@ $font-size-for-common-text: 1.5rem;
 $margin-top-about-me:2.5rem;
 $margin-bottom-about-me: 2.5rem;
 
-html {
-    width: 100%;
-    height: 100%;
+
+/* сюда добавим общие для страницы стили*/ 
+*,
+*:before,
+*:after {
     box-sizing: border-box;
+}
+
+.header-photo__block, .img-aboutme__block, .research-container__img {
+    width: 40%;
 }
 
 /* блоки об учебе и работе */
 .studies {
-    background-color: #E1F4F2;
-    margin-bottom: 5vh;
-    margin-top: 5vh;
+    background-color: $background;
 }
 
 .work {
-    background-color: #E1F4F2;
-    margin-bottom: 5vh;
+    margin-bottom: 2vh;
     margin-top: 5vh;
+}
+
+.work-row {
+    background-color: white;
 }
 
 .content-studi {
@@ -63,8 +70,8 @@ html {
 }
 
 .content {
-    width: 70vw;
-    margin-left: -30px;
+    width: 40vw;
+    margin-left: -20px;
 }
 
 .limiter {
@@ -138,8 +145,7 @@ html {
 /* styles to "tab block (patent, cert and research)" */
 .tabs-block {
     background: $primary-color;
-    height: 100%;
-    width: 100%;
+}
 
     .tabs-block__title {
         font-family: $font-main;
@@ -151,7 +157,6 @@ html {
         padding: 40px 0 20px 0;
         margin: 0;
     }
-}
 
 .tab-container {
     left: 50%;
@@ -276,6 +281,9 @@ html {
 
 .patent {
     padding-bottom: 2%;
+    .patent__title {
+        font-family: $font-main;
+        color: $primary-color;}
 }
 
 .patent__discription,
@@ -306,7 +314,7 @@ html {
     max-height: 100%;
 }
 
-
+/*style for certificate*/
 .cert-container {
     padding-top: 2%;
 }
@@ -316,9 +324,6 @@ html {
     border-radius: 5px;
 }
 
-.research-container__img {
-    width: 40%;
-}
 
 .research-container__title_bolder {
     font-weight: bolder;
@@ -328,7 +333,6 @@ html {
 /* styles to "about me" */
 .container-aboutme {
     font: 100% $font-main;
-
 }
 
 .img-aboutme {
@@ -352,12 +356,12 @@ html {
 
 
 /* styles to "workareas" */
-.container-workareas__title {
-    color: $title-color;
+
+.container-workareas__header {
+    color: white;
     font-family: $font-main;
     margin-top: 7vh;
     margin-bottom: 7vh;
-    margin-left: 3vw;
 }
 
 .container-workareas__topblock {
@@ -366,12 +370,17 @@ html {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    margin-bottom: -5%;
+}
+
+.container-workareas__bottomblock {
+    position: relative;
+    margin-top: -5%;
+    z-index: 2;
 }
 
 .container-workareas__card {
-    height: 34vh;
     max-width: 18rem;
-    margin-left: 4vw;
     border: 0.5px solid #177165;
     background-color: #fff;
     text-align: center;
@@ -392,9 +401,6 @@ html {
     margin-bottom: 1rem;
 }
 
-.container-workareas__bottomblock {
-    height: 25vh;
-}
 
 /* styles to "header" */
 nav,
@@ -403,15 +409,14 @@ nav,
     font-family: $font-other;
 }
 
-.header-block {
-    height: 788px;
+.header-block{
+    padding: 30px;
 }
-
 .header-block_title {
-    font-size: 60px;
-    line-height: 78px;
+    font-size: 50px;
+    line-height: 50px;
     color: $title-color;
-    margin: 80px 155px;
+    margin: 30px 20px 30px 40px;
     font-family: $font-main;
 }
 
@@ -423,14 +428,13 @@ nav,
 }
 .info-list {
     font-size: 25px;
-    margin: 30px 155px;
+    margin: 70px 20px 30px 40px;
     font-family: $font-other;
 }
 
 .header-photo{
     max-width: 100%;
     max-height: 100%;
-    padding-left: 150px;
 }
 .header-menu {
     position: relative;
@@ -439,6 +443,8 @@ nav,
     justify-content: space-between;
     margin-top: 27px auto;
     padding: 0px 30px;
+    background-color: #195f56;
+    align-items: baseline;
 }
 
 .header-menu ul li {
@@ -472,9 +478,10 @@ nav,
 .menu__link {
     display: block;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: none;
 }
+
 
 .header__button {
     display: flex;
@@ -516,12 +523,12 @@ nav,
 }
 .footer-heading{
     color: $title-color;
-    font-size: 60px;
-    width: 800px;
+    font-size: 50px;
+    width: 700px;
 }
 .footer-button{
     background-color: #23786D;
-    border: 1px ;
+    border: 1px;
     width: 400px;
     height: 98px;
     color: $title-color;
