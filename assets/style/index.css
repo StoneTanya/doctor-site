@@ -95,6 +95,11 @@
 .studies {
     background-color: #E1F4F2;
 }
+@media (max-width: 600px) {
+.workk {display: none;}
+.studies {display: none;}
+    }
+    
 
 .workk {
     background-color: #E1F4F2;
