@@ -150,16 +150,16 @@ $margin-bottom-about-me: 2.5rem;
     background: $primary-color;
 }
 
-    .tabs-block__title {
-        font-family: $font-main;
-        font-size: 2rem;
-        color: $primary-color;
-        text-align: center;
-        color: $title-color;
-        font-weight: 300;
-        padding: 40px 0 20px 0;
-        margin: 0;
-    }
+.tabs-block__title {
+    font-family: $font-main;
+    font-size: 2rem;
+    color: $primary-color;
+    text-align: center;
+    color: $title-color;
+    font-weight: 300;
+    padding: 40px 0 20px 0;
+    margin: 0;
+}
 
 .tab-container {
     left: 50%;
@@ -347,6 +347,10 @@ $margin-bottom-about-me: 2.5rem;
     margin-bottom: $margin-bottom-about-me;
 }
 
+// .img-aboutme__block {
+//     padding: 0;
+// }
+
 .h1-aboutme {
     font-size: 2.5rem;
     margin-top: $margin-top-about-me;
@@ -355,7 +359,7 @@ $margin-bottom-about-me: 2.5rem;
 }
 
 .p-aboutme {
-    font-size: $font-size-for-common-text;
+    font-size: 1.2rem;
     color: $text;
     font-family: $font-other;
 }
@@ -412,9 +416,10 @@ nav,
     font-family: $font-other;
 }
 
-.header-block{
+.header-block {
     padding: 30px;
 }
+
 .header-block_title {
     font-size: 50px;
     line-height: 50px;
@@ -527,7 +532,7 @@ nav,
     padding: 80px 0px;
 }
 
-.footer-title{
+.footer-title {
     font-family: $font-main;
     color: $title-color;
     font-size: 50px;
@@ -551,10 +556,18 @@ nav,
 
 /*styles to "FAQ" */
 
+.container-faq {
+    padding: 0;
+}
+
+.faq {
+    margin-bottom: 3rem;
+}
 
 .accordion {
-    font-family: $font-main;
+    font-family: $font-other;
     font-size: 1rem;
+    padding: 0;
 }
 
 .h1-faq {
