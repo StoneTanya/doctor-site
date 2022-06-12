@@ -283,11 +283,15 @@ $margin-bottom-about-me: 2.5rem;
 
 .patent {
     padding-bottom: 2%;
+}
+.patent__title {
+    font-family: $font-main;
+    color: $primary-color;
+}
 
-    .patent__title {
-        font-family: $font-main;
-        color: $primary-color;
-    }
+.patent__title {
+    font-family: $font-main;
+    color: $primary-color;
 }
 
 .patent__discription,
@@ -321,8 +325,21 @@ $margin-bottom-about-me: 2.5rem;
 /*style for certificate*/
 .cert-container {
     padding-top: 2%;
+    img {
+        width: 30%; 
+        height: 25%
+        }
 }
 
+.modal-body {
+    img {
+        width: 100%;
+        height: 50%;
+    }
+}
+
+
+/*style for research*/
 .research__img {
     max-width: 100%;
     border-radius: 5px;
