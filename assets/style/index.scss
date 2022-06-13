@@ -11,6 +11,9 @@ $btn-border: 2px solid $primary-color;
 $font-size-for-common-text: 1.5rem;
 $margin-top-about-me:2.5rem;
 $margin-bottom-about-me: 2.5rem;
+$title-size: 3rem;
+$sub-title-size: 2rem;
+$text-size: 1.2rem;
 
 
 /* сюда добавим общие для страницы стили*/
@@ -152,7 +155,7 @@ $margin-bottom-about-me: 2.5rem;
 
 .tabs-block__title {
     font-family: $font-main;
-    font-size: 2rem;
+    font-size: $sub-title-size;
     color: $primary-color;
     text-align: center;
     color: $title-color;
@@ -284,11 +287,11 @@ $margin-bottom-about-me: 2.5rem;
 
 .patent {
     padding-bottom: 2%;
+}
 
-    .patent__title {
-        font-family: $font-main;
-        color: $primary-color;
-    }
+.patent__title {
+    font-family: $font-main;
+    color: $primary-color;
 }
 
 .patent__discription,
@@ -322,8 +325,19 @@ $margin-bottom-about-me: 2.5rem;
 /*style for certificate*/
 .cert-container {
     padding-top: 2%;
+    img {
+        width: 30%; 
+        height: 25%
+        }
+}
+.modal-body {
+    img {
+        width: 100%;
+        height: 50%;
+    }
 }
 
+/*style for research*/
 .research__img {
     max-width: 100%;
     border-radius: 5px;
@@ -347,9 +361,9 @@ $margin-bottom-about-me: 2.5rem;
     margin-bottom: $margin-bottom-about-me;
 }
 
-// .img-aboutme__block {
-//     padding: 0;
-// }
+.img-aboutme__block {
+    padding: 0;
+}
 
 .h1-aboutme {
     font-size: 2.5rem;
