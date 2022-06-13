@@ -489,10 +489,16 @@ nav,
     color: $title-color;
 }
 
+.doctor-icon {
+    padding-right: 0.4vw;
+}
+
 .logo {
     padding-top: 20px;
+    padding-left: 3vw;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 1.3rem;
+    font-family: $font-other;
 }
 
 .menu__list {
@@ -502,6 +508,8 @@ nav,
 .menu__item {
     display: inline-block;
     margin-right: 29px;
+    font-size: 0.5rem;
+    font-family: $font-other;
 }
 
 .menu__link {
@@ -509,11 +517,7 @@ nav,
     font-weight: 400;
     font-size: 20px;
     text-decoration: none;
-}
-
-
-.header__button {
-    display: flex;
+    font-size: 0.8rem;
 }
 
 .header_blue__button {
@@ -521,11 +525,15 @@ nav,
     white-space: nowrap;
     text-align: center;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 1.2rem;
     text-decoration: none;
-    padding-top: 20px;
 }
 
+.telegram-icon {
+    font-size: 2rem;
+    padding-right: 0.7rem;
+
+}
 
 .header_blue__button:hover {
     color: $title-color;
@@ -533,7 +541,6 @@ nav,
 }
 
 .header__menu {
-    display: flex;
     justify-content: space-between;
 }
 
