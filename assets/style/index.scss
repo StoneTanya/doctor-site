@@ -8,9 +8,12 @@ $text: #777777;
 $title-color: #fff;
 $paragraph: #A4D6CF;
 $btn-border: 2px solid $primary-color;
-$font-size-for-common-text: 1.5rem;
+$font-size-for-common-text: 1.2rem;
 $margin-top-about-me:2.5rem;
 $margin-bottom-about-me: 2.5rem;
+$title-size: 3rem;
+$subtitle-size: 2rem;
+
 
 /* Прелоадер для сайта*/
 
@@ -519,7 +522,7 @@ $margin-bottom-about-me: 2.5rem;
 }
 
 .h1-aboutme {
-    font-size: 2.5rem;
+    font-size: $subtitle-size
     margin-top: $margin-top-about-me;
     margin-bottom: $margin-bottom-about-me;
     color: $primary-color;
@@ -589,11 +592,11 @@ nav,
 }
 
 .header-block_title {
-    font-size: 50px;
-    line-height: 50px;
+    font-size: $title-size;
     color: $title-color;
-    margin: 30px 20px 30px 40px;
+    margin: 6vh 3vw 4vh 5vw;
     font-family: $font-main;
+    line-height: 8vh;
 }
 
 .info-list,
@@ -604,14 +607,15 @@ nav,
 }
 
 .info-list {
-    font-size: 25px;
-    margin: 70px 20px 30px 40px;
+    font-size: $font-size-for-common-text;
+    margin: 7vh 3vw 5vh 5vw;
     font-family: $font-other;
 }
 
+
 .header-photo {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 95%;
+    max-height: 120%;
 }
 
 .header-menu {
@@ -621,7 +625,6 @@ nav,
     justify-content: space-between;
     margin-top: 27px auto;
     padding: 0px 30px;
-    background-color: #195f56;
     align-items: baseline;
 }
 
@@ -639,7 +642,6 @@ nav,
 }
 
 .logo {
-    padding-top: 20px;
     padding-left: 3vw;
     text-decoration: none;
     font-size: 1rem;
@@ -657,22 +659,16 @@ nav,
 
 .menu__item {
     display: inline-block;
-    margin-right: 29px;
 }
 
 .menu__link {
     display: block;
-    font-weight: 400;
     font-size: 0.8rem;
     text-decoration: none;
 }
 
-.header__button {
-    display: flex;
-}
 
 .header_blue__button {
-    display: flex;
     white-space: nowrap;
     text-align: center;
     font-size: 1rem;
@@ -687,7 +683,7 @@ nav,
 
 #telegram-icon {
     font-size: 2.5rem;
-    padding-right: 0.5vw;
+    padding-right: 0.8vw;
 }
 
 .header__menu {
