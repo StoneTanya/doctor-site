@@ -558,6 +558,7 @@ $subtitle-size: 2rem;
     position: relative;
     margin-top: -5%;
     z-index: 2;
+    margin-bottom: 3vh;
 }
 
 .container-workareas__card {
@@ -710,7 +711,7 @@ nav,
 .footer-title {
     font-family: $font-main;
     color: $title-color;
-    font-size: 50px;
+    font-size: $subtitle-size
     width: 700px;
 }
 
