@@ -640,8 +640,15 @@ nav,
 
 .logo {
     padding-top: 20px;
+    padding-left: 3vw;
     text-decoration: none;
-    font-size: 0.5rem;
+    font-size: 1rem;
+
+}
+
+.logo-icon {
+    font-size: 2rem;
+    padding-right: 0.5vw;
 }
 
 .menu__list {
@@ -656,7 +663,7 @@ nav,
 .menu__link {
     display: block;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 0.8rem;
     text-decoration: none;
 }
 
@@ -668,8 +675,7 @@ nav,
     display: flex;
     white-space: nowrap;
     text-align: center;
-    font-weight: 400;
-    font-size: 25px;
+    font-size: 1rem;
     text-decoration: none;
     padding-top: 20px;
 }
@@ -677,6 +683,11 @@ nav,
 .header_blue__button:hover {
     color: $title-color;
     opacity: .75;
+}
+
+#telegram-icon {
+    font-size: 2.5rem;
+    padding-right: 0.5vw;
 }
 
 .header__menu {
