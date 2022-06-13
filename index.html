@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
@@ -19,9 +20,9 @@
 </head>
 <!--Прелоадер для сайта-->
 <script>
-    window.onload = function() {
+    window.onload = function () {
         document.body.classList.add('loaded_hiding');
-        window.setTimeout(function() {
+        window.setTimeout(function () {
             document.body.classList.add('loaded');
             document.body.classList.remove('loaded_hiding');
         }, 500);
@@ -29,7 +30,8 @@
 </script>
 <div class="preloader">
     <img class="preloader__image" src="/assets/img/pulse.svg" viewBox="0 0 512 512">
-    <path fill="currentColor" d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+    <path fill="currentColor"
+        d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
     </path>
     </svg>
 </div>
@@ -56,8 +58,9 @@
                     </li>
                 </ul>
                 <div class="header__button">
-                    <a href="#" class="header_blue__button"><i class="fa-brands fa-telegram telegram-icon"></i>Связаться в
-            телеграмме</a>
+                    <a href="#" class="header_blue__button"><i class="fa-brands fa-telegram"
+                            id="telegram-icon"></i>Связаться в
+                        телеграмме</a>
                 </div>
             </nav>
             <div class="container header-block">
@@ -90,8 +93,10 @@
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <h1 class="h1-aboutme">Лечить людей — у меня в генах</h1>
-                    <p class="p-aboutme">Я родился в Смоленске в 1961 году в семье военных врачей. Моя жена — врач-невролог, а дочь — клинический ординатор.</p>
-                    <p class="p-aboutme">За 8 лет практики в качестве нейрохирурга я провёл около 2 000 операций. А в настоящее время являюсь практикующим неврологом и мануальным терапевтом в Москве.
+                    <p class="p-aboutme">Я родился в Смоленске в 1961 году в семье военных врачей. Моя жена —
+                        врач-невролог, а дочь — клинический ординатор.</p>
+                    <p class="p-aboutme">За 8 лет практики в качестве нейрохирурга я провёл около 2 000 операций. А в
+                        настоящее время являюсь практикующим неврологом и мануальным терапевтом в Москве.
                     </p>
                 </div>
             </div>
@@ -101,17 +106,21 @@
 
         <div class="container container-workareas">
             <div class="row container-workareas__topblock d-flex row wrap justify-content-around">
-                <h2 class="container-workareas__title large text-center">Восстанавливаю целостность организма после заболеваний и травм
+                <h2 class="container-workareas__title large text-center">Восстанавливаю целостность организма после
+                    заболеваний и травм
                 </h2>
             </div>
             <div class="row container-workareas__bottomblock d-flex row wrap justify-content-around">
-                <div class="col-12 col-sm-6 col-md-4 col-xl container-workareas__card" id="workareas__card1"><i class="fa-solid fa-head-side-virus workareas-icon fa-4x"></i>
+                <div class="col-12 col-sm-6 col-md-4 col-xl container-workareas__card" id="workareas__card1"><i
+                        class="fa-solid fa-head-side-virus workareas-icon fa-4x"></i>
                     <div>Диагностика и лечение заболеваний нервной системы и опорно-двигательного аппарата</div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-xl container-workareas__card"><i class="fa-solid fa-disease workareas-icon fa-4x"></i>
+                <div class="col-12 col-sm-6 col-md-4 col-xl container-workareas__card"><i
+                        class="fa-solid fa-disease workareas-icon fa-4x"></i>
                     <div>Реабилитация метаболических нарушений</div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-xl container-workareas__card"><i class="fa-solid fa-virus-covid workareas-icon fa-4x"></i>
+                <div class="col-12 col-sm-6 col-md-4 col-xl container-workareas__card"><i
+                        class="fa-solid fa-virus-covid workareas-icon fa-4x"></i>
                     <div>Реабилитация пациентов с постковидным синдромом</div>
                 </div>
             </div>
@@ -143,24 +152,31 @@
                                 <div class="limiter">
                                     <div class="content-studi">
                                         <h3 class="zagol-data">2001-2002 год</h3>
-                                        <p class="textcont1">Врач невролог ГУ Республики Коми санатория "Северное сияние" город Саки</p>
+                                        <p class="textcont1">Врач невролог ГУ Республики Коми санатория "Северное
+                                            сияние" город Саки</p>
                                     </div>
                                     <div class="content-studi">
                                         <h3 class="zagol-data">1998-2001 год</h3>
-                                        <p class="textcont1">Врач невролог центра восстановительной травматологии и нейрохирургии Сакского клинического военного санатория</p>
+                                        <p class="textcont1">Врач невролог центра восстановительной травматологии и
+                                            нейрохирургии Сакского клинического военного санатория</p>
                                     </div>
                                     <div class="content-studi">
                                         <h3 class="zagol-data">1990-1998 год</h3>
-                                        <p class="textcont1">Врач нейрохирург центра восстановительной травматологии и нейрохирургии Сакского клинического военного санатория</p>
+                                        <p class="textcont1">Врач нейрохирург центра восстановительной травматологии и
+                                            нейрохирургии Сакского клинического военного санатория</p>
                                     </div>
                                     <div class="content-studi">
                                         <h3 class="zagol-data">1989-1990 год</h3>
-                                        <p class="textcont1">Врач невролог в специализированном неврологическом отделении Центра восстановительной травматологии и нейрохирургии Сакского клинического военного санатория
+                                        <p class="textcont1">Врач невролог в специализированном неврологическом
+                                            отделении Центра восстановительной травматологии и нейрохирургии Сакского
+                                            клинического военного санатория
                                         </p>
                                     </div>
                                     <div class="content-studi">
                                         <h3 class="zagol-data">1985-1989 год</h3>
-                                        <p class="textcont1">Ординатор неврологического отделения в базовом специализированном клиническом санатории имени академика Н.Н. Бурденко для больных с последствиями травм позвоночника и спинного мозга
+                                        <p class="textcont1">Ординатор неврологического отделения в базовом
+                                            специализированном клиническом санатории имени академика Н.Н. Бурденко для
+                                            больных с последствиями травм позвоночника и спинного мозга
                                         </p>
                                     </div>
                                     <div class="bottom"></div>
@@ -185,12 +201,14 @@
                         <div class="content">
                             <div class="content-studi">
                                 <h3 class="zagol-data">2020 год</h3>
-                                <p class="textcont1">Усовершенствование по организации здравоохранения и общественному здоровью при Национальном Медико-Хирургическом Центре (НМХЦ) им. Н.И. Пирогова
+                                <p class="textcont1">Усовершенствование по организации здравоохранения и общественному
+                                    здоровью при Национальном Медико-Хирургическом Центре (НМХЦ) им. Н.И. Пирогова
                                 </p>
                             </div>
                             <div class="content-studi">
                                 <h3 class="zagol-data">2017-2020 год</h3>
-                                <p class="textcont1">Усовершенствование по рефлексотерапии, неврологии и мануальной терапии при Национальном Медико-Хирургическом Центре (НМХЦ) им. Н.И. Пирогова</p>
+                                <p class="textcont1">Усовершенствование по рефлексотерапии, неврологии и мануальной
+                                    терапии при Национальном Медико-Хирургическом Центре (НМХЦ) им. Н.И. Пирогова</p>
                             </div>
                             <div class="content-studi">
                                 <h3 class="zagol-data">2016 год</h3>
@@ -200,7 +218,9 @@
                             <div class="limiter">
                                 <div class="content-studi">
                                     <h3 class="zagol-data">2014-2015 год</h3>
-                                    <p class="textcont1">Усовершенствование по неврологии, мануальной терапии и организации здравоохранения и общественному здоровью при Национальном Медико-Хирургическом Центре (НМХЦ) им. Н.И. Пирогова</p>
+                                    <p class="textcont1">Усовершенствование по неврологии, мануальной терапии и
+                                        организации здравоохранения и общественному здоровью при Национальном
+                                        Медико-Хирургическом Центре (НМХЦ) им. Н.И. Пирогова</p>
                                 </div>
                                 <div class="content-studi">
                                     <h3 class="zagol-data">2011 год</h3>
@@ -212,12 +232,14 @@
                                 </div>
                                 <div class="content-studi">
                                     <h3 class="zagol-data">2005-2006 год</h3>
-                                    <p class="textcont1"> Усовершенствование при Московском институте неврологии по циклу: «Применение диспорта при заболеваниях нервной системы»
+                                    <p class="textcont1"> Усовершенствование при Московском институте неврологии по
+                                        циклу: «Применение диспорта при заболеваниях нервной системы»
                                         <br /> Подтверждение высшей квалификационной категории по неврологии</p>
                                 </div>
                                 <div class="content-studi">
                                     <h3 class="zagol-data">2004 год</h3>
-                                    <p class="textcont1">Усовершенствование по неврологии при Московском институте усовершенствования врачей
+                                    <p class="textcont1">Усовершенствование по неврологии при Московском институте
+                                        усовершенствования врачей
                                     </p>
                                 </div>
                                 <div class="content-studi">
@@ -227,12 +249,15 @@
                                 </div>
                                 <div class="content-studi">
                                     <h3 class="zagol-data">2002 год</h3>
-                                    <p class="textcont1">ТУ при Крымском мединституте по циклу: «Современные проблемы клиники, диагностики и лечения заболеваний н.с.»</p>
+                                    <p class="textcont1">ТУ при Крымском мединституте по циклу: «Современные проблемы
+                                        клиники, диагностики и лечения заболеваний н.с.»</p>
                                 </div>
                                 <div class="content-studi">
                                     <h3 class="zagol-data">2000 год</h3>
-                                    <p class="textcont1">Специализация по гомеопатии при Киевском гомеопатическом центре имени Демьяна Попова
-                                        <br /> Специализация по лечению больных с сахарным диабетом при диабетическом центре Furstenhof Bad Kissingen, Германия</p>
+                                    <p class="textcont1">Специализация по гомеопатии при Киевском гомеопатическом центре
+                                        имени Демьяна Попова
+                                        <br /> Специализация по лечению больных с сахарным диабетом при диабетическом
+                                        центре Furstenhof Bad Kissingen, Германия</p>
                                 </div>
                                 <div class="content-studi">
                                     <h3 class="zagol-data">1998 год</h3>
@@ -241,13 +266,18 @@
                                 </div>
                                 <div class="content-studi">
                                     <h3 class="zagol-data">1995 год</h3>
-                                    <p class="textcont1">Защитил кандидатскую диссертацию при военно-медицинской Академии на тему «Комплексное лечение и реабилитация больных с нарушением функции тазовых органов при травматической болезни спинного мозга»
-                                        <br /> Усовершенствование при Крымском мединституте по циклу «Физиотерапия в детской неврологии»
+                                    <p class="textcont1">Защитил кандидатскую диссертацию при военно-медицинской
+                                        Академии на тему «Комплексное лечение и реабилитация больных с нарушением
+                                        функции тазовых органов при травматической болезни спинного мозга»
+                                        <br /> Усовершенствование при Крымском мединституте по циклу «Физиотерапия в
+                                        детской неврологии»
                                     </p>
                                 </div>
                                 <div class="content-studi">
                                     <h3 class="zagol-data">1994 год</h3>
-                                    <p class="textcont1">Усовершенствование при Крымском медицинском институте по циклу «Реабилитация больных с последствиями заболеваний и травм позвоночника и спинного мозга»</p>
+                                    <p class="textcont1">Усовершенствование при Крымском медицинском институте по циклу
+                                        «Реабилитация больных с последствиями заболеваний и травм позвоночника и
+                                        спинного мозга»</p>
                                 </div>
                                 <div class="content-studi">
                                     <h3 class="zagol-data">1992 год</h3>
@@ -261,8 +291,10 @@
                                 </div>
                                 <div class="content-studi">
                                     <h3 class="zagol-data">1990 год</h3>
-                                    <p class="textcont1">Специализация по гомеопатии при Медицинском участке Крымского областного отделения Советского Детского фонда им. В.И. Ленина
-                                        <br /> Усовершенствование при Киевском ГИДУВе по циклу «Мануальная рефлексотерапия вертеброгенной патологии»
+                                    <p class="textcont1">Специализация по гомеопатии при Медицинском участке Крымского
+                                        областного отделения Советского Детского фонда им. В.И. Ленина
+                                        <br /> Усовершенствование при Киевском ГИДУВе по циклу «Мануальная
+                                        рефлексотерапия вертеброгенной патологии»
                                         <br /> Академические курсы по нейрохирургии при Военно-медицинской Академии</p>
                                 </div>
                                 <div class="content-studi">
@@ -272,16 +304,19 @@
                                 </div>
                                 <div class="content-studi">
                                     <h3 class="zagol-data">1987 год</h3>
-                                    <p class="textcont1">Академические курсы по рефлексотерапии при Военно-медицинской Академии
+                                    <p class="textcont1">Академические курсы по рефлексотерапии при Военно-медицинской
+                                        Академии
                                     </p>
                                 </div>
                                 <div class="content-studi">
                                     <h3 class="zagol-data">1985 год</h3>
-                                    <p class="textcont1">Усовершенствование при Новокузнецком ГИДУВе по циклу «Курортное лечение остеохондроза позвоночника»</p>
+                                    <p class="textcont1">Усовершенствование при Новокузнецком ГИДУВе по циклу «Курортное
+                                        лечение остеохондроза позвоночника»</p>
                                 </div>
                                 <div class="content-studi">
                                     <h3 class="zagol-data">1984-1985 год</h3>
-                                    <p class="textcont1">Интернатура по неврологии при клинике нервных болезней областной больницы города Симферополя
+                                    <p class="textcont1">Интернатура по неврологии при клинике нервных болезней
+                                        областной больницы города Симферополя
                                     </p>
                                 </div>
                                 <div class="content-studi">
@@ -303,20 +338,25 @@
         <section class="cases">
             <div class="container container-cases" id="cases">
                 <div class="row container-cases__topblock d-flex row wrap justify-content-around">
-                    <h1 class="container-cases__title large text-center">Помогаю восстанавливаться даже после сложных травм
+                    <h1 class="container-cases__title large text-center">Помогаю восстанавливаться даже после сложных
+                        травм
                     </h1>
                 </div>
-                <div class="carousel" data-flickity='{ "cellAlign": "left", "freeScroll": true, "contain": true, "pageDots": false }'>
+                <div class="carousel"
+                    data-flickity='{ "cellAlign": "left", "freeScroll": true, "contain": true, "pageDots": false }'>
                     <div class="carousel-cell">
                         <div class="cases-card">
                             <h2 class="cases-card__title">Мужчина, 56 лет
                             </h2>
                             <h3 class="cases-card__title">Проблема
                             </h3>
-                            <p class="cases-card__text">Черепно-мозговая травма (автотравма). Удалена гематома в правой лобнотеменновисочной области в день травмы через 4 часа. Поступил на реабилитацию через 1,5 месяца — левовосторонний гемипарез, моторно-сенсорная афазия</p>
+                            <p class="cases-card__text">Черепно-мозговая травма (автотравма). Удалена гематома в правой
+                                лобнотеменновисочной области в день травмы через 4 часа. Поступил на реабилитацию через
+                                1,5 месяца — левовосторонний гемипарез, моторно-сенсорная афазия</p>
                             <h3 class="cases-card__title">Лечение
                             </h3>
-                            <p class="cases-card__text">Ноотропы, антиконвульсанты, рефлексотерапия, лечебная физкультура</p>
+                            <p class="cases-card__text">Ноотропы, антиконвульсанты, рефлексотерапия, лечебная
+                                физкультура</p>
                             <h3 class="cases-card__title">Результат</h3>
                             <p class="cases-card__text">Научился ходить с тростью, улучшилась речь и её понимание</p>
                         </div>
@@ -327,13 +367,17 @@
                             </h2>
                             <h3 class="cases-card__title">Проблема
                             </h3>
-                            <p class="cases-card__text">Последствия перелома тазового кольца (автотравма), металлоостиосинтез крестца, симфиза, перелом поперечный отростков L4, L5. Справа — выраженный болевой синдром, парез правой ноги</p>
+                            <p class="cases-card__text">Последствия перелома тазового кольца (автотравма),
+                                металлоостиосинтез крестца, симфиза, перелом поперечный отростков L4, L5. Справа —
+                                выраженный болевой синдром, парез правой ноги</p>
                             <h3 class="cases-card__title">Лечение
                             </h3>
-                            <p class="cases-card__text">Блокады, анальгетики, НПВС, стероиды, рефлексотерапия и лечебная физкультура
+                            <p class="cases-card__text">Блокады, анальгетики, НПВС, стероиды, рефлексотерапия и лечебная
+                                физкультура
                             </p>
                             <h3 class="cases-card__title">Результат</h3>
-                            <p class="cases-card__text">Ходит без посторонней помощи, боль не беспокоит. Сила в правой ноге восстановилась до 5 баллов/Х баллов.</p>
+                            <p class="cases-card__text">Ходит без посторонней помощи, боль не беспокоит. Сила в правой
+                                ноге восстановилась до 5 баллов/Х баллов.</p>
                         </div>
                     </div>
                     <div class="carousel-cell">
@@ -342,12 +386,16 @@
                             </h2>
                             <h3 class="cases-card__title">Проблема
                             </h3>
-                            <p class="cases-card__text">Последствие перелома тазового кольца (автотравма), металлоостиосинтез крестца, левосторонний нижний монопарез, выраженный посттравматический болевой синдром</p>
+                            <p class="cases-card__text">Последствие перелома тазового кольца (автотравма),
+                                металлоостиосинтез крестца, левосторонний нижний монопарез, выраженный
+                                посттравматический болевой синдром</p>
                             <h3 class="cases-card__title">Лечение
                             </h3>
-                            <p class="cases-card__text">Блокады, анальгетики, нестероидные противовоспалительные средства, стероиды, рефлексотерапия, электроакупунктура, лечебная физкультура.</p>
+                            <p class="cases-card__text">Блокады, анальгетики, нестероидные противовоспалительные
+                                средства, стероиды, рефлексотерапия, электроакупунктура, лечебная физкультура.</p>
                             <h3 class="cases-card__title">Результат</h3>
-                            <p class="cases-card__text">Ходит без посторонней помощи, боль не беспокоит, сила в левой ноге восстановилась
+                            <p class="cases-card__text">Ходит без посторонней помощи, боль не беспокоит, сила в левой
+                                ноге восстановилась
                             </p>
                         </div>
                     </div>
@@ -357,12 +405,16 @@
                             </h2>
                             <h3 class="cases-card__title">Проблема
                             </h3>
-                            <p class="cases-card__text">Дорсопатия, парамедианная правосторонняя грыжа L5-S1, люмбоишиалгия, выраженный болевой синдром</p>
+                            <p class="cases-card__text">Дорсопатия, парамедианная правосторонняя грыжа L5-S1,
+                                люмбоишиалгия, выраженный болевой синдром</p>
                             <h3 class="cases-card__title">Лечение
                             </h3>
-                            <p class="cases-card__text">Блокады, анальгетики, нестероидные противовоспалительные средства, стероиды, рефлексотерапия, лечебная физкультура, фиксация поясничного отдела корсетом.</p>
+                            <p class="cases-card__text">Блокады, анальгетики, нестероидные противовоспалительные
+                                средства, стероиды, рефлексотерапия, лечебная физкультура, фиксация поясничного отдела
+                                корсетом.</p>
                             <h3 class="cases-card__title">Результат</h3>
-                            <p class="cases-card__text">Боль не беспокоит, сила в правой ноге восстановилась, чувствительные расстройства не фиксируются.</p>
+                            <p class="cases-card__text">Боль не беспокоит, сила в правой ноге восстановилась,
+                                чувствительные расстройства не фиксируются.</p>
                         </div>
                     </div>
                 </div>
@@ -374,52 +426,68 @@
             <div class="tab-container">
                 <ul class="nav nav-tabs container" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="patent-tab" data-bs-toggle="tab" data-bs-target="#patent" role="tab" aria-controls="patent" aria-selected="true"><i class="fa-brands fa-medrt"></i>Патенты</button>
+                        <button class="nav-link active" id="patent-tab" data-bs-toggle="tab" data-bs-target="#patent"
+                            role="tab" aria-controls="patent" aria-selected="true"><i
+                                class="fa-brands fa-medrt"></i>Патенты</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="sert-tab" data-bs-toggle="tab" data-bs-target="#sert" role="tab" aria-controls="sert" aria-selected="false"><i class="fa-solid fa-hospital-user"></i>Дипломы
-              и
-              сертификаты</button>
+                        <button class="nav-link" id="sert-tab" data-bs-toggle="tab" data-bs-target="#sert" role="tab"
+                            aria-controls="sert" aria-selected="false"><i class="fa-solid fa-hospital-user"></i>Дипломы
+                            и
+                            сертификаты</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="research-tab" data-bs-toggle="tab" data-bs-target="#research" role="tab" aria-controls="research" aria-selected="false"><i
-                class="fa-solid fa-file-signature"></i>Исследования</button>
+                        <button class="nav-link" id="research-tab" data-bs-toggle="tab" data-bs-target="#research"
+                            role="tab" aria-controls="research" aria-selected="false"><i
+                                class="fa-solid fa-file-signature"></i>Исследования</button>
                     </li>
                 </ul>
             </div>
 
             <div class="tab-content container" id="myTabContent">
 
-                <div class="tab-pane fade show active patent-block" id="patent" role="tabpanel" aria-labelledby="patent-tab">
+                <div class="tab-pane fade show active patent-block" id="patent" role="tabpanel"
+                    aria-labelledby="patent-tab">
 
                     <h2 class="patent__title text-center">Участвовал в создании патентов</h2>
 
                     <div class="row d-flex flex-row flex-wrap patent">
                         <div class="col-md-6">
-                            <h4 class="patent__title_small">Дистрактор для динамического вытяжения пояснично-грудного отдела</h4>
-                            <p class="patent__discription">Устройство обеспечивает свободу движений в верхнем плечевом поясе, уменьшает растяжение функционально нормальных позвоночно-двигательных сегментов</p>
-                            <a class="btn d-inline-flex align-items-center patent__btn" href="https://yandex.ru/patents/doc/RU5921U1_19980216">Узнать больше &nbsp<i
-                  class="fa-solid fa-plus"></i></a>
+                            <h4 class="patent__title_small">Дистрактор для динамического вытяжения пояснично-грудного
+                                отдела</h4>
+                            <p class="patent__discription">Устройство обеспечивает свободу движений в верхнем плечевом
+                                поясе, уменьшает растяжение функционально нормальных позвоночно-двигательных сегментов
+                            </p>
+                            <a class="btn d-inline-flex align-items-center patent__btn"
+                                href="https://yandex.ru/patents/doc/RU5921U1_19980216">Узнать больше &nbsp<i
+                                    class="fa-solid fa-plus"></i></a>
                         </div>
 
                         <div class="col-md-6 video-block">
-                            <h4 class="patent__title_small">Парфюмерная композиция для местного применения для снятия болевого синдрома
+                            <h4 class="patent__title_small">Парфюмерная композиция для местного применения для снятия
+                                болевого синдрома
                             </h4>
-                            <p class="patent__discription">Снимает болевые синдромы при заболеваниях, которые сопровождаются нарушением локального кровообращения, способствует профилактике наружных кожных болезней</p>
-                            <a class="btn d-inline-flex align-items-center patent__btn" href="https://yandex.ru/patents/doc/RU2580280C2_20160410">Узнать больше &nbsp<i
-                  class="fa-solid fa-plus"></i></a>
+                            <p class="patent__discription">Снимает болевые синдромы при заболеваниях, которые
+                                сопровождаются нарушением локального кровообращения, способствует профилактике наружных
+                                кожных болезней</p>
+                            <a class="btn d-inline-flex align-items-center patent__btn"
+                                href="https://yandex.ru/patents/doc/RU2580280C2_20160410">Узнать больше &nbsp<i
+                                    class="fa-solid fa-plus"></i></a>
                         </div>
                     </div>
 
                     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active" data-bs-interval="10000">
                                 <div class="video-block__container">
-                                    <video class="col video-block__distractor d-block w-100" preload="auto" loop autoplay src="./assets/video/Spina_2.mp4"></video>
+                                    <video class="col video-block__distractor d-block w-100" preload="auto" loop
+                                        autoplay src="./assets/video/Spina_2.mp4"></video>
                                 </div>
 
                                 <div class="carousel-caption d-none d-md-block">
@@ -428,21 +496,24 @@
                             </div>
                             <div class="carousel-item" data-bs-interval="10000">
                                 <div class="video-block__container">
-                                    <video class="col video-block__distractor d-block w-100" preload="auto" loop autoplay src="./assets/video/Spina_4.mp4"></video>
+                                    <video class="col video-block__distractor d-block w-100" preload="auto" loop
+                                        autoplay src="./assets/video/Spina_4.mp4"></video>
                                 </div>
                                 <div class="carousel-caption d-none d-md-block">
                                     <p class="patent__discription">Анимация дистрактора</p>
                                 </div>
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Предыдущий</span>
-            </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Следующий</span>
-            </button>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Предыдущий</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Следующий</span>
+                        </button>
                     </div>
 
 
@@ -450,32 +521,43 @@
 
                 <div class="tab-pane fade" id="sert" role="tabpanel" aria-labelledby="sert-tab">
                     <div class="dipl-list d-flex flex-row flex-wrap justify-content-around cert-container">
-                        <img class="lazyloaded cert-container_img" data-bs-toggle="modal" data-bs-target="#modal-1" style="object-fit:cover" src="./assets/img/Diplom2015.jpg">
+                        <img class="lazyloaded cert-container_img" data-bs-toggle="modal" data-bs-target="#modal-1"
+                            style="object-fit:cover" src="./assets/img/Diplom2015.jpg">
 
-                        <img class="lazyloaded cert-container_img" data-bs-toggle="modal" data-bs-target="#modal-2" style="object-fit:cover" src="./assets/img/ManualTerapy2019.jpg">
+                        <img class="lazyloaded cert-container_img" data-bs-toggle="modal" data-bs-target="#modal-2"
+                            style="object-fit:cover" src="./assets/img/ManualTerapy2019.jpg">
 
-                        <img class="lazyloaded cert-container_img" data-bs-toggle="modal" data-bs-target="#modal-3" style="object-fit:cover" src="./assets/img/NeurologiaFGBU_NMHC.jpeg">
+                        <img class="lazyloaded cert-container_img" data-bs-toggle="modal" data-bs-target="#modal-3"
+                            style="object-fit:cover" src="./assets/img/NeurologiaFGBU_NMHC.jpeg">
 
-                        <img class="lazyloaded cert-container_img" data-bs-toggle="modal" data-bs-target="#modal-4" style="object-fit:cover" src="./assets/img/NeuroSergery 01031990.jpg">
+                        <img class="lazyloaded cert-container_img" data-bs-toggle="modal" data-bs-target="#modal-4"
+                            style="object-fit:cover" src="./assets/img/NeuroSergery 01031990.jpg">
 
-                        <img class="lazyloaded cert-container_img" data-bs-toggle="modal" data-bs-target="#modal-5" style="object-fit:cover" src="./assets/img/Sert2019.jpg">
+                        <img class="lazyloaded cert-container_img" data-bs-toggle="modal" data-bs-target="#modal-5"
+                            style="object-fit:cover" src="./assets/img/Sert2019.jpg">
 
-                        <img class="lazyloaded cert-container_img" data-bs-toggle="modal" data-bs-target="#modal-6" style="object-fit:cover" src="./assets/img/Sert_healthcare019.jpg">
+                        <img class="lazyloaded cert-container_img" data-bs-toggle="modal" data-bs-target="#modal-6"
+                            style="object-fit:cover" src="./assets/img/Sert_healthcare019.jpg">
 
-                        <img class="lazyloaded cert-container_img" data-bs-toggle="modal" data-bs-target="#modal-7" style="object-fit:cover" src="./assets/img/SertManualTerapy2019.jpg">
+                        <img class="lazyloaded cert-container_img" data-bs-toggle="modal" data-bs-target="#modal-7"
+                            style="object-fit:cover" src="./assets/img/SertManualTerapy2019.jpg">
 
 
-                        <img class="lazyloaded cert-container_img" data-bs-toggle="modal" data-bs-target="#modal-8" style="object-fit:cover" src="./assets/img/SertMT14022015.jpg">
+                        <img class="lazyloaded cert-container_img" data-bs-toggle="modal" data-bs-target="#modal-8"
+                            style="object-fit:cover" src="./assets/img/SertMT14022015.jpg">
 
-                        <img class="lazyloaded cert-container_img" data-bs-toggle="modal" data-bs-target="#modal-9" style="object-fit:cover" src="./assets/img/SertNeurology2014.jpeg">
+                        <img class="lazyloaded cert-container_img" data-bs-toggle="modal" data-bs-target="#modal-9"
+                            style="object-fit:cover" src="./assets/img/SertNeurology2014.jpeg">
                     </div>
                 </div>
 
                 <!-- Modal -->
-                <div class="modal fade" id="modal-1" tabindex="-1" aria-labelledby="ModalLabelSertificate" aria-hidden="true">
+                <div class="modal fade" id="modal-1" tabindex="-1" aria-labelledby="ModalLabelSertificate"
+                    aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-xl">
                         <div class="modal-content">
-                            <button type="button" class="btn-close btn-close_modal" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <button type="button" class="btn-close btn-close_modal" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
                             <div class="modal-body">
                                 <img style="object-fit:cover" src="./assets/img/Diplom2015.jpg">
                             </div>
@@ -483,7 +565,8 @@
                     </div>
                 </div>
 
-                <div class="modal fade" id="modal-2" tabindex="-1" aria-labelledby="ModalLabelSertificate" aria-hidden="true">
+                <div class="modal fade" id="modal-2" tabindex="-1" aria-labelledby="ModalLabelSertificate"
+                    aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-xl">
                         <div class="modal-content">
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -494,7 +577,8 @@
                     </div>
                 </div>
 
-                <div class="modal fade" id="modal-3" tabindex="-1" aria-labelledby="ModalLabelSertificate" aria-hidden="true">
+                <div class="modal fade" id="modal-3" tabindex="-1" aria-labelledby="ModalLabelSertificate"
+                    aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-xl">
                         <div class="modal-content">
 
@@ -507,7 +591,8 @@
                     </div>
                 </div>
 
-                <div class="modal fade" id="modal-4" tabindex="-1" aria-labelledby="ModalLabelSertificate" aria-hidden="true">
+                <div class="modal fade" id="modal-4" tabindex="-1" aria-labelledby="ModalLabelSertificate"
+                    aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-xl">
                         <div class="modal-content">
 
@@ -520,7 +605,8 @@
                     </div>
                 </div>
 
-                <div class="modal fade" id="modal-5" tabindex="-1" aria-labelledby="ModalLabelSertificate" aria-hidden="true">
+                <div class="modal fade" id="modal-5" tabindex="-1" aria-labelledby="ModalLabelSertificate"
+                    aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-xl">
                         <div class="modal-content">
 
@@ -533,7 +619,8 @@
                     </div>
                 </div>
 
-                <div class="modal fade" id="modal-6" tabindex="-1" aria-labelledby="ModalLabelSertificate" aria-hidden="true">
+                <div class="modal fade" id="modal-6" tabindex="-1" aria-labelledby="ModalLabelSertificate"
+                    aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-xl">
                         <div class="modal-content">
 
@@ -546,7 +633,8 @@
                     </div>
                 </div>
 
-                <div class="modal fade" id="modal-7" tabindex="-1" aria-labelledby="ModalLabelSertificate" aria-hidden="true">
+                <div class="modal fade" id="modal-7" tabindex="-1" aria-labelledby="ModalLabelSertificate"
+                    aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-xl">
                         <div class="modal-content">
 
@@ -559,7 +647,8 @@
                     </div>
                 </div>
 
-                <div class="modal fade" id="modal-8" tabindex="-1" aria-labelledby="ModalLabelSertificate" aria-hidden="true">
+                <div class="modal fade" id="modal-8" tabindex="-1" aria-labelledby="ModalLabelSertificate"
+                    aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-xl">
                         <div class="modal-content">
 
@@ -572,10 +661,12 @@
                     </div>
                 </div>
 
-                <div class="modal fade" id="modal-9" tabindex="-1" aria-labelledby="ModalLabelSertificate" aria-hidden="true">
+                <div class="modal fade" id="modal-9" tabindex="-1" aria-labelledby="ModalLabelSertificate"
+                    aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-xl">
                         <div class="modal-content">
-                            <button type="button" class="btn-close btn-close_modal" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <button type="button" class="btn-close btn-close_modal" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
                             <div class="modal-body">
                                 <img style="object-fit:cover" src="./assets/img/SertNeurology2014.jpeg">
                             </div>
@@ -586,15 +677,20 @@
                 <div class="tab-pane fade" id="research" role="tabpanel" aria-labelledby="research-tab">
                     <div class="research-container d-flex flex-row justify-content-around">
                         <div class="research-container">
-                            <h2 class="research-container__title"> <i class="fa-solid fa-book-open"></i> &nbsp Диссертация кандидата медицинских наук <br> Санкт-Петербургская военно-медицинская академия, 1995 г. <br>
+                            <h2 class="research-container__title"> <i class="fa-solid fa-book-open"></i> &nbsp
+                                Диссертация кандидата медицинских наук <br> Санкт-Петербургская военно-медицинская
+                                академия, 1995 г. <br>
                                 <br> <span class="research-container__title_bolder">"Комплексное лечение и реабилитация
-                  больных с нарушением
-                  функции тазовых органов при травматической болезни спинного мозга"</span> </h2>
+                                    больных с нарушением
+                                    функции тазовых органов при травматической болезни спинного мозга"</span> </h2>
 
-                            <p class="research-container__paragraph">Исследование посвящено выявлению основных закономерностей применения лечебно-реабилитационных мероприятий, направленных на коррекцию расстройств функции тазовых органов.
+                            <p class="research-container__paragraph">Исследование посвящено выявлению основных
+                                закономерностей применения лечебно-реабилитационных мероприятий, направленных на
+                                коррекцию расстройств функции тазовых органов.
                             </p>
-                            <a class="btn d-inline-flex align-items-center research__btn" href="https://medical-diss.com/medicina/kompleksnoe-lechenie-i-reabilitatsiya-bolnyh-s-narusheniem-funktsii-tazovyh-organov-pri-travmaticheskoy-bolezni-spinnogo-">Ознакомиться
-                &nbsp<i class="fa-solid fa-plus"></i></a>
+                            <a class="btn d-inline-flex align-items-center research__btn"
+                                href="https://medical-diss.com/medicina/kompleksnoe-lechenie-i-reabilitatsiya-bolnyh-s-narusheniem-funktsii-tazovyh-organov-pri-travmaticheskoy-bolezni-spinnogo-">Ознакомиться
+                                &nbsp<i class="fa-solid fa-plus"></i></a>
                         </div>
                         <div class="research-container__img">
                             <img src="assets/img/Diploma1.svg" alt="main page of dissertation" class="research__img">
@@ -620,78 +716,118 @@
 
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
-                  Чем чаще всего обусловлена боль в пояснице и других отделах позвоночника?
-                </button>
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
+                                    aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                                    Чем чаще всего обусловлена боль в пояснице и других отделах позвоночника?
+                                </button>
                             </h2>
-                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="panelsStayOpen-headingOne">
                                 <div class="accordion-body">
                                     Боль в пояснице требует внимательного неврологического осмотра. <strong>Причин её
-                    может быть
-                    несколько.</strong> Это может быть патология дисков, позвонков, связок, паравертебральных (околопозвоночных) мышц, фасеточных суставов, состояние стеноза и нестабильности позвоночника, первичных опухолевых и метастатических процессов,
-                                    специфических и неспецифических бактериальных, грибковых, герпетически(вирусных), посттравматических процессов, заболеваний крови, болезней иммунной системы.
+                                        может быть
+                                        несколько.</strong> Это может быть патология дисков, позвонков, связок,
+                                    паравертебральных (околопозвоночных) мышц, фасеточных суставов, состояние стеноза и
+                                    нестабильности позвоночника, первичных опухолевых и метастатических процессов,
+                                    специфических и неспецифических бактериальных, грибковых, герпетически(вирусных),
+                                    посттравматических процессов, заболеваний крови, болезней иммунной системы.
                                 </div>
                             </div>
                         </div>
 
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                  Каким образом можно уменьшить или ликвидировать болевой синдром в позвоночнике?
-                </button>
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
+                                    aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                    Каким образом можно уменьшить или ликвидировать болевой синдром в позвоночнике?
+                                </button>
                             </h2>
-                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="panelsStayOpen-headingTwo">
                                 <div class="accordion-body">
                                     <strong>Все начинается с осмотра пациента и анализа причин болевого синдрома и
-                    механизмов его
-                    возникновения.</strong> Неврологический осмотр проводится с выявлением симптомов натяжения, триггерных точек, зон, при необходимости проводится дополнительная лабораторная и аппаратная диагностика
-                                    (оак, биохимия крови, термометрия, ретгенография, онкомаркеры, сцинциграфия, мрт, кт). Определяемся с характером патологии и начинаем лечить. Арсенал средств терапии боевого синдрома варьирует в зависимости от причин,
-                                    что повреждено. Вначале проводится ммобилизация проблемного участка позвоночника корсетом, если шейный отдел, - то воротником. Мануальная терапия по показаниям. Различные виды вытяжения (влажное, сухое). Медикаментозные
-                                    средства (НПВС, стероиды, аналгетики, витамины группы В, антиконвульсанты, миорелаксанты, прегабалины. Лечение специфическое основного заболевания, если боль вторичная. АНТИБИОТИКОТЕРАПИЯ, противовирусным терапия при
-                                    герпис зостер. Таблетированные, иньекционнве формы препаратов. Физиотерапевтические процедуры (электрофорез, фонофорез, дарсанваль, магнитотерапия, лазеротерапия..) рефлексотерапия. Хирургические лечение по показаниям.
+                                        механизмов его
+                                        возникновения.</strong> Неврологический осмотр проводится с выявлением симптомов
+                                    натяжения, триггерных точек, зон, при необходимости проводится дополнительная
+                                    лабораторная и аппаратная диагностика
+                                    (оак, биохимия крови, термометрия, ретгенография, онкомаркеры, сцинциграфия, мрт,
+                                    кт). Определяемся с характером патологии и начинаем лечить. Арсенал средств терапии
+                                    боевого синдрома варьирует в зависимости от причин,
+                                    что повреждено. Вначале проводится ммобилизация проблемного участка позвоночника
+                                    корсетом, если шейный отдел, - то воротником. Мануальная терапия по показаниям.
+                                    Различные виды вытяжения (влажное, сухое). Медикаментозные
+                                    средства (НПВС, стероиды, аналгетики, витамины группы В, антиконвульсанты,
+                                    миорелаксанты, прегабалины. Лечение специфическое основного заболевания, если боль
+                                    вторичная. АНТИБИОТИКОТЕРАПИЯ, противовирусным терапия при
+                                    герпис зостер. Таблетированные, иньекционнве формы препаратов. Физиотерапевтические
+                                    процедуры (электрофорез, фонофорез, дарсанваль, магнитотерапия, лазеротерапия..)
+                                    рефлексотерапия. Хирургические лечение по показаниям.
                                 </div>
                             </div>
                         </div>
 
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                  Когда больному показано хирургические лечение диска?
-                </button>
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
+                                    aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    Когда больному показано хирургические лечение диска?
+                                </button>
                             </h2>
-                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="panelsStayOpen-headingThree">
                                 <div class="accordion-body">
-                                    При отсутствии анталогической (противоболевой позы), т.е. болит в любом положении, лежа, стоя, сидя.
-                                    <br> Отсутствие клинического эффекта от консервативной терапии на протяжении 3-х месяцев.
-                                    <br> При остром развитии патологии, которая помимо боли сопровождается острым неврологическим дефицитом, парезом, параличом, тазовыми нарушениями.
+                                    При отсутствии анталогической (противоболевой позы), т.е. болит в любом положении,
+                                    лежа, стоя, сидя.
+                                    <br> Отсутствие клинического эффекта от консервативной терапии на протяжении 3-х
+                                    месяцев.
+                                    <br> При остром развитии патологии, которая помимо боли сопровождается острым
+                                    неврологическим дефицитом, парезом, параличом, тазовыми нарушениями.
                                 </div>
                             </div>
                         </div>
 
                         <div class="accordion-item ">
                             <h2 class="accordion-header" id="panelsStayOpen-headingFour">
-                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
-                  Как быстро можно ликвидировать болевой синдром в позвоночнике?
-                </button>
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour"
+                                    aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                                    Как быстро можно ликвидировать болевой синдром в позвоночнике?
+                                </button>
                             </h2>
-                            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                                aria-labelledby="panelsStayOpen-headingFour">
                                 <div class="accordion-body">
-                                    Быстрота клинического выздоравления, компенсация организма зависит от причины боли. Если это недавно развившийся, свежий рефлекторный болевой синдром при перегрузках позвоночно-двигательных сегментов, то иногда бывает достаточно одного сеанса с включением
-                                    мануальной, рефлексотерапия и фиксации проблемного сегмента позвоночника. Если это дискогенный процесс, то это более длительный процесс лечения, когда надо проводить несколько сеансов. Если это специфический деструктивный
-                                    процесс позвоночника с вторичным болевым синдромом, то лечение удлинняетя и проводится, как правило, в специализированном стационаре с применением специфической терапии.
+                                    Быстрота клинического выздоравления, компенсация организма зависит от причины боли.
+                                    Если это недавно развившийся, свежий рефлекторный болевой синдром при перегрузках
+                                    позвоночно-двигательных сегментов, то иногда бывает достаточно одного сеанса с
+                                    включением
+                                    мануальной, рефлексотерапия и фиксации проблемного сегмента позвоночника. Если это
+                                    дискогенный процесс, то это более длительный процесс лечения, когда надо проводить
+                                    несколько сеансов. Если это специфический деструктивный
+                                    процесс позвоночника с вторичным болевым синдромом, то лечение удлинняетя и
+                                    проводится, как правило, в специализированном стационаре с применением специфической
+                                    терапии.
                                 </div>
                             </div>
                         </div>
 
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="panelsStayOpen-headingFive">
-                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
-                  Насколько оправдана фиксация позвоночника корсетом при боли?
-                </button>
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive"
+                                    aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                                    Насколько оправдана фиксация позвоночника корсетом при боли?
+                                </button>
                             </h2>
-                            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+                            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+                                aria-labelledby="panelsStayOpen-headingFive">
                                 <div class="accordion-body">
-                                    Иммобилизация корсетом, воротникоми, покой позвоночника на уровне боли оправдано и физиологично для организма. Время фиксации и ее кратность в течение дня определяется врачом, исходя из динамики клинической картины.
+                                    Иммобилизация корсетом, воротникоми, покой позвоночника на уровне боли оправдано и
+                                    физиологично для организма. Время фиксации и ее кратность в течение дня определяется
+                                    врачом, исходя из динамики клинической картины.
                                 </div>
                             </div>
 
@@ -710,7 +846,8 @@
 
 
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
         </script>
 </body>
 
