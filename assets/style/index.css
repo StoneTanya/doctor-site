@@ -136,6 +136,8 @@
 /* styles to "tab block (patent, cert and research)" */
 .tabs-block {
   background: #177165;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .tabs-block__title {
@@ -298,6 +300,10 @@
 
 .patent {
   padding-bottom: 2%;
+}
+
+.patent-block {
+  padding-bottom: 0;
 }
 
 .patent__title {
@@ -594,7 +600,8 @@ nav,
 
 /*styles to "FAQ" */
 .container-faq {
-  padding: 0;
+  padding-top: 3%;
+  padding-bottom: 2%;
 }
 
 .faq {
@@ -609,10 +616,10 @@ nav,
 
 .h1-faq {
   font-size: 2rem;
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
   color: #177165;
   text-align: center;
+  font-family: "Playfair Display", serif;
 }
 
 .accordion-button:not(.collapsed) {

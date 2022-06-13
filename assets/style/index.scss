@@ -151,6 +151,8 @@ $text-size: 1.2rem;
 /* styles to "tab block (patent, cert and research)" */
 .tabs-block {
     background: $primary-color;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .tabs-block__title {
@@ -289,6 +291,10 @@ $text-size: 1.2rem;
     padding-bottom: 2%;
 }
 
+.patent-block {
+    padding-bottom: 0;
+}
+
 .patent__title {
     font-family: $font-main;
     color: $primary-color;
@@ -342,7 +348,6 @@ $text-size: 1.2rem;
     max-width: 100%;
     border-radius: 5px;
 }
-
 
 .research-container__title_bolder {
     font-weight: bolder;
@@ -571,7 +576,8 @@ nav,
 /*styles to "FAQ" */
 
 .container-faq {
-    padding: 0;
+    padding-top: 3%;
+    padding-bottom: 2%;
 }
 
 .faq {
@@ -585,12 +591,11 @@ nav,
 }
 
 .h1-faq {
-    font-size: 2rem;
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
+    font-size: $sub-title-size;
+    padding-bottom: 2.5rem;
     color: $primary-color;
-    text-align: center;
-
+    text-align: center; 
+    font-family: $font-main;
 }
 
 .accordion-button:not(.collapsed) {
