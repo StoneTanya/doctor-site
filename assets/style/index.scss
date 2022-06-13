@@ -11,6 +11,9 @@ $btn-border: 2px solid $primary-color;
 $font-size-for-common-text: 1.5rem;
 $margin-top-about-me:2.5rem;
 $margin-bottom-about-me: 2.5rem;
+$title-size: 3rem;
+$sub-title-size: 2rem;
+$text-size: 1.2rem;
 
 /* сюда добавим общие для страницы стили*/
 
@@ -33,7 +36,8 @@ $margin-bottom-about-me: 2.5rem;
     background-color: $background;
 }
 
-.work {
+.workk {
+    background-color: #E1F4F2;
     margin-bottom: 2vh;
     margin-top: 5vh;
 }
@@ -278,11 +282,17 @@ $margin-bottom-about-me: 2.5rem;
 
 .tabs-block {
     background: $primary-color;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .tabs-block__title {
     font-family: $font-main;
+
     font-size: 2rem;
+
+    font-size: $sub-title-size;
+
     color: $primary-color;
     text-align: center;
     color: $title-color;
@@ -413,10 +423,19 @@ $margin-bottom-about-me: 2.5rem;
 
 .patent {
     padding-bottom: 2%;
+
     .patent__title {
         font-family: $font-main;
         color: $primary-color;
-    }
+  }
+
+.patent-block {
+    padding-bottom: 0;
+}
+
+.patent__title {
+    font-family: $font-main;
+    color: $primary-color;
 }
 
 .patent__discription,
@@ -454,8 +473,19 @@ $margin-bottom-about-me: 2.5rem;
 
 .cert-container {
     padding-top: 2%;
+    img {
+        width: 30%; 
+        height: 25%
+        }
+}
+.modal-body {
+    img {
+        width: 100%;
+        height: 50%;
+    }
 }
 
+/*style for research*/
 .research__img {
     max-width: 100%;
     border-radius: 5px;
@@ -479,6 +509,10 @@ $margin-bottom-about-me: 2.5rem;
     margin-bottom: $margin-bottom-about-me;
 }
 
+.img-aboutme__block {
+    padding: 0;
+}
+
 .h1-aboutme {
     font-size: 2.5rem;
     margin-top: $margin-top-about-me;
@@ -487,7 +521,7 @@ $margin-bottom-about-me: 2.5rem;
 }
 
 .p-aboutme {
-    font-size: $font-size-for-common-text;
+    font-size: 1.2rem;
     color: $text;
     font-family: $font-other;
 }
@@ -599,10 +633,16 @@ nav,
     color: $title-color;
 }
 
+.doctor-icon {
+    padding-right: 0.4vw;
+}
+
 .logo {
     padding-top: 20px;
+    padding-left: 3vw;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 1.3rem;
+    font-family: $font-other;
 }
 
 .menu__list {
@@ -612,6 +652,8 @@ nav,
 .menu__item {
     display: inline-block;
     margin-right: 29px;
+    font-size: 0.5rem;
+    font-family: $font-other;
 }
 
 .menu__link {
@@ -623,6 +665,7 @@ nav,
 
 .header__button {
     display: flex;
+    font-size: 0.8rem;
 }
 
 .header_blue__button {
@@ -630,9 +673,15 @@ nav,
     white-space: nowrap;
     text-align: center;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 1.2rem;
     text-decoration: none;
-    padding-top: 20px;
+}
+
+
+.telegram-icon {
+    font-size: 2rem;
+    padding-right: 0.7rem;
+
 }
 
 .header_blue__button:hover {
@@ -641,7 +690,6 @@ nav,
 }
 
 .header__menu {
-    display: flex;
     justify-content: space-between;
 }
 
@@ -683,19 +731,28 @@ nav,
 }
 
 
-/*styles to "FAQ" */
+.container-faq {
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+
+.faq {
+    margin-bottom: 3rem;
+}
+
 
 .accordion {
-    font-family: $font-main;
+    font-family: $font-other;
     font-size: 1rem;
+    padding: 0;
 }
 
 .h1-faq {
-    font-size: 2rem;
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
+    font-size: $sub-title-size;
+    padding-bottom: 2.5rem;
     color: $primary-color;
-    text-align: center;
+    text-align: center; 
+    font-family: $font-main;
 }
 
 .accordion-button:not(.collapsed) {

@@ -18,7 +18,10 @@
   background-color: #E1F4F2;
 }
 
+
 .work {
+  background-color: #E1F4F2;
+
   margin-bottom: 2vh;
   margin-top: 5vh;
 }
@@ -131,126 +134,16 @@
   margin-left: 5%;
 }
 
-/*КОНЕЦ блоков об учебе и работе */
-/* styles to "cases"*/
-.container-cases {
-  font: 100% "Playfair Display", serif;
-}
 
-.container-cases__title {
-  font-size: 2.5rem;
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-  color: #177165;
-}
-
-.cases-card {
-  width: 540px;
-  height: 451px;
-  background: #E1F4F2;
-  padding: 18px;
-}
-
-.carousel-cell {
-  width: 45%;
-  margin-right: 10px;
-  border-radius: 2px;
-  background: #E1F4F2;
-}
-
-.carousel {
-  margin-bottom: 20px;
-}
-
-/* PC */
-@media (max-width: 1087px) {
-  .container-cases__title {
-    font-size: 1.5rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-  .cases-card__title {
-    font-size: 1.5rem;
-  }
-  .cases-card__text {
-    font-size: 0.9rem;
-  }
-  .cases-card {
-    width: 300px;
-  }
-  .carousel-cell {
-    width: 320px;
-  }
-}
-
-/* TABLET */
-@media (max-width: 991.98px) {
-  .container-cases__title {
-    font-size: 1.5rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-  .cases-card__title {
-    font-size: 1.5rem;
-  }
-  .cases-card__text {
-    font-size: 0.9rem;
-  }
-  .cases-card {
-    width: 300px;
-  }
-  .carousel-cell {
-    width: 320px;
-  }
-}
-
-/* MOBILE */
-@media (max-width: 767.98px) {
-  .container-cases__title {
-    font-size: 1.5rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-  .cases-card__title {
-    font-size: 1.5rem;
-  }
-  .cases-card__text {
-    font-size: 0.9rem;
-  }
-  .cases-card {
-    width: 300px;
-  }
-  .carousel-cell {
-    width: 320px;
-  }
-}
-
-/* MOBILE SMALL */
-@media (max-width: 479.98px) {
-  .container-cases__title {
-    font-size: 1rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-  .cases-card__title {
-    font-size: 1.5rem;
-  }
-  .cases-card__text {
-    font-size: 0.9rem;
-  }
-  .cases-card {
-    width: 300px;
-  }
-  .carousel-cell {
-    width: 320px;
-  }
-}
-
-/* "cases" styles end /
 
 /* styles to "tab block (patent, cert and research)" */
 .tabs-block {
   background: #177165;
+/* styles to "tab block (patent, cert and research)" */
+.tabs-block {
+  background: #177165;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .tabs-block__title {
@@ -413,9 +306,16 @@
 
 .patent {
   padding-bottom: 2%;
+
 }
 
-.patent .patent__title {
+
+.patent-block {
+  padding-bottom: 0;
+}
+
+.patent__title {
+
   font-family: "Playfair Display", serif;
   color: #177165;
 }
@@ -453,6 +353,17 @@
   padding-top: 2%;
 }
 
+.cert-container img {
+  width: 30%;
+  height: 25%;
+}
+
+.modal-body img {
+  width: 100%;
+  height: 50%;
+}
+
+/*style for research*/
 .research__img {
   max-width: 100%;
   border-radius: 5px;
@@ -474,6 +385,10 @@
   margin-bottom: 2.5rem;
 }
 
+.img-aboutme__block {
+  padding: 0;
+}
+
 .h1-aboutme {
   font-size: 2.5rem;
   margin-top: 2.5rem;
@@ -482,7 +397,8 @@
 }
 
 .p-aboutme {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+
   color: #777777;
   font-family: "Roboto", sans-serif;
 }
@@ -598,10 +514,18 @@ nav,
   color: #fff;
 }
 
+.doctor-icon {
+  padding-right: 0.4vw;
+}
+
 .logo {
   padding-top: 20px;
   text-decoration: none;
   font-size: 30px;
+  padding-left: 3vw;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-family: "Roboto", sans-serif;
 }
 
 .menu__list {
@@ -611,6 +535,8 @@ nav,
 .menu__item {
   display: inline-block;
   margin-right: 29px;
+  font-size: 0.5rem;
+  font-family: "Roboto", sans-serif;
 }
 
 .menu__link {
@@ -636,6 +562,23 @@ nav,
   font-size: 25px;
   text-decoration: none;
   padding-top: 20px;
+  font-size: 0.8rem;
+}
+
+.header_blue__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  white-space: nowrap;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.telegram-icon {
+  font-size: 2rem;
+  padding-right: 0.7rem;
 }
 
 .header_blue__button:hover {
@@ -693,9 +636,23 @@ nav,
 }
 
 /*styles to "FAQ" */
+
 .accordion {
   font-family: "Playfair Display", serif;
   font-size: 1rem;
+.container-faq {
+  padding-top: 3%;
+  padding-bottom: 2%;
+}
+
+.faq {
+  margin-bottom: 3rem;
+}
+
+.accordion {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  padding: 0;
 }
 
 .h1-faq {
@@ -704,6 +661,10 @@ nav,
   margin-bottom: 2.5rem;
   color: #177165;
   text-align: center;
+  padding-bottom: 2.5rem;
+  color: #177165;
+  text-align: center;
+  font-family: "Playfair Display", serif;
 }
 
 .accordion-button:not(.collapsed) {
