@@ -1,4 +1,41 @@
 @charset "UTF-8";
+/* Прелоадер для сайта*/
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  /* фоновый цвет */
+  background: white;
+  z-index: 1001;
+}
+
+.preloader__image {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
+  -webkit-animation: preloader-rotate 2s infinite linear;
+          animation: preloader-rotate 2s infinite linear;
+}
+
+.loaded_hiding .preloader {
+  -webkit-transition: 0.3s opacity;
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
+
+/* Прелоадер для сайта*/
 /* сюда добавим общие для страницы стили*/
 *,
 *:before,
@@ -132,6 +169,122 @@
 }
 
 /*КОНЕЦ блоков об учебе и работе */
+/* styles to "cases"*/
+.container-cases {
+  font: 100% "Playfair Display", serif;
+}
+
+.container-cases__title {
+  font-size: 2.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  color: #177165;
+}
+
+.cases-card {
+  width: 540px;
+  height: 451px;
+  background: #E1F4F2;
+  padding: 18px;
+}
+
+.carousel-cell {
+  width: 45%;
+  margin-right: 10px;
+  border-radius: 2px;
+  background: #E1F4F2;
+}
+
+.carousel {
+  margin-bottom: 20px;
+}
+
+/* PC */
+@media (max-width: 1087px) {
+  .container-cases__title {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .cases-card__title {
+    font-size: 1.5rem;
+  }
+  .cases-card__text {
+    font-size: 0.9rem;
+  }
+  .cases-card {
+    width: 300px;
+  }
+  .carousel-cell {
+    width: 320px;
+  }
+}
+
+/* TABLET */
+@media (max-width: 991.98px) {
+  .container-cases__title {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .cases-card__title {
+    font-size: 1.5rem;
+  }
+  .cases-card__text {
+    font-size: 0.9rem;
+  }
+  .cases-card {
+    width: 300px;
+  }
+  .carousel-cell {
+    width: 320px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 767.98px) {
+  .container-cases__title {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .cases-card__title {
+    font-size: 1.5rem;
+  }
+  .cases-card__text {
+    font-size: 0.9rem;
+  }
+  .cases-card {
+    width: 300px;
+  }
+  .carousel-cell {
+    width: 320px;
+  }
+}
+
+/* MOBILE SMALL */
+@media (max-width: 479.98px) {
+  .container-cases__title {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .cases-card__title {
+    font-size: 1.5rem;
+  }
+  .cases-card__text {
+    font-size: 0.9rem;
+  }
+  .cases-card {
+    width: 300px;
+  }
+  .carousel-cell {
+    width: 320px;
+  }
+}
+
+/* "cases" styles end /
+
 /* styles to "tab block (patent, cert and research)" */
 .tabs-block {
   background: #177165;
@@ -304,11 +457,6 @@
   color: #177165;
 }
 
-.patent__title {
-  font-family: "Playfair Display", serif;
-  color: #177165;
-}
-
 .patent__discription,
 .research-container__paragraph {
   font-family: "Roboto", sans-serif;
@@ -375,14 +523,14 @@
 }
 
 .h1-aboutme {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
   color: #177165;
 }
 
 .p-aboutme {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #777777;
   font-family: "Roboto", sans-serif;
 }
@@ -393,6 +541,7 @@
   font-family: "Playfair Display", serif;
   margin-top: 7vh;
   margin-bottom: 25vh;
+  text-align: left;
 }
 
 .container-workareas__topblock {
@@ -408,6 +557,7 @@
   position: relative;
   margin-top: -5%;
   z-index: 2;
+  margin-bottom: 3vh;
 }
 
 .container-workareas__card {
@@ -441,11 +591,11 @@ nav,
 }
 
 .header-block_title {
-  font-size: 50px;
-  line-height: 50px;
+  font-size: 3rem;
   color: #fff;
-  margin: 30px 20px 30px 40px;
+  margin: 6vh 3vw 4vh 5vw;
   font-family: "Playfair Display", serif;
+  line-height: 8vh;
 }
 
 .info-list,
@@ -456,14 +606,14 @@ nav,
 }
 
 .info-list {
-  font-size: 25px;
-  margin: 70px 20px 30px 40px;
+  font-size: 1.2rem;
+  margin: 7vh 3vw 5vh 5vw;
   font-family: "Roboto", sans-serif;
 }
 
 .header-photo {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 95%;
+  max-height: 120%;
 }
 
 .header-menu {
@@ -477,7 +627,6 @@ nav,
           justify-content: space-between;
   margin-top: 27px auto;
   padding: 0px 30px;
-  background-color: #195f56;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
@@ -499,9 +648,14 @@ nav,
 }
 
 .logo {
-  padding-top: 20px;
+  padding-left: 3vw;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 1rem;
+}
+
+.logo-icon {
+  font-size: 2rem;
+  padding-right: 0.5vw;
 }
 
 .menu__list {
@@ -510,30 +664,18 @@ nav,
 
 .menu__item {
   display: inline-block;
-  margin-right: 29px;
 }
 
 .menu__link {
   display: block;
-  font-weight: 400;
-  font-size: 20px;
+  font-size: 0.8rem;
   text-decoration: none;
 }
 
-.header__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .header_blue__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   white-space: nowrap;
   text-align: center;
-  font-weight: 400;
-  font-size: 25px;
+  font-size: 1rem;
   text-decoration: none;
   padding-top: 20px;
 }
@@ -541,6 +683,11 @@ nav,
 .header_blue__button:hover {
   color: #fff;
   opacity: .75;
+}
+
+#telegram-icon {
+  font-size: 2.5rem;
+  padding-right: 0.8vw;
 }
 
 .header__menu {
@@ -573,7 +720,7 @@ nav,
 .footer-title {
   font-family: "Playfair Display", serif;
   color: #fff;
-  font-size: 50px;
+  font-size: 2rem;
   width: 700px;
 }
 
