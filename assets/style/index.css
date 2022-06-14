@@ -384,7 +384,7 @@
 }
 
 .nav .nav-link:hover {
-  color: #a0b6b3;
+  color: #0f705b;
 }
 
 .nav .nav-link.active::before {
@@ -408,7 +408,6 @@
 
 .nav .nav-link.active,
 .nav .nav-link.active:hover {
-  background-color: var(#E1F4F2);
   color: #177165;
 }
 
@@ -416,20 +415,6 @@
   font-size: 1.3em;
   display: block;
   margin: 0 0 0.35em;
-  opacity: 0;
-  -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
-  transition: opacity 0.2s, -webkit-transform 0.2s;
-  transition: transform 0.2s, opacity 0.2s;
-  transition: transform 0.2s, opacity 0.2s, -webkit-transform 0.2s;
-  -webkit-transform: translate3d(0, -100px, 0);
-          transform: translate3d(0, -100px, 0);
-  pointer-events: none;
-}
-
-.nav .nav-link.active i {
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
 }
 
 .patent__btn,
@@ -445,7 +430,8 @@
 
 .patent__btn:hover,
 .research__btn:hover {
-  font-size: 1rem;
+  background-color: #A4D6CF;
+  border: none;
 }
 
 .patent {
@@ -520,6 +506,10 @@
   max-height: 100%;
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
+}
+
+.img-aboutme__block {
+  padding-left: 0;
 }
 
 .h1-aboutme {
@@ -633,7 +623,7 @@ nav,
 }
 
 .header-menu ul li {
-  margin-right: 29px;
+  margin-right: 3%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
