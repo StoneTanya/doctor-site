@@ -1,7 +1,5 @@
-$font-main:'Playfair Display',
-serif;
-$font-other: 'Roboto',
-sans-serif;
+$font-main:'Playfair Display', serif;
+$font-other: 'Roboto', sans-serif;
 $primary-color: #177165;
 $background: #E1F4F2;
 $text: #777777;
@@ -49,8 +47,6 @@ $subtitle-size: 2rem;
 .loaded .preloader {
     display: none;
 }
-
-
 /* Прелоадер для сайта*/
 
 
@@ -324,7 +320,7 @@ $subtitle-size: 2rem;
 
 .tabs-block__title {
     font-family: $font-main;
-    font-size: 2rem;
+    font-size: $subtitle-size;
     color: $primary-color;
     text-align: center;
     color: $title-color;
@@ -400,7 +396,7 @@ $subtitle-size: 2rem;
 }
 
 .nav .nav-link:hover {
-    color: #a0b6b3;
+    color: #0f705b;
 }
 
 .nav .nav-link.active::before {
@@ -420,23 +416,13 @@ $subtitle-size: 2rem;
 
 .nav .nav-link.active,
 .nav .nav-link.active:hover {
-    background-color: var(#E1F4F2);
-    color: #177165;
+    color: $primary-color;
 }
 
 .nav i {
     font-size: 1.3em;
     display: block;
     margin: 0 0 0.35em;
-    opacity: 0;
-    transition: transform 0.2s, opacity 0.2s;
-    transform: translate3d(0, -100px, 0);
-    pointer-events: none;
-}
-
-.nav .nav-link.active i {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
 }
 
 .patent__btn,
@@ -449,7 +435,8 @@ $subtitle-size: 2rem;
     margin-top: 5%;
     margin-left: 5%;
     &:hover {
-        font-size: 1rem;
+        background-color: $paragraph;
+        border: none;
     }
 }
 
@@ -533,7 +520,9 @@ $subtitle-size: 2rem;
     margin-top: $margin-top-about-me;
     margin-bottom: $margin-bottom-about-me;
 }
-
+.img-aboutme__block {
+    padding-left: 0;
+}
 .h1-aboutme {
     font-size: $subtitle-size;
     margin-top: $margin-top-about-me;
