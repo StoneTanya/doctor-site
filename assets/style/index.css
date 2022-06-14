@@ -571,7 +571,7 @@
 
 /* styles to "header" */
 nav,
-.header-block {
+.header-block, .dropdown-menu {
   background-color: #177165;
   font-family: "Roboto", sans-serif;
 }
@@ -591,7 +591,8 @@ nav,
 .info-list,
 .logo,
 .menu__link,
-.header_blue__button {
+.header_blue__button,
+.dropdown-item {
   color: #A4D6CF;
 }
 
@@ -607,11 +608,14 @@ nav,
 }
 
 .header-menu {
-  position: relative;
   z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -620,13 +624,6 @@ nav,
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-}
-
-.header-menu ul li {
-  margin-right: 3%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .menu__link:hover,
@@ -638,7 +635,6 @@ nav,
 }
 
 .logo {
-  padding-left: 3vw;
   text-decoration: none;
   font-size: 1rem;
 }
@@ -650,14 +646,27 @@ nav,
 
 .menu__list {
   padding-top: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .menu__item {
-  display: inline-block;
+  list-style-type: none;
 }
 
-.menu__link {
-  display: block;
+.menu__link, .dropdown-item {
   font-size: 0.8rem;
   text-decoration: none;
 }
@@ -678,19 +687,6 @@ nav,
 #telegram-icon {
   font-size: 2.5rem;
   padding-right: 0.8vw;
-}
-
-.header__menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.header__menu ul li {
-  margin-right: 29px;
 }
 
 /* styles to "footer" */
