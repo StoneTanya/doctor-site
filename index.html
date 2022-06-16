@@ -76,17 +76,19 @@
             </nav>
             <div class="container header-block">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                         <h1 class="header-block_title">
                             Помогаю людям адаптироваться и восстанавливаться после серьёзных травм
                         </h1>
                         <ul class="info-list">
-                            <li>Невролог высшей категории, мануальный терапевт, кандидат медицинских наук</li>
-                            <li>Имею практический опыт в нейрохирургии</li>
-                            <li>Консультирую в Москве</li>
+                            <li> <i class="fa-solid fa-circle-check"></i> Невролог высшей категории </li>
+                            <li> <i class="fa-solid fa-circle-check"></i> Мануальный терапевт</li>
+                            <li> <i class="fa-solid fa-circle-check"></i> Кандидат медицинских наук</li>
+                            <li> <i class="fa-solid fa-circle-check"></i> Имею практический опыт в нейрохирургии</li>
+                            <li> <i class="fa-solid fa-circle-check"></i> Консультирую в Москве</li>
                         </ul>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                         <img class="header-photo" src="assets/pictures/header_main.jpg" alt="doctor" alt="doctor">
                     </div>
                 </div>
@@ -98,10 +100,10 @@
         <!-- about me block   -->
         <div class="container container-aboutme" id="about_me">
             <div class="row d-flex wrap justify-content-between">
-                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 img-aboutme__block">
+                <div class="col-12 col-md-6 img-aboutme__block">
                     <img class="img-aboutme" src="assets/pictures/about_me.png" alt="Sergey Fomchenkov">
                 </div>
-                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <div class="col-12 col-md-6">
                     <h1 class="h1-aboutme">Лечить людей — у меня в генах</h1>
                     <p class="p-aboutme">Я родился в Смоленске в 1961 году в семье военных врачей. Моя жена —
                         врач-невролог, а дочь — клинический ординатор.</p>
@@ -862,44 +864,32 @@
         <footer class="footer">
             <div class="container">
                 <div class="d-flex justify-content-around">
-                    <ul class="footer-menu flex-column">
-                        <li class="menu__item">
-                            <a class="menu__link" data-bs-toggle="collapse" href="#collapseFooter" role="button"
-                                aria-expanded="false" aria-controls="collapseFooter">
-                                Обо мне
-                            </a>
-                        </li>
-                        <div class="collapse collapse-horizontal" id="collapseFooter">
-                            <div class="card card-body  footer-collapse">
-                                <ul>
-                                    <li class="menu__item"><a class="menu__link" href="#education">Образование</a></li>
-                                    <li class="menu__item"><a class="menu__link" href="#career">Карьерный путь</a></li>
-                                    <li class="menu__item"><a class="menu__link" href="#patents">Патенты</a></li>
-                                    <li class="menu__item"><a class="menu__link" href="#patents">Дипломы и сертификаты</a></li>
-                                    <li class="menu__item"><a class="menu__link" href="#patents">Исследования</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <li class="menu__item">
-                            <a href="#cases" class="menu__link">Случаи из практики</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#workareas" class="menu__link">Патенты</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#contacts" class="menu__link">Сертификаты</a>
-                        </li>
+                    
+                    <ul class="footer-menu d-flex flex-wrap justify-content-between">
+                    <div class="footer-menu__col">
+                        <li class="menu__item"> <i class="fa-solid fa-angles-right"></i> &nbsp; <a class="menu__link" href="#about_me">Обо мне</a></li>
+                        <li class="menu__item"> <i class="fa-solid fa-angles-right"></i> &nbsp; <a class="menu__link" href="#education">Образование</a></li>
+                        <li class="menu__item"> <i class="fa-solid fa-angles-right"></i> &nbsp; <a class="menu__link" href="#career">Карьерный путь</a></li>
+                        <li class="menu__item"> <i class="fa-solid fa-angles-right"></i> &nbsp; <a href="#cases" class="menu__link">Случаи из практики</a></li>
+
+                    </div>
+                    <div class="footer-menu__col">
+                        <li class="menu__item"> <i class="fa-solid fa-angles-right"></i> &nbsp; <a href="#workareas" class="menu__link">Услуги</a></li>
+                        <li class="menu__item"> <i class="fa-solid fa-angles-right"></i> &nbsp; <a class="menu__link" href="#patents">Патенты</a></li>
+                        <li class="menu__item"> <i class="fa-solid fa-angles-right"></i> &nbsp; <a class="menu__link" href="#patents">Дипломы и сертификаты</a></li>
+                        <li class="menu__item"> <i class="fa-solid fa-angles-right"></i> &nbsp; <a class="menu__link" href="#patents">Исследования</a></li>
+                    </div>
                     </ul>
 
                     <div class="footer-contacts text-center" id="contacts">
-                        <i class="fa-solid fa-user-doctor logo-icon logo-icon__footer"> &nbsp; Сергей Фомченков</i> 
-                        <a href="#" class="footer__button"><i class="fa-brands fa-telegram"
-                                id="telegram-icon"></i>Обращайтесь за консультацией в Телеграмм</a>
+                        <i class="fa-solid fa-user-doctor  logo-icon logo-icon__footer"> &nbsp; Сергей Фомченков</i>
+                        <div class="d-flex flex-column wrap align-items-center"> 
+                        <a href="#" class="footer__button"><i class="fa-brands fa-telegram footer-contacts__icon"></i>Телеграмм</a>
+                        <a href="#" class="footer__button"><i class="fa-solid fa-envelope footer-contacts__icon"></i>fom_sw1@mail.ru</a>
+                        <p class="footer__clock"><i class="fa-solid fa-clock footer-contacts__icon"></i>Пн.-Пт. 10:00 - 19:00 мск</p>
                     </div>
-                </div>
-        </footer>
-
-
+                    </div>
+        
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
         </script>

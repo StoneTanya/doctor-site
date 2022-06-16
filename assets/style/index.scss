@@ -9,8 +9,9 @@ $btn-border: 2px solid $primary-color;
 $font-size-for-common-text: 1.2rem;
 $margin-top-about-me:2.5rem;
 $margin-bottom-about-me: 2.5rem;
-$title-size: 3rem;
+$title-size: 2.8rem;
 $subtitle-size: 2rem;
+$menu-size: 1rem;
 
 
 /* Прелоадер для сайта*/
@@ -544,8 +545,6 @@ $subtitle-size: 2rem;
 
 /* styles to "workareas" */
 
-
-
 .container-workareas__title {
     color: white;
     font-family: $font-main;
@@ -593,36 +592,34 @@ $subtitle-size: 2rem;
 /* styles to "header" and footer*/
 
 nav,
-.header-block, .footer-menu, .dropdown-menu, .footer-collapse {
+.header-block, .footer-menu, .dropdown-menu {
     background-color: $primary-color;
     font-family: $font-other;
-    
 }
 
 .header-block {
-    padding: 30px;
+    padding-top: 3%;
 }
 
 .header-block_title {
     font-size: $title-size;
     color: $title-color;
-    margin: 6vh 3vw 4vh 5vw;
+    margin: 3vh 3vw 4vh 5vw;
     font-family: $font-main;
-    line-height: 8vh;
+    line-height: 120%;
 }
 
 .info-list,
-.logo,
 .menu__link,
-.header_blue__button,
-.dropdown-item {
+.header_blue__button, .dropdown-item {
     color: $paragraph;
 }
 
 
+
 .info-list {
     font-size: $font-size-for-common-text;
-    margin: 7vh 3vw 5vh 5vw;
+    margin: 5vh 3vw 5vh 5vw;
     font-family: $font-other;
 }
 
@@ -635,7 +632,7 @@ nav,
 .header-menu {
     z-index: 2;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-between;
     margin-top: 27px auto;
     padding: 0px 30px;
@@ -653,7 +650,7 @@ nav,
 
 .logo {
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .logo-icon {
@@ -670,20 +667,25 @@ nav,
     align-items: baseline;
 }
 
-.menu__item {
+.menu__item, .info-list {
     list-style-type: none;
+    margin-bottom: 3%;
 }
 
-.menu__link, .dropdown-item {
-    font-size: 0.8rem;
+.info-list {
+    text-indent: -0.5em;
+} 
+
+.menu__link {
+    font-size: $menu-size;
     text-decoration: none;
 }
 
 
-.header_blue__button, .footer__button {
+.header_blue__button, .footer__button, .footer__clock {
     white-space: nowrap;
     text-align: center;
-    font-size: 1rem;
+    font-size: $menu-size;
     text-decoration: none;
     padding-top: 20px;
 }
@@ -693,9 +695,10 @@ nav,
     opacity: .75;
 }
 
-#telegram-icon {
+#telegram-icon, .footer-contacts__icon {
     font-size: 2.5rem;
     padding-right: 0.8vw;
+    color: $paragraph;
 }
 
 
@@ -704,44 +707,46 @@ nav,
 .footer {
     background-color: $primary-color;
     padding: 80px 0px;
+    margin-top: 7%;
 }
+
 .footer-menu {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
     padding-top: 1%;
     padding-bottom:  1%;
+    li {
+        text-indent: -0.5em;
+    }
+}
+.footer-menu__col {
+    margin-right: 25px;
 }
 
 .footer-contacts {
-    padding: 5% 5%;
+    padding: 2% 2%;
     background-color: #23786D;
     max-width: 30%;
+    a, p {
+        color: #fff;
+    }
+    i {
+        padding-left: 0;
+    }
 }
 
-.footer-button {
-    background-color: #23786D;
-    border: 1px;
-    width: 400px;
-    height: 98px;
-    color: $title-color;
-    font-size: 25px;
-    font-family: $font-other;
-}
 
 .footer-button:hover {
     opacity: 1.75;
     background-color: #389084;
 }
 
-.footer-collapse {
-    border: none;   
+
+.logo-icon__footer, .logo {
+    color: white;
 }
 
-.logo-icon__footer, .logo-footer {
-    color: white;
-    
-}
-.logo-footer {
+.logo-footer, .logo {
     font-family: $font-main;
     text-decoration: none;
 }
