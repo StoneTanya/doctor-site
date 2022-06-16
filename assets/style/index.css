@@ -569,9 +569,9 @@
   color: #177165;
 }
 
-/* styles to "header" */
+/* styles to "header" and footer*/
 nav,
-.header-block, .dropdown-menu {
+.header-block, .footer-menu, .dropdown-menu, .footer-collapse {
   background-color: #177165;
   font-family: "Roboto", sans-serif;
 }
@@ -671,7 +671,7 @@ nav,
   text-decoration: none;
 }
 
-.header_blue__button {
+.header_blue__button, .footer__button {
   white-space: nowrap;
   text-align: center;
   font-size: 1rem;
@@ -679,7 +679,7 @@ nav,
   padding-top: 20px;
 }
 
-.header_blue__button:hover {
+.header_blue__button:hover, .footer__button:hover {
   color: #fff;
   opacity: .75;
 }
@@ -692,22 +692,20 @@ nav,
 /* styles to "footer" */
 .footer {
   background-color: #177165;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   padding: 80px 0px;
 }
 
-.footer-title {
-  font-family: "Playfair Display", serif;
-  color: #fff;
-  font-size: 2rem;
-  width: 700px;
+.footer-menu {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.footer-contacts {
+  padding: 5% 5%;
+  background-color: #23786D;
+  max-width: 30%;
 }
 
 .footer-button {
@@ -723,6 +721,19 @@ nav,
 .footer-button:hover {
   opacity: 1.75;
   background-color: #389084;
+}
+
+.footer-collapse {
+  border: none;
+}
+
+.logo-icon__footer, .logo-footer {
+  color: white;
+}
+
+.logo-footer {
+  font-family: "Playfair Display", serif;
+  text-decoration: none;
 }
 
 /*styles to "FAQ" */

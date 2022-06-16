@@ -583,10 +583,10 @@ $subtitle-size: 2rem;
 }
 
 
-/* styles to "header" */
+/* styles to "header" and footer*/
 
 nav,
-.header-block, .dropdown-menu {
+.header-block, .footer-menu, .dropdown-menu, .footer-collapse {
     background-color: $primary-color;
     font-family: $font-other;
     
@@ -673,7 +673,7 @@ nav,
 }
 
 
-.header_blue__button {
+.header_blue__button, .footer__button {
     white-space: nowrap;
     text-align: center;
     font-size: 1rem;
@@ -681,7 +681,7 @@ nav,
     padding-top: 20px;
 }
 
-.header_blue__button:hover {
+.header_blue__button:hover, .footer__button:hover {
     color: $title-color;
     opacity: .75;
 }
@@ -692,23 +692,23 @@ nav,
 }
 
 
-
-
 /* styles to "footer" */
 
 .footer {
     background-color: $primary-color;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     padding: 80px 0px;
 }
+.footer-menu {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+    padding-bottom:  1%;
+}
 
-.footer-title {
-    font-family: $font-main;
-    color: $title-color;
-    font-size: $subtitle-size;
-    width: 700px;
+.footer-contacts {
+    padding: 5% 5%;
+    background-color: #23786D;
+    max-width: 30%;
 }
 
 .footer-button {
@@ -726,6 +726,18 @@ nav,
     background-color: #389084;
 }
 
+.footer-collapse {
+    border: none;   
+}
+
+.logo-icon__footer, .logo-footer {
+    color: white;
+    
+}
+.logo-footer {
+    font-family: $font-main;
+    text-decoration: none;
+}
 
 /*styles to "FAQ" */
 
