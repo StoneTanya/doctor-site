@@ -57,7 +57,7 @@
 
 .work {
   margin-bottom: 2vh;
-  margin-top: 5vh;
+  margin-top: 20vh;
 }
 
 .work-row {
@@ -564,12 +564,8 @@
   font-family: "Roboto", sans-serif;
 }
 
-.container-workareas__card:hover {
-  border: 3px solid #413f3f;
-}
-
 .workareas-icon {
-  margin-top: 2vw;
+  margin-top: 2rem;
   margin-bottom: 1rem;
   color: #177165;
 }
