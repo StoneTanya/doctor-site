@@ -578,35 +578,34 @@
   color: #177165;
 }
 
-/* styles to "header" */
+/* styles to "header" and footer*/
 nav,
-.header-block {
+.header-block, .footer-menu, .dropdown-menu {
   background-color: #177165;
   font-family: "Roboto", sans-serif;
 }
 
 .header-block {
-  padding: 30px;
+  padding-top: 3%;
 }
 
 .header-block_title {
-  font-size: 3rem;
+  font-size: 2.8rem;
   color: #fff;
-  margin: 6vh 3vw 4vh 5vw;
+  margin: 3vh 3vw 4vh 5vw;
   font-family: "Playfair Display", serif;
-  line-height: 8vh;
+  line-height: 120%;
 }
 
 .info-list,
-.logo,
 .menu__link,
-.header_blue__button {
+.header_blue__button, .dropdown-item {
   color: #A4D6CF;
 }
 
 .info-list {
   font-size: 1.2rem;
-  margin: 7vh 3vw 5vh 5vw;
+  margin: 5vh 3vw 5vh 5vw;
   font-family: "Roboto", sans-serif;
 }
 
@@ -616,11 +615,14 @@ nav,
 }
 
 .header-menu {
-  position: relative;
   z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -629,13 +631,6 @@ nav,
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-}
-
-.header-menu ul li {
-  margin-right: 3%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .menu__link:hover,
@@ -647,9 +642,8 @@ nav,
 }
 
 .logo {
-  padding-left: 3vw;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .logo-icon {
@@ -659,19 +653,37 @@ nav,
 
 .menu__list {
   padding-top: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
-.menu__item {
-  display: inline-block;
+.menu__item, .info-list {
+  list-style-type: none;
+  margin-bottom: 3%;
+}
+
+.info-list {
+  text-indent: -0.5em;
 }
 
 .menu__link {
-  display: block;
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-decoration: none;
 }
 
-.header_blue__button {
+.header_blue__button, .footer__button, .footer__clock {
   white-space: nowrap;
   text-align: center;
   font-size: 1rem;
@@ -679,63 +691,65 @@ nav,
   padding-top: 20px;
 }
 
-.header_blue__button:hover {
+.header_blue__button:hover, .footer__button:hover {
   color: #fff;
   opacity: .75;
 }
 
-#telegram-icon {
+#telegram-icon, .footer-contacts__icon {
   font-size: 2.5rem;
   padding-right: 0.8vw;
-}
-
-.header__menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.header__menu ul li {
-  margin-right: 29px;
+  color: #A4D6CF;
 }
 
 /* styles to "footer" */
 .footer {
   background-color: #177165;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   padding: 80px 0px;
+  margin-top: 7%;
 }
 
-.footer-title {
-  font-family: "Playfair Display", serif;
-  color: #fff;
-  font-size: 2rem;
-  width: 700px;
+.footer-menu {
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
-.footer-button {
+.footer-menu li {
+  text-indent: -0.5em;
+}
+
+.footer-menu__col {
+  margin-right: 25px;
+}
+
+.footer-contacts {
+  padding: 2% 2%;
   background-color: #23786D;
-  border: 1px;
-  width: 400px;
-  height: 98px;
+  max-width: 30%;
+}
+
+.footer-contacts a, .footer-contacts p {
   color: #fff;
-  font-size: 25px;
-  font-family: "Roboto", sans-serif;
+}
+
+.footer-contacts i {
+  padding-left: 0;
 }
 
 .footer-button:hover {
   opacity: 1.75;
   background-color: #389084;
+}
+
+.logo-icon__footer, .logo {
+  color: white;
+}
+
+.logo-footer, .logo {
+  font-family: "Playfair Display", serif;
+  text-decoration: none;
 }
 
 /*styles to "FAQ" */

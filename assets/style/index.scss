@@ -9,8 +9,9 @@ $btn-border: 2px solid $primary-color;
 $font-size-for-common-text: 1.2rem;
 $margin-top-about-me:2.5rem;
 $margin-bottom-about-me: 2.5rem;
-$title-size: 3rem;
+$title-size: 2.8rem;
 $subtitle-size: 2rem;
+$menu-size: 1rem;
 
 
 /* Прелоадер для сайта*/
@@ -553,8 +554,6 @@ $subtitle-size: 2rem;
 
 /* styles to "workareas" */
 
-
-
 .container-workareas__title {
     color: white;
     font-family: $font-main;
@@ -595,36 +594,37 @@ $subtitle-size: 2rem;
 }
 
 
-/* styles to "header" */
+/* styles to "header" and footer*/
 
 nav,
-.header-block {
+.header-block, .footer-menu, .dropdown-menu {
     background-color: $primary-color;
     font-family: $font-other;
 }
 
 .header-block {
-    padding: 30px;
+    padding-top: 3%;
 }
 
 .header-block_title {
     font-size: $title-size;
     color: $title-color;
-    margin: 6vh 3vw 4vh 5vw;
+    margin: 3vh 3vw 4vh 5vw;
     font-family: $font-main;
-    line-height: 8vh;
+    line-height: 120%;
 }
 
 .info-list,
-.logo,
 .menu__link,
-.header_blue__button {
+.header_blue__button, .dropdown-item {
     color: $paragraph;
 }
 
+
+
 .info-list {
     font-size: $font-size-for-common-text;
-    margin: 7vh 3vw 5vh 5vw;
+    margin: 5vh 3vw 5vh 5vw;
     font-family: $font-other;
 }
 
@@ -635,19 +635,15 @@ nav,
 }
 
 .header-menu {
-    position: relative;
     z-index: 2;
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
     margin-top: 27px auto;
     padding: 0px 30px;
     align-items: baseline;
 }
 
-.header-menu ul li {
-    margin-right: 3%;
-    align-items: center;
-}
 
 .menu__link:hover,
 .menu__link:focus,
@@ -658,10 +654,8 @@ nav,
 }
 
 .logo {
-    padding-left: 3vw;
     text-decoration: none;
-    font-size: 1rem;
-
+    font-size: 1.5rem;
 }
 
 .logo-icon {
@@ -671,44 +665,45 @@ nav,
 
 .menu__list {
     padding-top: 28px;
+    display: flex;
+    width: 40%;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
-.menu__item {
-    display: inline-block;
+.menu__item, .info-list {
+    list-style-type: none;
+    margin-bottom: 3%;
 }
+
+.info-list {
+    text-indent: -0.5em;
+} 
 
 .menu__link {
-    display: block;
-    font-size: 0.8rem;
+    font-size: $menu-size;
     text-decoration: none;
 }
 
 
-.header_blue__button {
+.header_blue__button, .footer__button, .footer__clock {
     white-space: nowrap;
     text-align: center;
-    font-size: 1rem;
+    font-size: $menu-size;
     text-decoration: none;
     padding-top: 20px;
 }
 
-.header_blue__button:hover {
+.header_blue__button:hover, .footer__button:hover {
     color: $title-color;
     opacity: .75;
 }
 
-#telegram-icon {
+#telegram-icon, .footer-contacts__icon {
     font-size: 2.5rem;
     padding-right: 0.8vw;
-}
-
-.header__menu {
-    display: flex;
-    justify-content: space-between;
-}
-
-.header__menu ul li {
-    margin-right: 29px;
+    color: $paragraph;
 }
 
 
@@ -716,34 +711,50 @@ nav,
 
 .footer {
     background-color: $primary-color;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     padding: 80px 0px;
+    margin-top: 7%;
 }
 
-.footer-title {
-    font-family: $font-main;
-    color: $title-color;
-    font-size: $subtitle-size;
-    width: 700px;
+.footer-menu {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1%;
+    padding-bottom:  1%;
+    li {
+        text-indent: -0.5em;
+    }
+}
+.footer-menu__col {
+    margin-right: 25px;
 }
 
-.footer-button {
+.footer-contacts {
+    padding: 2% 2%;
     background-color: #23786D;
-    border: 1px;
-    width: 400px;
-    height: 98px;
-    color: $title-color;
-    font-size: 25px;
-    font-family: $font-other;
+    max-width: 30%;
+    a, p {
+        color: #fff;
+    }
+    i {
+        padding-left: 0;
+    }
 }
+
 
 .footer-button:hover {
     opacity: 1.75;
     background-color: #389084;
 }
 
+
+.logo-icon__footer, .logo {
+    color: white;
+}
+
+.logo-footer, .logo {
+    font-family: $font-main;
+    text-decoration: none;
+}
 
 /*styles to "FAQ" */
 
