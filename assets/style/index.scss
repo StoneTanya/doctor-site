@@ -190,6 +190,7 @@ $subtitle-size: 2rem;
 
 .container-cases {
     font: 100% "Playfair Display", serif;
+    margin-top: 10vh;
 }
 
 .container-cases__title {
@@ -200,6 +201,7 @@ $subtitle-size: 2rem;
 }
 
 .cases-card {
+    font: $font-other;
     width: 540px;
     height: 451px;
     background: #E1F4F2;
@@ -512,6 +514,8 @@ $subtitle-size: 2rem;
 
 .container-aboutme {
     font: 100% $font-main;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
 
 .img-aboutme {
@@ -534,10 +538,13 @@ $subtitle-size: 2rem;
     font-size: $font-size-for-common-text;
     color: $text;
     font-family: $font-other;
+    line-height: 4vh;
 }
 
 
 /* styles to "workareas" */
+
+
 
 .container-workareas__title {
     color: white;
