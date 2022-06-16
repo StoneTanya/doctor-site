@@ -189,7 +189,6 @@ $subtitle-size: 2rem;
 /* styles to "cases"*/
 
 .container-cases {
-    font: 100% "Playfair Display", serif;
     margin-top: 10vh;
 }
 
@@ -198,10 +197,20 @@ $subtitle-size: 2rem;
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
     color: #177165;
+    font-family: $font-main;  
+}
+
+
+.container-cases__title, 
+.cases-card__title {
+    font-family: $font-main;
+}
+
+.cases-card__text {
+    font-family: $font-other;
 }
 
 .cases-card {
-    font: $font-other;
     width: 540px;
     height: 451px;
     background: #E1F4F2;
