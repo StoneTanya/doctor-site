@@ -172,6 +172,7 @@
 /* styles to "cases"*/
 .container-cases {
   font: 100% "Playfair Display", serif;
+  margin-top: 10vh;
 }
 
 .container-cases__title {
@@ -182,6 +183,7 @@
 }
 
 .cases-card {
+  font: "Roboto", sans-serif;
   width: 540px;
   height: 451px;
   background: #E1F4F2;
@@ -499,6 +501,8 @@
 /* styles to "about me" */
 .container-aboutme {
   font: 100% "Playfair Display", serif;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
 .img-aboutme {
@@ -523,6 +527,7 @@
   font-size: 1.2rem;
   color: #777777;
   font-family: "Roboto", sans-serif;
+  line-height: 4vh;
 }
 
 /* styles to "workareas" */
@@ -564,7 +569,7 @@
 }
 
 .workareas-icon {
-  margin-top: 2rem;
+  margin-top: 2vw;
   margin-bottom: 1rem;
   color: #177165;
 }
