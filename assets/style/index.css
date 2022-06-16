@@ -57,7 +57,7 @@
 
 .work {
   margin-bottom: 2vh;
-  margin-top: 5vh;
+  margin-top: 20vh;
 }
 
 .work-row {
@@ -171,7 +171,6 @@
 /*КОНЕЦ блоков об учебе и работе */
 /* styles to "cases"*/
 .container-cases {
-  font: 100% "Playfair Display", serif;
   margin-top: 10vh;
 }
 
@@ -180,10 +179,19 @@
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
   color: #177165;
+  font-family: "Playfair Display", serif;
+}
+
+.container-cases__title,
+.cases-card__title {
+  font-family: "Playfair Display", serif;
+}
+
+.cases-card__text {
+  font-family: "Roboto", sans-serif;
 }
 
 .cases-card {
-  font: "Roboto", sans-serif;
   width: 540px;
   height: 451px;
   background: #E1F4F2;
@@ -562,10 +570,6 @@
   text-align: center;
   font-size: 1.1rem;
   font-family: "Roboto", sans-serif;
-}
-
-.container-workareas__card:hover {
-  border: 3px solid #413f3f;
 }
 
 .workareas-icon {
