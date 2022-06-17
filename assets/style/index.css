@@ -496,6 +496,17 @@
   height: 50%;
 }
 
+.btn-close_modal {
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  right: 20px;
+  background-color: black;
+  border: 0;
+  padding: 5px 10px;
+  font-size: 1.3rem;
+}
+
 /*style for research*/
 .research__img {
   max-width: 100%;
