@@ -47,12 +47,18 @@
     <!-- header block -->
     <div class="container">
         <header class="header">
-            <nav class="header-menu">
-                <a href="#" class="logo"><i class="fa-solid fa-user-doctor logo-icon"></i>Сергей Фомченков</a>
-                <ul class="menu__list">
-                    <li class="menu__item dropdown">
-                        <a href="#about_me" class="menu__link dropdown-toggle" id="dropdownAboutMe"
-                            data-bs-toggle="dropdown" aria-expanded="false">Обо мне</a>
+            <nav class="header-menu navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a href="#" class="logo navbar-brand"><i class="fa-solid fa-user-doctor logo-icon"></i>Сергей Фомченков</a>
+                    <button class="navbar-toggler navbar-btn_mobile" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"aria-label="Переключатель навигации">
+                        <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                
+                <ul class="menu__list navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="menu__item nav-item dropdown">
+                        <a href="#about_me" class="menu__link dropdown-toggle nav-link active" id="dropdownAboutMe"
+                            data-bs-toggle="dropdown" aria-expanded="false" aria-current="page">Обо мне</a>
                         <ul class="dropdown-menu" aria-labelledby="dropdownAboutMe">
                             <li><a class="dropdown-item" href="#education">Образование</a></li>
                             <li><a class="dropdown-item" href="#career">Карьерный путь</a></li>
@@ -61,22 +67,24 @@
                             <li><a class="dropdown-item" href="#patents">Исследования</a></li>
                         </ul>
                     </li>
-                    <li class="menu__item">
-                        <a href="#cases" class="menu__link">Случаи из практики</a>
+                    <li class="menu__item nav-item">
+                        <a href="#cases" class="menu__link nav-link">Случаи из практики</a>
                     </li>
-                    <li class="menu__item">
-                        <a href="#workareas" class="menu__link">Услуги</a>
+                    <li class="menu__item nav-item">
+                        <a href="#workareas" class="menu__link nav-link">Услуги</a>
                     </li>
-                    <li class="menu__item">
-                        <a href="#contacts" class="menu__link">Контакты</a>
+                    <li class="menu__item nav-item">
+                        <a href="#contacts" class="menu__link nav-link">Контакты</a>
                     </li>
                 </ul>
                 <div class="header__button">
-                    <a href="#" class="header_blue__button"><i class="fa-brands fa-telegram" id="telegram-icon"></i></a>
+                    <a href="#" class="header_blue__button"><i class="fa-brands fa-telegram" id="telegram-icon"></i> &nbsp; Записаться на консультацию</a>
                 </div>
+            </div>
+        </div>
+        </nav>
 
 
-            </nav>
             <div class="container header-block">
                 <div class="row">
                     <div class="col-12 col-md-6">
@@ -84,13 +92,13 @@
                             Помогаю людям адаптироваться и восстанавливаться после серьёзных травм
                         </h1>
                         <ul class="info-list">
-                            <li> <i class="fa-solid fa-circle-check"></i> Невролог высшей категории </li>
-                            <li> <i class="fa-solid fa-circle-check"></i> Нейрохирург</li>
-                            <li> <i class="fa-solid fa-circle-check"></i> Рефлексотерапевт</li>
-                            <li> <i class="fa-solid fa-circle-check"></i> Мануальный терапевт</li>
-                            <li> <i class="fa-solid fa-circle-check"></i> Кандидат медицинских наук</li>
-                            <li> <i class="fa-solid fa-circle-check"></i> Имею практический опыт в нейрохирургии</li>
-                            <li> <i class="fa-solid fa-circle-check"></i> Консультирую в Москве</li>
+                            <li> <i class="fa-solid fa-check-double"></i> &nbsp; Невролог высшей категории </li>
+                            <li> <i class="fa-solid fa-check-double"></i> &nbsp; Нейрохирург</li>
+                            <li> <i class="fa-solid fa-check-double"></i> &nbsp; Рефлексотерапевт</li>
+                            <li> <i class="fa-solid fa-check-double"></i> &nbsp; Мануальный терапевт</li>
+                            <li> <i class="fa-solid fa-check-double"></i> &nbsp; Кандидат медицинских наук</li>
+                            <li> <i class="fa-solid fa-check-double"></i> &nbsp; Имею практический опыт в нейрохирургии</li>
+                            <li> <i class="fa-solid fa-check-double"></i> &nbsp; Консультирую в Москве</li>
                         </ul>
                     </div>
                     <div class="col-12 col-md-6">
@@ -506,7 +514,7 @@
                                 <div class="video-block__container">
                                     <video class="col video-block__distractor d-block w-100" preload="auto" loop
                                         autoplay>
-                                        <source src="assets/video/Spina_2.mp4" type="video/mp4">
+                                        <source src="/assets/video/Spina_2.mp4" type="video/mp4">
                                     </video>
                                 </div>
 
@@ -518,7 +526,7 @@
                                 <div class="video-block__container">
                                     <video class="col video-block__distractor d-block w-100" preload="auto" loop
                                         autoplay>
-                                        <source src="assets/video/Spina_4.mp4" type="video/mp4">
+                                        <source src="/assets/video/Spina_4.mp4" type="video/mp4">
                                     </video>
                                 </div>
                                 <div class="carousel-caption d-none d-md-block">
@@ -544,34 +552,31 @@
                 <div class="tab-pane fade" id="sert" role="tabpanel" aria-labelledby="sert-tab">
                     <div class="dipl-list d-flex flex-row flex-wrap justify-content-around cert-container">
                         <img class="lazyloaded cert-container_img" data-bs-toggle="modal" data-bs-target="#modal-1"
-                            style="object-fit:cover" src="./assets/img/Diplom2015.jpg">
+                            style="object-fit:cover" src="/assets/img/Diplom2015.jpg">
 
                         <img class="lazyloaded cert-container_img" data-bs-toggle="modal" data-bs-target="#modal-2"
-                            style="object-fit:cover" src="./assets/img/ManualTerapy2019.jpg">
+                            style="object-fit:cover" src="/assets/img/ManualTerapy2019.jpg">
 
                         <img class="lazyloaded cert-container_img" data-bs-toggle="modal" data-bs-target="#modal-3"
-                            style="object-fit:cover" src="./assets/img/NeurologiaFGBU_NMHC.jpeg">
+                            style="object-fit:cover" src="/assets/img/NeurologiaFGBU_NMHC.jpeg">
 
                         <img class="lazyloaded cert-container_img" data-bs-toggle="modal" data-bs-target="#modal-4"
-                            style="object-fit:cover" src="./assets/img/NeuroSergery 01031990.jpg">
+                            style="object-fit:cover" src="/assets/img/NeuroSergery 01031990.jpg">
 
                         <img class="lazyloaded cert-container_img" data-bs-toggle="modal" data-bs-target="#modal-5"
-                            style="object-fit:cover" src="./assets/img/Sert2019.jpg">
+                            style="object-fit:cover" src="/assets/img/Sert2019.jpg">
 
                         <img class="lazyloaded cert-container_img" data-bs-toggle="modal" data-bs-target="#modal-6"
-                            style="object-fit:cover" src="./assets/img/Sert_healthcare019.jpg">
+                            style="object-fit:cover" src="/assets/img/Sert_healthcare019.jpg">
 
                         <img class="lazyloaded cert-container_img" data-bs-toggle="modal" data-bs-target="#modal-7"
-                            style="object-fit:cover" src="./assets/img/SertManualTerapy2019.jpg">
+                            style="object-fit:cover" src="/assets/img/SertManualTerapy2019.jpg">
 
                         <img class="lazyloaded cert-container_img" data-bs-toggle="modal" data-bs-target="#modal-8"
-                            style="object-fit:cover" src="./assets/img/SertMT14022015.jpg">
-
-                        <img class="lazyloaded cert-container_img" data-bs-toggle="modal" data-bs-target="#modal-8"
-                            style="object-fit:cover" src="./assets/img/SertMT14022015.jpg">
+                            style="object-fit:cover" src="/assets/img/SertMT14022015.jpg">
 
                         <img class="lazyloaded cert-container_img" data-bs-toggle="modal" data-bs-target="#modal-9"
-                            style="object-fit:cover" src="./assets/img/SertNeurology2014.jpeg">
+                            style="object-fit:cover" src="/assets/img/SertNeurology2014.jpeg">
                     </div>
                 </div>
 
@@ -580,7 +585,7 @@
                     aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-xl">
                         <div class="modal-content">
-                            <button type="button" class="btn-close btn-close_modal" data-bs-dismiss="modal"
+                            <button type="button" class="btn-close btn-success btn-close_modal" data-bs-dismiss="modal"
                                 aria-label="Close"></button>
                             <div class="modal-body">
                                 <img style="object-fit:cover" src="./assets/img/Diplom2015.jpg">
@@ -593,7 +598,7 @@
                     aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-xl">
                         <div class="modal-content">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <button type="button" class="btn-close btn-success btn-close_modal" data-bs-dismiss="modal" aria-label="Close"></button>
                             <div class="modal-body">
                                 <img style="object-fit:cover" src="./assets/img/ManualTerapy2019.jpg">
                             </div>
@@ -606,7 +611,7 @@
                     <div class="modal-dialog modal-dialog-centered modal-xl">
                         <div class="modal-content">
 
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <button type="button" class="btn-close btn-success btn-close_modal" data-bs-dismiss="modal" aria-label="Close"></button>
 
                             <div class="modal-body">
                                 <img style="object-fit:cover" src="./assets/img/NeurologiaFGBU_NMHC.jpeg">
@@ -620,7 +625,7 @@
                     <div class="modal-dialog modal-dialog-centered modal-xl">
                         <div class="modal-content">
 
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <button type="button" class="btn-close btn-success btn-close_modal" data-bs-dismiss="modal" aria-label="Close"></button>
 
                             <div class="modal-body">
                                 <img style="object-fit:cover" src="./assets/img/NeuroSergery 01031990.jpg">
@@ -634,7 +639,7 @@
                     <div class="modal-dialog modal-dialog-centered modal-xl">
                         <div class="modal-content">
 
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <button type="button" class="btn-close btn-success btn-close_modal" data-bs-dismiss="modal" aria-label="Close"></button>
 
                             <div class="modal-body">
                                 <img style="object-fit:cover" src="./assets/img/Sert2019.jpg">
@@ -648,7 +653,7 @@
                     <div class="modal-dialog modal-dialog-centered modal-xl">
                         <div class="modal-content">
 
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <button type="button" class="btn-close btn-success btn-close_modal" data-bs-dismiss="modal" aria-label="Close"></button>
 
                             <div class="modal-body">
                                 <img style="object-fit:cover" src="./assets/img/Sert_healthcare019.jpg">
@@ -662,7 +667,7 @@
                     <div class="modal-dialog modal-dialog-centered modal-xl">
                         <div class="modal-content">
 
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <button type="button" class="btn-close btn-success btn-close_modal" data-bs-dismiss="modal" aria-label="Close"></button>
 
                             <div class="modal-body">
                                 <img style="object-fit:cover" src="./assets/img/SertManualTerapy2019.jpg">
@@ -676,7 +681,7 @@
                     <div class="modal-dialog modal-dialog-centered modal-xl">
                         <div class="modal-content">
 
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <button type="button" class="btn-close btn-success btn-close_modal" data-bs-dismiss="modal" aria-label="Close"></button>
 
                             <div class="modal-body">
                                 <img style="object-fit:cover" src="./assets/img/SertMT14022015.jpg">
@@ -689,7 +694,7 @@
                     aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-xl">
                         <div class="modal-content">
-                            <button type="button" class="btn-close btn-close_modal" data-bs-dismiss="modal"
+                            <button type="button" class="btn-close btn-success btn-close_modal" data-bs-dismiss="modal"
                                 aria-label="Close"></button>
                             <div class="modal-body">
                                 <img style="object-fit:cover" src="./assets/img/SertNeurology2014.jpeg">
