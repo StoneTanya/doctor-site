@@ -62,9 +62,13 @@ $menu-size: 1rem;
 .header-photo__block,
 .img-aboutme__block,
 .research-container__img {
-    width: 40%;
+    width: 50%;
 }
-
+@media screen and (max-width: 768px) {
+    .img-aboutme__block {
+        width: 100%;
+    }
+}
 
 /* блоки об учебе и работе */
 
@@ -550,6 +554,7 @@ $menu-size: 1rem;
 }
 .img-aboutme__block {
     padding-left: 0;
+    padding-right: 0;
 }
 .h1-aboutme {
     font-size: $subtitle-size;
@@ -722,9 +727,6 @@ nav,
         }
     }
 
-    .menu__list {
-        margin-left: 0%;
-    }
 }
 
 /* styles to "footer" */

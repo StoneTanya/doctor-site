@@ -47,7 +47,13 @@
 .header-photo__block,
 .img-aboutme__block,
 .research-container__img {
-  width: 40%;
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .img-aboutme__block {
+    width: 100%;
+  }
 }
 
 /* блоки об учебе и работе */
@@ -537,6 +543,7 @@
 
 .img-aboutme__block {
   padding-left: 0;
+  padding-right: 0;
 }
 
 .h1-aboutme {
@@ -702,9 +709,6 @@ nav,
   }
   .navbar-btn_mobile span i {
     font-size: 1.9rem;
-  }
-  .menu__list {
-    margin-left: 0%;
   }
 }
 
