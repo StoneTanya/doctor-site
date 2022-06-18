@@ -733,35 +733,48 @@ nav,
 
 .footer {
     background-color: $primary-color;
-    padding: 80px 0px;
+    padding: 3% 3%;
     margin-top: 7%;
 }
 
 .footer-menu {
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-top: 1%;
-    padding-bottom:  1%;
+    padding-left:10%;
+    padding-right: 10%;
+    padding-top: 4%;
+    padding-bottom:  3%;
     li {
         text-indent: -0.5em;
     }
 }
+
 .footer-menu__col {
-    margin-right: 25px;
+    li {
+        padding-bottom: 5%;
+    }
+    i {
+        font-size: 0.7rem;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
 }
 
 .footer-contacts {
-    padding: 2% 2%;
+    padding: 2% 1%;
     background-color: #23786D;
-    max-width: 30%;
-    a, p {
+    a, p  {
         color: #fff;
+        padding-bottom: 3%;
     }
     i {
         padding-left: 0;
+        font-size: 1.3rem;
+        padding-bottom: 8%;
+    }
+    .footer-contacts__icons {
+        padding: 2% 2%;
     }
 }
-
 
 .footer-button:hover {
     opacity: 1.75;
