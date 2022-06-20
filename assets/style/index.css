@@ -44,14 +44,14 @@
           box-sizing: border-box;
 }
 
-.header-photo__block
-.img-aboutme__block,
+.header-photo__block .img-aboutme__block,
 .research-container__img {
   width: 50%;
 }
 
 @media screen and (max-width: 768px) {
-  .img-aboutme__block {
+  .img-aboutme__block,
+  .text-about__block {
     width: 100%;
   }
 }
@@ -67,11 +67,13 @@
   background-color: #E1F4F2;
 }
 
-.work__block_right, .study__block_right {
+.work__block_right,
+.study__block_right {
   padding-left: 15%;
 }
 
-.work__content__block, .study__content__block {
+.work__content__block,
+.study__content__block {
   background-color: white;
   max-width: 70%;
   padding: 4% 6%;
@@ -80,22 +82,26 @@
   border-radius: 10px;
 }
 
-.work__content__block p, .study__content__block p {
+.work__content__block p,
+.study__content__block p {
   color: black;
   font-family: 'Roboto';
 }
 
-.study__content__title, .work__content__title {
+.study__content__title,
+.work__content__title {
   color: #177165;
   font-family: 'Playfair Display';
 }
 
-.work__title, .study__title {
+.work__title,
+.study__title {
   color: #177165;
   font-family: 'Playfair Display';
 }
 
-.work__title h2, .study__title h2 {
+.work__title h2,
+.study__title h2 {
   padding: 5% 7%;
   margin: 5% 5%;
   background-color: #fff;
@@ -107,7 +113,8 @@
   background-color: #177165;
 }
 
-.work__content, .study__content {
+.work__content,
+.study__content {
   width: 40vw;
   margin-left: -20px;
 }
@@ -171,29 +178,31 @@
 
 .container-cases__title,
 .cases-card__title {
-  font-family: "Playfair Display", serif;
+  font-family: "Roboto", sans-serif;
+  color: #177165;
 }
 
 .cases-card__text {
   font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
 }
 
 .cases-card {
-  width: 540px;
-  height: 451px;
+  width: 34rem;
+  height: 28rem;
   background: #E1F4F2;
-  padding: 18px;
+  padding: 1.125rem;
 }
 
 .carousel-cell {
   width: 45%;
-  margin-right: 10px;
-  border-radius: 2px;
+  margin-right: 0.625rem;
+  border-radius: 0.125rem;
   background: #E1F4F2;
 }
 
 .carousel {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 /* PC */
@@ -210,10 +219,10 @@
     font-size: 0.9rem;
   }
   .cases-card {
-    width: 300px;
+    width: 19rem;
   }
   .carousel-cell {
-    width: 320px;
+    width: 20rem;
   }
 }
 
@@ -606,7 +615,9 @@
 
 /* styles to "header" and footer*/
 nav,
-.header-block, .footer-menu, .dropdown-menu {
+.header-block,
+.footer-menu,
+.dropdown-menu {
   background-color: #177165;
   font-family: "Roboto", sans-serif;
 }
@@ -633,7 +644,8 @@ nav,
 
 .info-list,
 .menu__link,
-.header_blue__button, .dropdown-item {
+.header_blue__button,
+.dropdown-item {
   color: #A4D6CF;
 }
 
@@ -669,7 +681,8 @@ nav,
   padding-left: 1vw;
 }
 
-.menu__item, .info-list {
+.menu__item,
+.info-list {
   list-style-type: none;
 }
 
@@ -682,17 +695,21 @@ nav,
   text-decoration: none;
 }
 
-.header_blue__button, .footer__button, .footer__clock {
+.header_blue__button,
+.footer__button,
+.footer__clock {
   font-size: 0.9rem;
   text-decoration: none;
 }
 
-.header_blue__button:hover, .footer__button:hover {
+.header_blue__button:hover,
+.footer__button:hover {
   color: #fff;
   opacity: .75;
 }
 
-#telegram-icon, .footer-contacts__icon {
+#telegram-icon,
+.footer-contacts__icon {
   font-size: 2.5rem;
   padding-right: 0.8vw;
   color: #A4D6CF;
@@ -707,7 +724,8 @@ nav,
     margin-left: 3%;
     font-size: 1.1rem;
   }
-  .logo i, .logo a {
+  .logo i,
+  .logo a {
     margin-top: 1.5%;
   }
   .navbar-btn_mobile {
@@ -760,7 +778,8 @@ nav,
   background-color: #23786D;
 }
 
-.footer-contacts a, .footer-contacts p {
+.footer-contacts a,
+.footer-contacts p {
   color: #fff;
 }
 
@@ -779,17 +798,19 @@ nav,
   background-color: #389084;
 }
 
-.logo-icon__footer, .logo {
+.logo-icon__footer,
+.logo {
   color: white;
 }
 
-.logo-footer, .logo {
+.logo-footer,
+.logo {
   font-family: "Playfair Display", serif;
   text-decoration: none;
 }
 
 /*styles to "FAQ" */
-.accordion {
+.container-faq {
   font-family: "Playfair Display", serif;
   font-size: 1rem;
 }
