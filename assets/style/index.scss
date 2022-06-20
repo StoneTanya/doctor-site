@@ -567,6 +567,10 @@ $menu-size: 0.9rem;
     line-height: 4vh;
 }
 
+.text-about__block {
+    padding-left: 5vw;
+}
+
 
 /* styles to "workareas" */
 
@@ -632,6 +636,10 @@ nav,
     line-height: 120%;
 }
 
+.navbar-toggler-icon {
+    color: white;
+}
+
 .info-list,
 .menu__link,
 .header_blue__button, .dropdown-item {
@@ -658,6 +666,7 @@ nav,
 .nav-link_about:hover .dropdown-menu {
     display: block;
 }
+
 
 .logo {
     text-decoration: none;
@@ -725,7 +734,6 @@ nav,
         margin-left: 30%;
     } 
 }
-
 
 /* styles to "footer" */
 
