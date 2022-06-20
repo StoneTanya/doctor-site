@@ -169,33 +169,35 @@
 }
 
 .container-cases__title {
-  font-size: 2.5rem;
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
   color: #177165;
+  font-family: "Playfair Display", serif;
 }
 
-.container-cases__title,
 .cases-card__title {
   font-family: "Roboto", sans-serif;
   color: #177165;
+  font-size: 1.6rem;
 }
 
 .cases-card__text {
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
+  color: #777777;
 }
 
 .cases-card {
-  width: 34rem;
-  height: 28rem;
+  width: 30rem;
+  height: 40rem;
   background: #E1F4F2;
-  padding: 0, auto;
+  padding: 1.5rem 2.5rem;
 }
 
 .carousel-cell {
   width: 45%;
-  margin-right: 0.625rem;
+  margin-right: 1rem;
   border-radius: 0.125rem;
   background: #E1F4F2;
 }
@@ -316,6 +318,7 @@
 /* styles to "tab block (patent, cert and research)" */
 .tabs-block {
   background: #177165;
+  margin-top: 8%;
 }
 
 .tabs-block__title {
@@ -326,7 +329,7 @@
   color: #fff;
   font-weight: 300;
   padding: 40px 0 20px 0;
-  margin: 0;
+  margin-bottom: 2%;
 }
 
 .tab-container {
@@ -422,7 +425,7 @@
 
 .tab-content .tab-pane {
   margin-top: 2%;
-  margin-bottom: 2%;
+  margin-bottom: 5%;
   padding: 1em;
   background: white;
   width: 100%;
@@ -816,8 +819,8 @@ nav,
 
 .h1-faq {
   font-size: 2rem;
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
   color: #177165;
   text-align: center;
 }

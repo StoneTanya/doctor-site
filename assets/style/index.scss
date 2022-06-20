@@ -1,7 +1,5 @@
-$font-main:'Playfair Display',
-serif;
-$font-other: 'Roboto',
-sans-serif;
+$font-main:'Playfair Display', serif;
+$font-other: 'Roboto', sans-serif;
 $primary-color: #177165;
 $background: #E1F4F2;
 $text: #777777;
@@ -9,7 +7,7 @@ $title-color: #fff;
 $paragraph: #A4D6CF;
 $btn-border: 2px solid $primary-color;
 $font-size-for-common-text: 1.2rem;
-$margin-top-about-me:2.5rem;
+$margin-top-about-me: 2.5rem;
 $margin-bottom-about-me: 2.5rem;
 $title-size: 2.8rem;
 $subtitle-size: 2rem;
@@ -190,36 +188,36 @@ $menu-size: 0.9rem;
 }
 
 .container-cases__title {
-    font-size: 2.5rem;
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
+    font-size: $subtitle-size;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
     color: #177165;
+    font-family: $font-main;
 }
 
 
-.container-cases__title,
 .cases-card__title {
     font-family: $font-other;
     color: $primary-color;
-
+    font-size: 1.6rem;
 }
 
 .cases-card__text {
     font-family: $font-other;
     font-size: $font-size-for-common-text;
-
+    color: $text;
 }
 
 .cases-card {
-    width: 34rem;
-    height: 28rem;
+    width: 30rem;
+    height: 40rem;
     background: #E1F4F2;
-    padding: 0, auto;
+    padding: 1.5rem 2.5rem;
 }
 
 .carousel-cell {
     width: 45%;
-    margin-right: 0.625rem;
+    margin-right: 1rem;
     border-radius: 0.125rem;
     background: #E1F4F2;
 }
@@ -367,6 +365,7 @@ $menu-size: 0.9rem;
 
 .tabs-block {
     background: $primary-color;
+    margin-top: 8%;
 }
 
 .tabs-block__title {
@@ -377,7 +376,7 @@ $menu-size: 0.9rem;
     color: $title-color;
     font-weight: 300;
     padding: 40px 0 20px 0;
-    margin: 0;
+    margin-bottom: 2%;
 }
 
 .tab-container {
@@ -460,7 +459,7 @@ $menu-size: 0.9rem;
 
 .tab-content .tab-pane {
     margin-top: 2%;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
     padding: 1em;
     background: white;
     width: 100%;
@@ -868,9 +867,9 @@ nav,
 }
 
 .h1-faq {
-    font-size: 2rem;
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
+    font-size: $subtitle-size;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
     color: $primary-color;
     text-align: center;
 }
