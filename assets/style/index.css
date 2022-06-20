@@ -173,7 +173,6 @@
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
   color: #177165;
-  font-family: "Playfair Display", serif;
 }
 
 .container-cases__title,
@@ -191,7 +190,7 @@
   width: 34rem;
   height: 28rem;
   background: #E1F4F2;
-  padding: 1.125rem;
+  padding: 0, auto;
 }
 
 .carousel-cell {
