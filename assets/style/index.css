@@ -560,6 +560,10 @@
   line-height: 4vh;
 }
 
+.text-about__block {
+  padding-left: 5vw;
+}
+
 /* styles to "workareas" */
 .container-workareas__title {
   color: white;
@@ -621,6 +625,10 @@ nav,
   margin: 3vh 3vw 4vh 5vw;
   font-family: "Playfair Display", serif;
   line-height: 120%;
+}
+
+.navbar-toggler-icon {
+  color: white;
 }
 
 .info-list,
