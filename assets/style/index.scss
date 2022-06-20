@@ -192,7 +192,6 @@ $menu-size: 0.9rem;
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
     color: #177165;
-    font-family: $font-main;
 }
 
 
@@ -212,7 +211,7 @@ $menu-size: 0.9rem;
     width: 34rem;
     height: 28rem;
     background: #E1F4F2;
-    padding: 1.125rem;
+    padding: 0, auto;
 }
 
 .carousel-cell {
