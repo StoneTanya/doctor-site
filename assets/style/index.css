@@ -84,8 +84,9 @@
 
 .work__content__block p,
 .study__content__block p {
-  color: black;
-  font-family: 'Roboto';
+  color: #777777;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
 }
 
 .study__content__title,
@@ -158,9 +159,33 @@
   margin: 5% 10%;
   padding: 2% 2%;
   font-family: "Roboto", sans-serif;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   background-color: #177165;
   color: #fff;
+}
+
+/* mobile for study and career*/
+@media screen and (max-width: 768px) {
+  .work__content,
+  .study__content {
+    width: 100vw;
+  }
+  .work__content__block,
+  .study__content__block {
+    max-width: 75%;
+    padding: 2% 3%;
+    margin-top: 1vh;
+    margin-bottom: 1.5vh;
+    border-radius: 10px;
+  }
+  .work__content__block h3,
+  .study__content__block h3 {
+    font-size: 1rem;
+  }
+  .work__content__block p,
+  .study__content__block p {
+    font-size: 0.8rem;
+  }
 }
 
 /*КОНЕЦ блоков об учебе и работе */

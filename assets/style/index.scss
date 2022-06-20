@@ -100,8 +100,9 @@ $menu-size: 0.9rem;
     border-radius: 10px;
 
     p {
-        color: black;
-        font-family: 'Roboto';
+        color: $text;
+        font-family: $font-other;
+        font-size: 0.9rem;
     }
 }
 
@@ -174,9 +175,35 @@ $menu-size: 0.9rem;
     margin: 5% 10%;
     padding: 2% 2%;
     font-family: $font-other;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     background-color: $primary-color;
     color: #fff;
+}
+
+/* mobile for study and career*/
+
+@media screen and (max-width: 768px) {
+    .work__content,
+    .study__content {
+    width: 100vw;
+}
+
+.work__content__block,
+.study__content__block {
+    max-width: 75%;
+    padding: 2% 3%;
+    margin-top: 1vh;
+    margin-bottom: 1.5vh;
+    border-radius: 10px;
+
+    h3 {
+        font-size: 1rem;
+    }
+    p {
+        font-size: 0.8rem;
+    }
+}
+
 }
 
 /*КОНЕЦ блоков об учебе и работе */
