@@ -59,10 +59,11 @@
 /* блоки об учебе и работе */
 .studies {
   background-color: #E1F4F2;
+  margin-top: 3%;
 }
 
 .work {
-  margin-bottom: 0;
+  margin-bottom: 3%;
   margin-top: 10vh;
   background-color: #E1F4F2;
 }
@@ -165,10 +166,10 @@
 }
 
 /* mobile for study and career*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .work__content,
   .study__content {
-    width: 100vw;
+    width: 80vw;
   }
   .work__content__block,
   .study__content__block {
@@ -181,10 +182,6 @@
   .work__content__block h3,
   .study__content__block h3 {
     font-size: 1rem;
-  }
-  .work__content__block p,
-  .study__content__block p {
-    font-size: 0.8rem;
   }
 }
 
@@ -318,30 +315,6 @@
 }
 
 /* "cases" styles end */
-/* block with statistic*/
-.statistic {
-  background-color: #177165;
-}
-
-.statistic__block {
-  margin: 3% 3%;
-  padding: 2% 1%;
-  background-color: #E1F4F2;
-  border-radius: 20px;
-  border: #E1F4F2 1px solid;
-  font-family: "Roboto", sans-serif;
-}
-
-.statistic__block p span {
-  font-size: 2rem;
-  color: #177165;
-}
-
-.statistic__paragraph {
-  font-size: 0.9rem;
-  color: #777777;
-}
-
 /* styles to "tab block (patent, cert and research)" */
 .tabs-block {
   background: #177165;
@@ -656,7 +629,7 @@ nav,
 }
 
 .header-photo {
-  max-width: 100%;
+  max-width: 80%;
 }
 
 .header-block_title {
@@ -839,17 +812,27 @@ nav,
 }
 
 /*styles to "FAQ" */
-.container-faq {
-  font-family: "Playfair Display", serif;
-  font-size: 1rem;
-}
-
 .h1-faq {
   font-size: 2rem;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   color: #177165;
   text-align: center;
+  font-family: "Playfair Display", serif;
+}
+
+.faq-answer {
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+  font-size: 1rem;
+}
+
+.faq-question {
+  font-family: "Roboto", sans-serif;
+}
+
+.faq-question button {
+  letter-spacing: 1px;
 }
 
 .accordion-button:not(.collapsed) {
