@@ -77,10 +77,11 @@ $menu-size: 0.9rem;
 
 .studies {
     background-color: $background;
+    margin-top: 3%;
 }
 
 .work {
-    margin-bottom: 0;
+    margin-bottom: 3%;
     margin-top: 10vh;
     background-color: $background;
 }
@@ -100,8 +101,9 @@ $menu-size: 0.9rem;
     border-radius: 10px;
 
     p {
-        color: black;
-        font-family: 'Roboto';
+        color: $text;
+        font-family: $font-other;
+        font-size: 0.9rem;
     }
 }
 
@@ -174,9 +176,32 @@ $menu-size: 0.9rem;
     margin: 5% 10%;
     padding: 2% 2%;
     font-family: $font-other;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     background-color: $primary-color;
     color: #fff;
+}
+
+/* mobile for study and career*/
+
+@media screen and (max-width: 900px) {
+    .work__content,
+    .study__content {
+    width: 80vw;
+}
+
+.work__content__block,
+.study__content__block {
+    max-width: 75%;
+    padding: 2% 3%;
+    margin-top: 1vh;
+    margin-bottom: 1.5vh;
+    border-radius: 10px;
+
+    h3 {
+        font-size: 1rem;
+    }
+}
+
 }
 
 /*КОНЕЦ блоков об учебе и работе */
@@ -339,29 +364,6 @@ $menu-size: 0.9rem;
 /* "cases" styles end */
 
 
-/* block with statistic*/
-.statistic {
-    background-color: $primary-color;
-}
-
-.statistic__block {
-    margin: 3% 3%;
-    padding: 2% 1%;
-    background-color: $background;
-    border-radius: 20px;
-    border: $background 1px solid;
-    font-family: $font-other;
-
-    p span {
-        font-size: 2rem;
-        color: $primary-color;
-    }
-}
-
-.statistic__paragraph {
-    font-size: 0.9rem;
-    color: $text;
-}
 
 /* styles to "tab block (patent, cert and research)" */
 
@@ -669,7 +671,7 @@ nav,
 }
 
 .header-photo {
-    max-width: 100%;
+    max-width: 80%;
 }
 
 .header-block_title {
@@ -863,17 +865,26 @@ nav,
 
 /*styles to "FAQ" */
 
-.container-faq {
-    font-family: $font-main;
-    font-size: 1rem;
-}
-
 .h1-faq {
     font-size: $subtitle-size;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
     color: $primary-color;
     text-align: center;
+    font-family: $font-main;
+}
+.faq-answer {
+    font-family: $font-other;
+    color: $text;
+    font-size: 1rem;
+}
+
+.faq-question {
+    font-family: $font-other;
+    button {
+        letter-spacing: 1px;
+    }
+    
 }
 
 .accordion-button:not(.collapsed) {
