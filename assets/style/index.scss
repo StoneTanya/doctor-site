@@ -78,12 +78,14 @@ $menu-size: 0.9rem;
 .studies {
     background-color: $background;
     margin-top: 3%;
+    padding-top: 3%;
 }
 
 .work {
     margin-bottom: 3%;
-    margin-top: 10vh;
+    margin-top: 15vh;
     background-color: $background;
+    padding-top: 3%;
 }
 
 .work__block_right,
@@ -174,9 +176,10 @@ $menu-size: 0.9rem;
     color: black;
     text-decoration: none;
     margin: 5% 10%;
-    padding: 2% 2%;
+    padding: 1% 2%;
+    border-radius: 8px;
     font-family: $font-other;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     background-color: $primary-color;
     color: #fff;
 }
@@ -283,7 +286,7 @@ $menu-size: 0.9rem;
 
 /* TABLET */
 
-@media (max-width: 991.98px) {
+@media (max-width: 992px) {
     .container-cases__title {
         font-size: 1.5rem;
         margin-top: 1.5rem;
@@ -310,7 +313,7 @@ $menu-size: 0.9rem;
 
 /* MOBILE */
 
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
     .container-cases__title {
         font-size: 1.5rem;
         margin-top: 1.5rem;
@@ -337,7 +340,7 @@ $menu-size: 0.9rem;
 
 /* MOBILE SMALL */
 
-@media (max-width: 479.98px) {
+@media (max-width: 480px) {
     .container-cases__title {
         font-size: 1rem;
         margin-top: 1.5rem;
@@ -495,8 +498,13 @@ $menu-size: 0.9rem;
     }
 }
 
-.patent {
+
+#patent {
     padding-bottom: 2%;
+}
+
+#patents {
+    padding-bottom: 1%;
 }
 
 .patent__title {
@@ -509,9 +517,10 @@ $menu-size: 0.9rem;
     font-family: $font-other;
     color: $text;
     font-size: 1rem;
-    padding-top: 5%;
+    margin-top: 8%;
     padding-left: 5%;
 }
+
 
 .patent__title_small,
 .research-container__title {
@@ -522,18 +531,31 @@ $menu-size: 0.9rem;
     color: $primary-color;
 }
 
+.research-container__img {
+    padding: 1% 2%;
+}
+
+@media (max-width: 992px) {
+.research-container__img {
+    display: none;
+}
+}
 
 /*style for video*/
 
-.video-block__container {
+.video-block__container1, .video-block__container2 {
     width: 100%;
     height: 70vh;
 }
 
 .video-block__distractor {
     max-height: 100%;
+    max-width: 100%;
 }
 
+.video-carousel {
+    padding-bottom: 15%;
+}
 
 /*style for certificate*/
 
@@ -579,8 +601,8 @@ $menu-size: 0.9rem;
 
 .container-aboutme {
     font: 100% $font-main;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding-top: 7vh;
+    padding-bottom: 7vh;
 }
 
 .img-aboutme {
@@ -666,12 +688,17 @@ nav,
     font-family: $font-other;
 }
 
+.header-menu {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
 .header-block {
     padding-top: 3%;
 }
 
 .header-photo {
-    max-width: 80%;
+    max-width: 75%;
 }
 
 .header-block_title {
@@ -765,6 +792,10 @@ nav,
 
     .header-block_title {
         font-size: 2rem;
+    }
+
+    .header-photo__block {
+        display: none;
     }
 
     .logo {

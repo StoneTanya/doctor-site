@@ -60,12 +60,14 @@
 .studies {
   background-color: #E1F4F2;
   margin-top: 3%;
+  padding-top: 3%;
 }
 
 .work {
   margin-bottom: 3%;
-  margin-top: 10vh;
+  margin-top: 15vh;
   background-color: #E1F4F2;
+  padding-top: 3%;
 }
 
 .work__block_right,
@@ -158,9 +160,10 @@
   color: black;
   text-decoration: none;
   margin: 5% 10%;
-  padding: 2% 2%;
+  padding: 1% 2%;
+  border-radius: 8px;
   font-family: "Roboto", sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   background-color: #177165;
   color: #fff;
 }
@@ -252,7 +255,7 @@
 }
 
 /* TABLET */
-@media (max-width: 991.98px) {
+@media (max-width: 992px) {
   .container-cases__title {
     font-size: 1.5rem;
     margin-top: 1.5rem;
@@ -273,7 +276,7 @@
 }
 
 /* MOBILE */
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   .container-cases__title {
     font-size: 1.5rem;
     margin-top: 1.5rem;
@@ -294,7 +297,7 @@
 }
 
 /* MOBILE SMALL */
-@media (max-width: 479.98px) {
+@media (max-width: 480px) {
   .container-cases__title {
     font-size: 1rem;
     margin-top: 1.5rem;
@@ -465,8 +468,12 @@
   border: none;
 }
 
-.patent {
+#patent {
   padding-bottom: 2%;
+}
+
+#patents {
+  padding-bottom: 1%;
 }
 
 .patent__title {
@@ -479,7 +486,7 @@
   font-family: "Roboto", sans-serif;
   color: #777777;
   font-size: 1rem;
-  padding-top: 5%;
+  margin-top: 8%;
   padding-left: 5%;
 }
 
@@ -492,14 +499,29 @@
   color: #177165;
 }
 
+.research-container__img {
+  padding: 1% 2%;
+}
+
+@media (max-width: 992px) {
+  .research-container__img {
+    display: none;
+  }
+}
+
 /*style for video*/
-.video-block__container {
+.video-block__container1, .video-block__container2 {
   width: 100%;
   height: 70vh;
 }
 
 .video-block__distractor {
   max-height: 100%;
+  max-width: 100%;
+}
+
+.video-carousel {
+  padding-bottom: 15%;
 }
 
 /*style for certificate*/
@@ -541,8 +563,8 @@
 /* styles to "about me" */
 .container-aboutme {
   font: 100% "Playfair Display", serif;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+  padding-top: 7vh;
+  padding-bottom: 7vh;
 }
 
 .img-aboutme {
@@ -624,12 +646,17 @@ nav,
   font-family: "Roboto", sans-serif;
 }
 
+.header-menu {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
 .header-block {
   padding-top: 3%;
 }
 
 .header-photo {
-  max-width: 80%;
+  max-width: 75%;
 }
 
 .header-block_title {
@@ -721,6 +748,9 @@ nav,
 @media only screen and (max-width: 768px) {
   .header-block_title {
     font-size: 2rem;
+  }
+  .header-photo__block {
+    display: none;
   }
   .logo {
     margin-left: 3%;
