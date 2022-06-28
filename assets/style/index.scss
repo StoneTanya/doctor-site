@@ -67,7 +67,6 @@ $menu-size: 0.9rem;
 
 @media screen and (max-width: 768px) {
 
-    .img-aboutme__block,
     .text-about__block {
         width: 100%;
     }
@@ -219,8 +218,8 @@ $menu-size: 0.9rem;
 
 .container-cases__title {
     font-size: $subtitle-size;
-    margin-top: 2rem;
-    margin-bottom: 3rem;
+    margin-top: 4vh;
+    margin-bottom: 8vh;
     color: #177165;
     font-family: $font-main;
 }
@@ -619,9 +618,8 @@ $menu-size: 0.9rem;
 
 .h1-aboutme {
     font-size: $subtitle-size;
-    margin-top: $margin-top-about-me;
-    margin-bottom: $margin-bottom-about-me;
     color: $primary-color;
+    padding-top: 25vh;
 }
 
 .p-aboutme {
@@ -641,8 +639,7 @@ $menu-size: 0.9rem;
 .container-workareas__title {
     color: white;
     font-family: $font-main;
-    margin-top: 7vh;
-    margin-bottom: 25vh;
+    margin-bottom: 7vh;
     text-align: left;
 }
 
@@ -816,6 +813,12 @@ nav,
             font-size: 1.9rem;
         }
     }
+
+    .container-workareas__topblock {
+        height: 40vh;
+    }
+
+
 }
 
 @media screen and (min-width: 992px) {
@@ -895,6 +898,11 @@ nav,
 }
 
 /*styles to "FAQ" */
+
+.accordion-item{ 
+    border: none;
+    border-bottom: 1px lightgray solid;
+}
 
 .h1-faq {
     font-size: $subtitle-size;
