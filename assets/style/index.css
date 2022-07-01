@@ -50,7 +50,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .img-aboutme__block,
   .text-about__block {
     width: 100%;
   }
@@ -197,8 +196,8 @@
 
 .container-cases__title {
   font-size: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin-top: 4vh;
+  margin-bottom: 8vh;
   color: #177165;
   font-family: "Playfair Display", serif;
 }
@@ -582,9 +581,8 @@
 
 .h1-aboutme {
   font-size: 2rem;
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
   color: #177165;
+  padding-top: 25vh;
 }
 
 .p-aboutme {
@@ -602,8 +600,7 @@
 .container-workareas__title {
   color: white;
   font-family: "Playfair Display", serif;
-  margin-top: 7vh;
-  margin-bottom: 25vh;
+  margin-bottom: 7vh;
   text-align: left;
 }
 
@@ -768,6 +765,9 @@ nav,
   .navbar-btn_mobile span i {
     font-size: 1.9rem;
   }
+  .container-workareas__topblock {
+    height: 40vh;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -843,6 +843,11 @@ nav,
 }
 
 /*styles to "FAQ" */
+.accordion-item {
+  border: none;
+  border-bottom: 1px lightgray solid;
+}
+
 .h1-faq {
   font-size: 2rem;
   padding-top: 2.5rem;
