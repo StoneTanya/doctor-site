@@ -76,13 +76,13 @@ $menu-size: 0.9rem;
 
 .studies {
     background-color: $background;
-    margin-top: 3%;
+    margin-top: 10%;
     padding-top: 3%;
 }
 
 .work {
     margin-bottom: 3%;
-    margin-top: 15vh;
+    margin-top: 7vh;
     background-color: $background;
     padding-top: 3%;
 }
@@ -97,7 +97,7 @@ $menu-size: 0.9rem;
     background-color: white;
     max-width: 70%;
     padding: 4% 6%;
-    margin-top: 2vh;
+    margin-top: 1vh;
     margin-bottom: 3vh;
     border-radius: 10px;
 
@@ -212,14 +212,13 @@ $menu-size: 0.9rem;
 /* styles to "cases"*/
 
 .container-cases {
-    margin-top: 7vh;
     margin-bottom: 10vh;
 }
 
 .container-cases__title {
     font-size: $subtitle-size;
-    margin-top: 4vh;
-    margin-bottom: 8vh;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
     color: #177165;
     font-family: $font-main;
 }
@@ -620,7 +619,6 @@ $menu-size: 0.9rem;
 .h1-aboutme {
     font-size: $subtitle-size;
     color: $primary-color;
-    padding-top: 25vh;
 }
 
 .p-aboutme {
@@ -640,17 +638,17 @@ $menu-size: 0.9rem;
 .container-workareas__title {
     color: white;
     font-family: $font-main;
-    margin-bottom: 7vh;
     text-align: left;
+    padding-bottom: 14%;
+    padding-top: 7%;
 }
 
 .container-workareas__topblock {
     background-color: #177165;
-    height: 30vh;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-bottom: -5%;
+    margin-bottom: -10%;
 }
 
 .container-workareas__bottomblock {
@@ -667,6 +665,7 @@ $menu-size: 0.9rem;
     text-align: center;
     font-size: 1.1rem;
     font-family: $font-other;
+    padding-bottom: 2%;
 }
 
 .workareas-icon {
@@ -675,6 +674,20 @@ $menu-size: 0.9rem;
     color: $primary-color;
 }
 
+@media only screen and (max-width: 768px) {
+    .container-workareas__topblock {
+        height: 30vh;
+        margin-bottom: -25%;
+    }
+
+    .container-workareas__title {
+        padding-bottom: 20%;
+    }
+
+    .container-workareas__card {
+        padding-bottom: 7%;
+    }
+}
 
 /* styles to "header" and footer*/
 
@@ -815,9 +828,7 @@ nav,
         }
     }
 
-    .container-workareas__topblock {
-        height: 40vh;
-    }
+
 
 
 }
