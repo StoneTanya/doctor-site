@@ -43,7 +43,7 @@
     <!-- header block -->
     <div class="container">
         <header class="header">
-            <nav class="header-menu navbar navbar-expand-lg ">
+            <nav class="header-menu navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <a href="#" class="logo navbar-brand d-flex align-items-center"><i
                             class="fa-solid fa-user-doctor logo-icon"></i>Сергей Фомченков</a>
@@ -62,9 +62,9 @@
                                 <ul class="dropdown-menu" aria-labelledby="dropdownAboutMe">
                                     <li><a class="dropdown-item" href="#education">Образование</a></li>
                                     <li><a class="dropdown-item" href="#career">Карьерный путь</a></li>
-                                    <li><a class="dropdown-item" href="#patents">Патенты</a></li>
-                                    <li><a class="dropdown-item" href="#patents">Дипломы и сертификаты</a></li>
-                                    <li><a class="dropdown-item" href="#patents">Исследования</a></li>
+                                    <li><a class="dropdown-item" href="#patent">Патенты</a></li>
+                                    <li><a class="dropdown-item" href="#sert">Дипломы и сертификаты</a></li>
+                                    <li><a class="dropdown-item" href="#research">Исследования</a></li>
                                 </ul>
                             </li>
                             <li class="menu__item nav-item">
@@ -78,8 +78,9 @@
                             </li>
                         </ul>
                         <div class="header__button">
-                            <a href="https://t.me/sergey_fom" target="_blank" class="header_blue__button d-flex align-items-center"><i
-                                    class="fa-brands fa-telegram" id="telegram-icon"></i> &nbsp; Записаться на
+                            <a href="https://t.me/Sergey_fom" target="_blank"
+                                class="header_blue__button d-flex align-items-center"><i class="fa-brands fa-telegram"
+                                    id="telegram-icon"></i> &nbsp; Записаться на
                                 консультацию</a>
                         </div>
                     </div>
@@ -160,7 +161,7 @@
         <section class="work container" id="career">
             <div class="row">
                 <div class="work__title col-12 col-md-12 col-lg-5">
-                    <h2>За время практики помог более 12500 пациентов</h2>
+                    <h2>За время практики помог более 12 500 пациентов</h2>
                 </div>
                 <div class="work__block_right col-12 col-md-12 col-lg-7">
                     <div class="line">
@@ -173,12 +174,13 @@
                                 <h3 class="work__content__title">c 2013 года</h3>
                                 <p>Ведущий невролог в компании Нитроздрав</p>
                             </div>
-                            <div class="work__content__block">
-                                <h3 class="work__content__title">2003 год</h3>
-                                <p>Ведущий невролог Фонда "Дети России"- вице-президент Фонда </p>
-                            </div>
                             <input type="checkbox" class="read-more-checker" id="read-more-checker" />
                             <div class="limiter">
+                                <div class="work__content__block">
+                                    <h3 class="work__content__title">2003 год</h3>
+                                    <p>Ведущий невролог Фонда "Дети России"- вице-президент Фонда </p>
+                                </div>
+
                                 <div class="work__content__block">
                                     <h3 class="work__content__title">2001-2002 год</h3>
                                     <p>Врач невролог ГУ Республики Коми санатория "Северное
@@ -235,12 +237,13 @@
                                 <p>Усовершенствование по рефлексотерапии, неврологии и мануальной
                                     терапии при Национальном Медико-Хирургическом Центре (НМХЦ) им. Н.И. Пирогова</p>
                             </div>
-                            <div class="study__content__block">
-                                <h3 class="study__content__title">2016 год</h3>
-                                <p>Подтверждение высшей квалификационной категории по неврологии</p>
-                            </div>
                             <input type="checkbox" class="read-more-checker2" id="read-more-checker2" />
                             <div class="limiter">
+                                <div class="study__content__block">
+                                    <h3 class="study__content__title">2016 год</h3>
+                                    <p>Подтверждение высшей квалификационной категории по неврологии</p>
+                                </div>
+
                                 <div class="study__content__block">
                                     <h3 class="study__content__title">2014-2015 год</h3>
                                     <p>Усовершенствование по неврологии, мануальной терапии и
@@ -475,7 +478,7 @@
 
             <div class="tab-content container" id="myTabContent">
 
-                <div class="tab-pane fade show active patent-block" id="patent" role="tabpanel"
+                <div class="tab-pane fade show active border" id="patent" role="tabpanel"
                     aria-labelledby="patent-tab">
 
                     <h2 class="patent__title text-center">Участвовал в создании патентов</h2>
@@ -492,7 +495,7 @@
                                 &nbsp<i class="fa-solid fa-plus"></i></a>
                         </div>
 
-                        <div class="col-md-6 video-block">
+                        <div class="col-md-6">
                             <h4 class="patent__title_small">Парфюмерная композиция для местного применения для снятия
                                 болевого синдрома
                             </h4>
@@ -505,6 +508,7 @@
                         </div>
                     </div>
 
+
                     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
@@ -514,10 +518,12 @@
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active" data-bs-interval="10000">
-                                <div class="video-block__container">
+                                <div class="video-block__container1 d-flex align-items-center">
                                     <video class="col video-block__distractor d-block w-100" preload="auto" loop
-                                        autoplay>
+                                        autoplay muted>
                                         <source src="/assets/video/Spina_2.mp4" type="video/mp4">
+                                        <source src="/assets/video/Spina_2.webm" type="video/webm">
+                                        <source src="/assets/video/Spina_2.ogv" type="video/ogg">
                                     </video>
                                 </div>
 
@@ -526,10 +532,12 @@
                                 </div>
                             </div>
                             <div class="carousel-item" data-bs-interval="10000">
-                                <div class="video-block__container">
+                                <div class="video-block__container2">
                                     <video class="col video-block__distractor d-block w-100" preload="auto" loop
-                                        autoplay>
+                                        autoplay muted>
                                         <source src="/assets/video/Spina_4.mp4" type="video/mp4">
+                                        <source src="/assets/video/Spina_4.webm" type="video/webm">
+                                        <source src="/assets/video/Spina_4.ogv" type="video/ogg">
                                     </video>
                                 </div>
                                 <div class="carousel-caption d-none d-md-block">
@@ -548,9 +556,9 @@
                             <span class="visually-hidden">Следующий</span>
                         </button>
                     </div>
-
-
                 </div>
+
+
 
                 <div class="tab-pane fade" id="sert" role="tabpanel" aria-labelledby="sert-tab">
                     <div class="dipl-list d-flex flex-row flex-wrap justify-content-around cert-container">
@@ -716,11 +724,11 @@
 
                 <div class="tab-pane fade" id="research" role="tabpanel" aria-labelledby="research-tab">
                     <div class="research-container row">
-                        <div class="research-container__img col-md-3 col-sm-12">
+                        <div class="research-container__img col-md-3">
                             <img src="assets/img/Diploma1.svg" alt="main page of dissertation" class="research__img">
                         </div>
 
-                        <div class="col-md-6 col-sm-12">
+                        <div class="col-md-12 col-sm-12 col-lg-6">
                             <h2 class="research-container__title"> <i class="fa-solid fa-book-open"></i> &nbsp
                                 Диссертация кандидата медицинских наук <br> Санкт-Петербургская военно-медицинская
                                 академия, 1995 г. <br>
@@ -757,7 +765,7 @@
 
 
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <h2 class="accordion-header faq-question" id="panelsStayOpen-headingOne">
                                 <button class="accordion-button collapsed fw-bold" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
                                     aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
@@ -766,7 +774,7 @@
                             </h2>
                             <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
                                 aria-labelledby="panelsStayOpen-headingOne">
-                                <div class="accordion-body">
+                                <div class="accordion-body faq-answer">
                                     Боль в пояснице требует внимательного неврологического осмотра. <strong>Причин её
                                         может быть
                                         несколько.</strong> Это может быть патология дисков, позвонков, связок,
@@ -779,7 +787,7 @@
                         </div>
 
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                            <h2 class="accordion-header faq-question" id="panelsStayOpen-headingTwo">
                                 <button class="accordion-button collapsed fw-bold" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
                                     aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
@@ -788,7 +796,7 @@
                             </h2>
                             <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
                                 aria-labelledby="panelsStayOpen-headingTwo">
-                                <div class="accordion-body">
+                                <div class="accordion-body faq-answer">
                                     <strong>Все начинается с осмотра пациента и анализа причин болевого синдрома и
                                         механизмов его
                                         возникновения.</strong> Неврологический осмотр проводится с выявлением симптомов
@@ -811,7 +819,7 @@
                         </div>
 
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                            <h2 class="accordion-header faq-question" id="panelsStayOpen-headingThree">
                                 <button class="accordion-button collapsed fw-bold" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
                                     aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
@@ -820,7 +828,7 @@
                             </h2>
                             <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
                                 aria-labelledby="panelsStayOpen-headingThree">
-                                <div class="accordion-body">
+                                <div class="accordion-body faq-answer">
                                     При отсутствии анталогической (противоболевой позы), т.е. болит в любом положении,
                                     лежа, стоя, сидя.
                                     <br> Отсутствие клинического эффекта от консервативной терапии на протяжении 3-х
@@ -832,7 +840,7 @@
                         </div>
 
                         <div class="accordion-item ">
-                            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                            <h2 class="accordion-header faq-question" id="panelsStayOpen-headingFour">
                                 <button class="accordion-button collapsed fw-bold" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour"
                                     aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
@@ -841,7 +849,7 @@
                             </h2>
                             <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
                                 aria-labelledby="panelsStayOpen-headingFour">
-                                <div class="accordion-body">
+                                <div class="accordion-body faq-answer">
                                     Быстрота клинического выздоравления, компенсация организма зависит от причины боли.
                                     Если это недавно развившийся, свежий рефлекторный болевой синдром при перегрузках
                                     позвоночно-двигательных сегментов, то иногда бывает достаточно одного сеанса с
@@ -857,7 +865,7 @@
                         </div>
 
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                            <h2 class="accordion-header faq-question" id="panelsStayOpen-headingFive">
                                 <button class="accordion-button collapsed fw-bold" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive"
                                     aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
@@ -866,7 +874,7 @@
                             </h2>
                             <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
                                 aria-labelledby="panelsStayOpen-headingFive">
-                                <div class="accordion-body">
+                                <div class="accordion-body faq-answer">
                                     Иммобилизация корсетом, воротникоми, покой позвоночника на уровне боли оправдано и
                                     физиологично для организма. Время фиксации и ее кратность в течение дня определяется
                                     врачом, исходя из динамики клинической картины.
@@ -882,7 +890,7 @@
 
     <!--footer-->
 
-    <footer class="footer">
+    <footer class="container footer">
         <div class="container row">
             <div class="col-12 col-md-6 col-lg-8">
                 <ul class="footer-menu d-flex flex-wrap justify-content-between">
@@ -901,18 +909,18 @@
                         <li class="menu__item"> <i class="fa-solid fa-angles-right"></i> &nbsp; <a href="#workareas"
                                 class="menu__link">Услуги</a></li>
                         <li class="menu__item"> <i class="fa-solid fa-angles-right"></i> &nbsp; <a class="menu__link"
-                                href="#patents">Патенты</a></li>
+                                href="#patent">Патенты</a></li>
                         <li class="menu__item"> <i class="fa-solid fa-angles-right"></i> &nbsp; <a class="menu__link"
-                                href="#patents">Дипломы и сертификаты</a></li>
+                                href="#sert">Дипломы и сертификаты</a></li>
                         <li class="menu__item"> <i class="fa-solid fa-angles-right"></i> &nbsp; <a class="menu__link"
-                                href="#patents">Исследования</a></li>
+                                href="#research">Исследования</a></li>
                     </div>
                 </ul>
             </div>
             <div class="footer-contacts col-12 col-md-6 col-lg-4" id="contacts">
                 <i class="fa-solid fa-user-doctor  logo-icon logo-icon__footer"> &nbsp; Сергей Фомченков</i>
                 <div class="d-flex flex-column wrap footer-contacts__icons">
-                    <a href="https://t.me/sergey_fom" target="_blank" class="footer__button"><i
+                    <a href="https://t.me/Sergey_fom" target="_blank" class="footer__button"><i
                             class="fa-brands fa-telegram footer-contacts__icon"></i> &nbsp; Телеграмм</a>
                     <a href="#" class="footer__button"><i class="fa-solid fa-envelope footer-contacts__icon"></i>
                         &nbsp; fom_sw1@mail.ru</a>
