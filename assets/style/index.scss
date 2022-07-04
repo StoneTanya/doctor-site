@@ -955,3 +955,25 @@ nav,
 .accordion-button:focus {
     box-shadow: 0 0 0 0.1rem $primary-color;
 }
+
+/*Button scroll-up*/
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 2rem;
+    right: 0.3rem;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: $primary-color;
+    color: white;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: $font-size-for-common-text;
+
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
