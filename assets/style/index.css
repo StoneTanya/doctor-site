@@ -899,15 +899,14 @@ nav,
   display: none;
   position: fixed;
   bottom: 2rem;
-  right: 0.3rem;
+  right: 1rem;
   z-index: 99;
   border: none;
   outline: none;
   background-color: #177165;
   color: white;
   cursor: pointer;
-  padding: 1rem;
-  border-radius: 1rem;
+  padding: 0.8rem;
   font-size: 1.2rem;
 }
 
